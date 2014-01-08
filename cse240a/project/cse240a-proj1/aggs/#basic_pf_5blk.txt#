@@ -1,0 +1,9 @@
+tot_run_time                   mean: 1247435.00		median:1025861.50
+dCache_tot_hit_rate            mean:       0.98		median:      0.98
+l2_tot_hit_rate                mean:       0.85		median:      0.86
+AMAT                           mean:       1.63		median:      1.72
+AMQL                           mean:       1.25		median:      1.36
+dCache_to_l2_bandwidth_util    mean:       0.03		median:      0.03
+mem_bandwidth_util             mean:       0.27		median:      0.28
+
+

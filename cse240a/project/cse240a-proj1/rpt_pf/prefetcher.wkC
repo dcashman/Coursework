@@ -1,0 +1,88 @@
+/*
+ *
+ * File: prefetcher.C
+ * Author: Sat Garcia (sat@cs)
+ * Description: This simple prefetcher waits until there is a D-cache miss then 
+ * requests location (addr + 16), where addr is the address that just missed 
+ * in the cache.
+ *
+ */
+
+#include "prefetcher.h"
+#include <stdio.h>
+
+static int counter = 0;
+
+
+Prefetcher::Prefetcher() { _ready = false; 
+  printf("PRE: creating prefetcher with value of (%d reqs per miss)\n", NUM_REQS_PER_MISS);
+  /* clear to 0's the rpt table */
+  //memset(rpt_table, 0, sizeof(struct rpt_row_entry) * NUM_RPT_ENTRIES);
+  /*  int i;
+  for(i = 0; i < NUM_RPT_ENTRIES; i++){
+    rpt_table[i].pc = 0;
+    } */
+  
+}
+
+bool Prefetcher::hasRequest(u_int32_t cycle) { return _ready; }
+
+Request Prefetcher::getRequest(u_int32_t cycle) { 
+  //printf("PRE: addr fetched %x on %d num prefetch\n", _nextReq.addr, _req_left);
+  return _nextReq; }
+
+void Prefetcher::completeRequest(u_int32_t cycle) { 
+  if(_req_left == 0){
+    _ready = false; 
+  }else{
+    _req_left--;
+    _nextReq.addr = _nextReq.addr + L2_BLOCK_SIZE;
+  }
+  
+}
+
+void Prefetcher::cpuRequest(Request req) { 
+  	if(!_ready && !req.HitL1) {
+	       /* check entry in RPT table */
+	       int rpt_row_num = req.addr % NUM_RPT_ENTRIES;
+	       if(rpt_table[rpt_row_num].pc != req.pc){
+		 /* this entry not in RPT - put it in*/
+		 rpt_table[rpt_row_num].pc = req.pc;
+		 rpt_table[rpt_row_num].last_mem = req.addr;
+		 rpt_table[rpt_row_num].state = INIT;  //does work?
+		 rpt_table[rpt_row_num].last_stride = 0;
+		 /* and do normal fetching */
+		 /* TODO */
+	       }else if(rpt_table[rpt_row_num].state == INIT || rpt_table[rpt_row_num].last_stride == 0){
+		 /* in RPT, but only one record so far */
+		 rpt_table[rpt_row_num].state = TRANSITION;
+		 rpt_table[rpt_row_num].last_stride = req.addr - rpt_table[rpt_row_num].last_mem;
+		 rpt_table[rpt_row_num].last_mem = req.addr;
+		 /* and do normal or stride fetching */
+		 /* TODO */
+	       }else{ 
+		 /* in RPT, and has history */
+                 //counter++;
+
+		 if((req.addr - rpt_table[rpt_row_num].last_mem) ==
+		    rpt_table[rpt_row_num].last_stride){
+		   printf("PRE: pc %x already in RPT and strides (%d) match!\n",
+			  req.pc, rpt_table[rpt_row_num].last_stride);
+		   /* strides match, predict this for next one */
+		   rpt_table[rpt_row_num].state = STEADY;
+		   _nextReq.addr = rpt_table[rpt_row_num].last_stride + req.addr;
+		   _req_left = 0;
+		   _ready = true;
+		 }else{
+		   rpt_table[rpt_row_num].state = TRANSITION;
+		   rpt_table[rpt_row_num].last_stride = 
+		     req.addr - rpt_table[rpt_row_num].last_mem;
+		 }
+		 rpt_table[rpt_row_num].last_mem = req.addr;
+	       }
+
+		 /*		_nextReq.addr = req.addr + L2_BLOCK_SIZE;
+		_ready = true;
+		_req_left = NUM_REQS_PER_MISS - 1; */
+	} 
+}

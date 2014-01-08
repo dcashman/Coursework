@@ -1,0 +1,25 @@
+SuperPin is a parallel version of Pin that can be used for certain 
+"parallelizable" instrumentation tasks. It spawns instrumentation
+threads along side an uninstrumented _main_ thread. Each 
+instrumentation thread handles a particular _slice_ of the execution, 
+and as each slice completes, the results are merged into a collective
+total. Not surprisingly, SuperPin works very well for tasks such as 
+event counting and trace generation. Other tasks, such as cache 
+simulation will require more "massaging" before they are parallelizable.
+For example, the user could write the simulator such that the starting 
+state of each slice is assumed, then any differences between the assumed
+and actual starting state are resolved when they become known.
+
+DISCLAIMER: SuperPin has only been tested on single-threaded applications
+runnnig on a 16-core system with SUSE Linux Enterprise Server 9. It doesn't 
+make sense to run it on a system with fewer than four cores. It also 
+doesn't make sense to run SuperPin on a multithreaded application 
+since it will already have spread itself out onto the available cores.
+
+To learn more about SuperPin, its applications, its limitations, and its
+implementation, please see our CGO 2007 paper on the Pin website:
+http://rogue.colorado.edu/pin/papers.html
+
+SuperPin was developed at Intel by Steven Wallace. It is maintained by 
+Kim Hazelwood.
+

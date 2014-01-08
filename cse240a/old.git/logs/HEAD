@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 ad312c0850e02149b1c0861f343a861b1ceb1d9e dcashman <dan.a.cashman@gmail.com> 1362541420 -0800	clone: from https://github.com/dcashman/cse240a.git
+ad312c0850e02149b1c0861f343a861b1ceb1d9e e259a55a14fd3d172a456a615fe03c5b5e7c9179 dcashman <dan.a.cashman@gmail.com> 1362541587 -0800	commit: first commit of project files to github
+e259a55a14fd3d172a456a615fe03c5b5e7c9179 feabc6bce7d1eac2b3b3c7fc32605922786158ad dcashman <dan.a.cashman@gmail.com> 1362541696 -0800	commit: test.txt
+feabc6bce7d1eac2b3b3c7fc32605922786158ad bc1a7631f9aaa8c13f7acefd85377fcba1c7e3d9 dcashman <dan.a.cashman@gmail.com> 1362640770 -0800	commit: all progress through tagged basics
+bc1a7631f9aaa8c13f7acefd85377fcba1c7e3d9 d4ad31fc0c70bf153e99e0fc079e84f4f870e356 dcashman <dan.a.cashman@gmail.com> 1362706696 -0800	commit: final prefetcher made

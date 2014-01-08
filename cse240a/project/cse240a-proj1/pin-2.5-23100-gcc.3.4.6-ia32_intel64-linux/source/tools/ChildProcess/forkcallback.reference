@@ -1,0 +1,5 @@
+BeforeFork
+AfterForkInParent
+PIN_GetPid() is correct in parent process
+AfterForkInChild
+PIN_GetPid() is correct in child process

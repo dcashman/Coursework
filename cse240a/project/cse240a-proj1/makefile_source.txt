@@ -1,0 +1,23 @@
+CC = g++
+CCFLAGS = -g
+
+cacheSim: CPU.o cache.o main.o memQueue.o ${PREFETCH_DIR}/prefetcher.o
+	${CC} ${CCFLAGS} CPU.o cache.o main.o memQueue.o ${PREFETCH_DIR}/prefetcher.o -o cacheSim
+
+CPU.o: CPU.C CPU.h mem-sim.h
+	${CC} ${CCFLAGS} -c CPU.C
+
+cache.o: cache.C cache.h
+	${CC} ${CCFLAGS} -c cache.C
+
+main.o: main.C mem-sim.h CPU.h cache.h memQueue.h ${PREFETCH_DIR}/prefetcher.h
+	${CC} ${CCFLAGS} -c main.C
+
+memQueue.o: memQueue.C memQueue.h mem-sim.h cache.h
+	${CC} ${CCFLAGS} -c memQueue.C
+
+prefetcher.o: ${PREFETCH_DIR}/prefetcher.C ${PREFETCH_DIR}/prefetcher.h mem-sim.h
+	${CC} ${CCFLAGS} -c ${PREFETCH_DIR}/prefetcher.C
+
+clean:
+	rm -f *.o cacheSim

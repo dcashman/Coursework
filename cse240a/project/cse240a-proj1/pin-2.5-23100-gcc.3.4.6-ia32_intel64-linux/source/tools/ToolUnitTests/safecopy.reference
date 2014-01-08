@@ -1,0 +1,9 @@
+Test SafeCopy in the trace instrumentation callback.
+SafeCopy (A): Entire buffer has been copied successfully.
+SafeCopy (B): Accessible part of the buffer has been copied successfully.
+SafeCopy (C): Inaccessible buffer has not been copied.
+Test SafeCopy in the trace analysis routine.
+SafeCopy (A): Entire buffer has been copied successfully.
+SafeCopy (B): Accessible part of the buffer has been copied successfully.
+SafeCopy (C): Inaccessible buffer has not been copied.
+SafeCopy test completed.

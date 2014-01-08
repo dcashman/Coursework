@@ -1,0 +1,1987 @@
+amalgam
+g++    -c -o amalgam/prefetcher.o amalgam/prefetcher.C
+g++ -g CPU.o cache.o main.o memQueue.o amalgam/prefetcher.o -o cacheSim
+PRE: creating prefetcher with value of (1 reqs per miss)
+PRE: NUM ENTRIES IN TABLE: 8192
+PRE: same stride found for address 60ba06, with lastmem of 6333ca0 and curr_req of 6333d30, previous stride at 144
+Long stride! 1 total short strides
+PRE: same stride found for address 6420db0, with lastmem of 6328704 and curr_req of 63287a4, previous stride at 160
+Long stride! 2 total short strides
+PRE: same stride found for address 6420db0, with lastmem of 632bd14 and curr_req of 632bdc4, previous stride at 176
+Long stride! 3 total short strides
+PRE: same stride found for address 6384b76, with lastmem of 8e830fc and curr_req of 8e83194, previous stride at 152
+Long stride! 4 total short strides
+PRE: same stride found for address 6384975, with lastmem of 644bb8c and curr_req of 644bc34, previous stride at 168
+Long stride! 5 total short strides
+PRE: same stride found for address 805389a, with lastmem of 8e862f0 and curr_req of 8e86390, previous stride at 160
+Long stride! 6 total short strides
+PRE: same stride found for address 805387e, with lastmem of 8e8a2f0 and curr_req of 8e8a390, previous stride at 160
+Long stride! 7 total short strides
+PRE: same stride found for address 80538c0, with lastmem of 8e862f2 and curr_req of 8e86392, previous stride at 160
+Long stride! 8 total short strides
+PRE: same stride found for address 8053858, with lastmem of 8e8a2f0 and curr_req of 8e8a390, previous stride at 160
+Long stride! 9 total short strides
+PRE: same stride found for address 80538a4, with lastmem of 8e862f1 and curr_req of 8e86391, previous stride at 160
+Long stride! 10 total short strides
+PRE: same stride found for address 8053874, with lastmem of 8e8a2f3 and curr_req of 8e8a393, previous stride at 160
+Long stride! 11 total short strides
+PRE: same stride found for address 805389a, with lastmem of 8e862f2 and curr_req of 8e86392, previous stride at 160
+Long stride! 12 total short strides
+PRE: same stride found for address 80538c0, with lastmem of 8e8a2f2 and curr_req of 8e8a392, previous stride at 160
+Long stride! 13 total short strides
+PRE: same stride found for address 805387e, with lastmem of 8e862f1 and curr_req of 8e86391, previous stride at 160
+Long stride! 14 total short strides
+PRE: same stride found for address 80538ae, with lastmem of 8e862f3 and curr_req of 8e86393, previous stride at 160
+Long stride! 15 total short strides
+PRE: same stride found for address 805389a, with lastmem of 8e8a2f3 and curr_req of 8e8a393, previous stride at 160
+Long stride! 16 total short strides
+PRE: same stride found for address 80538ca, with lastmem of 8e8a2f2 and curr_req of 8e8a392, previous stride at 160
+Long stride! 17 total short strides
+PRE: same stride found for address 8053874, with lastmem of 8e862f3 and curr_req of 8e86393, previous stride at 160
+Long stride! 18 total short strides
+PRE: same stride found for address 805387e, with lastmem of 8e862f1 and curr_req of 8e86391, previous stride at 160
+Long stride! 19 total short strides
+PRE: same stride found for address 8053862, with lastmem of 8e862f2 and curr_req of 8e86392, previous stride at 160
+Long stride! 20 total short strides
+PRE: same stride found for address 80538ca, with lastmem of 8e8a2f2 and curr_req of 8e8a392, previous stride at 160
+Long stride! 21 total short strides
+PRE: same stride found for address 80538ae, with lastmem of 8e862f2 and curr_req of 8e86392, previous stride at 160
+Long stride! 22 total short strides
+PRE: same stride found for address 8053888, with lastmem of 8e862f0 and curr_req of 8e86390, previous stride at 160
+Long stride! 23 total short strides
+PRE: same stride found for address 8053888, with lastmem of 8e8a2f0 and curr_req of 8e8a390, previous stride at 160
+Long stride! 24 total short strides
+AMAT: 1.899936
+PRE: creating prefetcher with value of (1 reqs per miss)
+PRE: NUM ENTRIES IN TABLE: 8192
+PRE: same stride found for address 615a06, with lastmem of 2b70ca0 and curr_req of 2b70d30, previous stride at 144
+Long stride! 1 total short strides
+PRE: same stride found for address 2c5ddb0, with lastmem of 2b68d14 and curr_req of 2b68dc4, previous stride at 176
+Long stride! 2 total short strides
+PRE: same stride found for address 2c5ddb0, with lastmem of 2b69c94 and curr_req of 2b69d34, previous stride at 160
+Long stride! 3 total short strides
+PRE: same stride found for address 2bc1eac, with lastmem of 834e04c and curr_req of 834f03c, previous stride at 4080
+Long stride! 4 total short strides
+PRE: same stride found for address 2bc1b76, with lastmem of 834e04c and curr_req of 834f03c, previous stride at 4080
+Long stride! 5 total short strides
+PRE: same stride found for address 2bc79c1, with lastmem of 834e054 and curr_req of 834f044, previous stride at 4080
+Long stride! 6 total short strides
+PRE: same stride found for address 2bc79d5, with lastmem of 834e050 and curr_req of 834f040, previous stride at 4080
+Long stride! 7 total short strides
+PRE: same stride found for address 2bc1eac, with lastmem of 83528e4 and curr_req of 8352994, previous stride at 176
+Long stride! 8 total short strides
+PRE: same stride found for address 2bc1eac, with lastmem of 8352a24 and curr_req of 8352ab4, previous stride at 144
+Long stride! 9 total short strides
+PRE: same stride found for address 805510a, with lastmem of 8059250 and curr_req of 80593f0, previous stride at 416
+Long stride! 10 total short strides
+PRE: same stride found for address 2bc1eac, with lastmem of 8353934 and curr_req of 8353a9c, previous stride at 360
+Long stride! 11 total short strides
+PRE: same stride found for address 80541d5, with lastmem of bfe738bc and curr_req of bfe73abc, previous stride at 512
+Long stride! 12 total short strides
+PRE: same stride found for address 80541d6, with lastmem of bfe738c0 and curr_req of bfe73ac0, previous stride at 512
+Long stride! 13 total short strides
+PRE: same stride found for address 61089e, with lastmem of 61f50c and curr_req of 61fb9c, previous stride at 1680
+Long stride! 14 total short strides
+PRE: same stride found for address 2bea039, with lastmem of 2c87628 and curr_req of 2c87788, previous stride at 352
+Long stride! 15 total short strides
+PRE: same stride found for address 2bbf687, with lastmem of 2c87614 and curr_req of 2c87774, previous stride at 352
+Long stride! 16 total short strides
+AMAT: 2.466453
+PRE: creating prefetcher with value of (1 reqs per miss)
+PRE: NUM ENTRIES IN TABLE: 8192
+PRE: same stride found for address 2ebb86, with lastmem of 6d51ca0 and curr_req of 6d51d30, previous stride at 144
+Long stride! 1 total short strides
+PRE: same stride found for address 6da00b0, with lastmem of 6e6b628 and curr_req of 6e6b788, previous stride at 352
+Long stride! 2 total short strides
+PRE: same stride found for address 6da01b7, with lastmem of 6e6b5d0 and curr_req of 6e6b730, previous stride at 352
+Long stride! 3 total short strides
+PRE: same stride found for address 6da01b2, with lastmem of 6e6b5f4 and curr_req of 6e6b754, previous stride at 352
+Long stride! 4 total short strides
+PRE: same stride found for address 6da0480, with lastmem of 6e6b5c0 and curr_req of 6e6b720, previous stride at 352
+Long stride! 5 total short strides
+AMAT: 2.241078
+PRE: creating prefetcher with value of (1 reqs per miss)
+PRE: NUM ENTRIES IN TABLE: 8192
+PRE: same stride found for address fc35ed, with lastmem of b74c652c and curr_req of b74c67bc, previous stride at 656
+Long stride! 1 total short strides
+PRE: same stride found for address fc3615, with lastmem of b74c6760 and curr_req of b74c69f0, previous stride at 656
+Long stride! 2 total short strides
+PRE: same stride found for address fc3636, with lastmem of b74c651c and curr_req of b74c67ac, previous stride at 656
+Long stride! 3 total short strides
+PRE: same stride found for address fc37a0, with lastmem of b74c6528 and curr_req of b74c67b8, previous stride at 656
+Long stride! 4 total short strides
+PRE: same stride found for address fc36c0, with lastmem of b74c66c4 and curr_req of b74c6954, previous stride at 656
+Long stride! 5 total short strides
+PRE: same stride found for address fc36f1, with lastmem of b74c66dc and curr_req of b74c696c, previous stride at 656
+Long stride! 6 total short strides
+PRE: same stride found for address fc3785, with lastmem of b74c66b4 and curr_req of b74c6944, previous stride at 656
+Long stride! 7 total short strides
+PRE: same stride found for address fbf991, with lastmem of b74c6668 and curr_req of b74c68f8, previous stride at 656
+Long stride! 8 total short strides
+PRE: same stride found for address fbfe90, with lastmem of b74c666e and curr_req of b74c68fe, previous stride at 656
+Long stride! 9 total short strides
+PRE: same stride found for address fbfbc4, with lastmem of b74c66b8 and curr_req of b74c6948, previous stride at 656
+Long stride! 10 total short strides
+PRE: same stride found for address fbfbdf, with lastmem of b74c66bc and curr_req of b74c694c, previous stride at 656
+Long stride! 11 total short strides
+PRE: same stride found for address fc0009, with lastmem of b74c6520 and curr_req of b74c67b0, previous stride at 656
+Long stride! 12 total short strides
+PRE: same stride found for address fc0061, with lastmem of b74c6548 and curr_req of b74c67d8, previous stride at 656
+Long stride! 13 total short strides
+PRE: same stride found for address fc0080, with lastmem of b74c6550 and curr_req of b74c67e0, previous stride at 656
+Long stride! 14 total short strides
+PRE: same stride found for address fc0094, with lastmem of b74c657c and curr_req of b74c680c, previous stride at 656
+Long stride! 15 total short strides
+PRE: same stride found for address fc009e, with lastmem of b74c6594 and curr_req of b74c6824, previous stride at 656
+Long stride! 16 total short strides
+PRE: same stride found for address fc00a8, with lastmem of b74c65fc and curr_req of b74c688c, previous stride at 656
+Long stride! 17 total short strides
+PRE: same stride found for address fc00b5, with lastmem of b74c65b0 and curr_req of b74c6840, previous stride at 656
+Long stride! 18 total short strides
+PRE: same stride found for address fc00e1, with lastmem of b74c65d0 and curr_req of b74c6860, previous stride at 656
+Long stride! 19 total short strides
+PRE: same stride found for address fc03df, with lastmem of b74c65ac and curr_req of b74c683c, previous stride at 656
+Long stride! 20 total short strides
+PRE: same stride found for address fc01df, with lastmem of b74c6734 and curr_req of b74c69c4, previous stride at 656
+Long stride! 21 total short strides
+PRE: same stride found for address fc02a2, with lastmem of b74c66e4 and curr_req of b74c6974, previous stride at 656
+Long stride! 22 total short strides
+PRE: same stride found for address fc7390, with lastmem of b74c6534 and curr_req of b74c67c4, previous stride at 656
+Long stride! 23 total short strides
+PRE: same stride found for address fc7395, with lastmem of b74c6758 and curr_req of b74c69e8, previous stride at 656
+Long stride! 24 total short strides
+PRE: same stride found for address fbf8cf, with lastmem of b74c66f0 and curr_req of b74c6980, previous stride at 656
+Long stride! 25 total short strides
+PRE: same stride found for address fbf8d5, with lastmem of b74c66ec and curr_req of b74c697c, previous stride at 656
+Long stride! 26 total short strides
+PRE: same stride found for address fc533c, with lastmem of b74c6670 and curr_req of b74c6900, previous stride at 656
+Long stride! 27 total short strides
+PRE: same stride found for address fc7449, with lastmem of ee08f4 and curr_req of ee0984, previous stride at 144
+Long stride! 28 total short strides
+PRE: same stride found for address fc7a06, with lastmem of 5f8eca0 and curr_req of 5f8ed30, previous stride at 144
+Long stride! 29 total short strides
+PRE: same stride found for address fc7944, with lastmem of b74c66a0 and curr_req of b74c6930, previous stride at 656
+Long stride! 30 total short strides
+PRE: same stride found for address fc7964, with lastmem of b74c66b0 and curr_req of b74c6940, previous stride at 656
+Long stride! 31 total short strides
+PRE: same stride found for address fc28df, with lastmem of b74c66b0 and curr_req of b74c6940, previous stride at 656
+Long stride! 32 total short strides
+PRE: same stride found for address fc28f1, with lastmem of b74c6688 and curr_req of b74c6918, previous stride at 656
+Long stride! 33 total short strides
+PRE: same stride found for address 607bdb0, with lastmem of 5f86d14 and curr_req of 5f86dc4, previous stride at 176
+Long stride! 34 total short strides
+PRE: same stride found for address 804af80, with lastmem of 84b8520 and curr_req of 84b8620, previous stride at 256
+Long stride! 35 total short strides
+PRE: same stride found for address 804af89, with lastmem of 84b85a0 and curr_req of 84b86a0, previous stride at 256
+Long stride! 36 total short strides
+PRE: same stride found for address 804af80, with lastmem of 84b8920 and curr_req of 84b8a20, previous stride at 256
+Long stride! 37 total short strides
+PRE: same stride found for address 804af89, with lastmem of 84b89a0 and curr_req of 84b8aa0, previous stride at 256
+Long stride! 38 total short strides
+PRE: same stride found for address 804af80, with lastmem of 84b8d20 and curr_req of 84b8e20, previous stride at 256
+Long stride! 39 total short strides
+PRE: same stride found for address 804af89, with lastmem of 84b8da0 and curr_req of 84b8ea0, previous stride at 256
+Long stride! 40 total short strides
+PRE: same stride found for address 804c88c, with lastmem of 84b8510 and curr_req of 84b8710, previous stride at 512
+Long stride! 41 total short strides
+PRE: same stride found for address 804c85c, with lastmem of 84b86b4 and curr_req of 84b88b4, previous stride at 512
+Long stride! 42 total short strides
+PRE: same stride found for address 804c867, with lastmem of 84b8704 and curr_req of 84b8904, previous stride at 512
+Long stride! 43 total short strides
+PRE: same stride found for address 804c88c, with lastmem of 84b8d10 and curr_req of 84b8f10, previous stride at 512
+Long stride! 44 total short strides
+PRE: same stride found for address 804c85c, with lastmem of 84b8eb4 and curr_req of 84b90b4, previous stride at 512
+Long stride! 45 total short strides
+PRE: same stride found for address 804c867, with lastmem of 84b8f04 and curr_req of 84b9104, previous stride at 512
+Long stride! 46 total short strides
+PRE: same stride found for address 804c88c, with lastmem of 84b8790 and curr_req of 84b8990, previous stride at 512
+Long stride! 47 total short strides
+PRE: same stride found for address 804c85c, with lastmem of 84b8734 and curr_req of 84b8934, previous stride at 512
+Long stride! 48 total short strides
+PRE: same stride found for address 804c867, with lastmem of 84b8784 and curr_req of 84b8984, previous stride at 512
+Long stride! 49 total short strides
+PRE: same stride found for address 804c88c, with lastmem of 84b8f90 and curr_req of 84b9190, previous stride at 512
+Long stride! 50 total short strides
+PRE: same stride found for address 804c85c, with lastmem of 84b8f34 and curr_req of 84b9134, previous stride at 512
+Long stride! 51 total short strides
+PRE: same stride found for address 804c867, with lastmem of 84b8f84 and curr_req of 84b9184, previous stride at 512
+Long stride! 52 total short strides
+PRE: same stride found for address 804c88c, with lastmem of 84b8610 and curr_req of 84b8810, previous stride at 512
+Long stride! 53 total short strides
+PRE: same stride found for address 804c867, with lastmem of 84b8604 and curr_req of 84b8804, previous stride at 512
+Long stride! 54 total short strides
+PRE: same stride found for address 804c85c, with lastmem of 84b87b4 and curr_req of 84b89b4, previous stride at 512
+Long stride! 55 total short strides
+PRE: same stride found for address 804c88c, with lastmem of 84b8e10 and curr_req of 84b9010, previous stride at 512
+Long stride! 56 total short strides
+PRE: same stride found for address 804c867, with lastmem of 84b8e04 and curr_req of 84b9004, previous stride at 512
+Long stride! 57 total short strides
+PRE: same stride found for address 804c85c, with lastmem of 84b8fb4 and curr_req of 84b91b4, previous stride at 512
+Long stride! 58 total short strides
+PRE: same stride found for address 804c88c, with lastmem of 84b8690 and curr_req of 84b8890, previous stride at 512
+Long stride! 59 total short strides
+PRE: same stride found for address 804c85c, with lastmem of 84b8634 and curr_req of 84b8834, previous stride at 512
+Long stride! 60 total short strides
+PRE: same stride found for address 804c867, with lastmem of 84b8684 and curr_req of 84b8884, previous stride at 512
+Long stride! 61 total short strides
+PRE: same stride found for address 804c88c, with lastmem of 84b8e90 and curr_req of 84b9090, previous stride at 512
+Long stride! 62 total short strides
+PRE: same stride found for address 804c85c, with lastmem of 84b8e34 and curr_req of 84b9034, previous stride at 512
+Long stride! 63 total short strides
+PRE: same stride found for address 804c867, with lastmem of 84b8e84 and curr_req of 84b9084, previous stride at 512
+Long stride! 64 total short strides
+PRE: same stride found for address fc6c69, with lastmem of b74c6718 and curr_req of b74c69a8, previous stride at 656
+Long stride! 65 total short strides
+PRE: same stride found for address fc697c, with lastmem of b74c66fc and curr_req of b74c698c, previous stride at 656
+Long stride! 66 total short strides
+PRE: same stride found for address fc69b0, with lastmem of b74c6708 and curr_req of b74c6998, previous stride at 656
+Long stride! 67 total short strides
+PRE: same stride found for address fc6920, with lastmem of b74c6718 and curr_req of b74c69a8, previous stride at 656
+Long stride! 68 total short strides
+AMAT: 2.500777
+PRE: creating prefetcher with value of (1 reqs per miss)
+PRE: NUM ENTRIES IN TABLE: 8192
+PRE: same stride found for address 809d1d6, with lastmem of 82302c8 and curr_req of 8230518, previous stride at 592
+Long stride! 1 total short strides
+PRE: same stride found for address 809d218, with lastmem of 82302e8 and curr_req of 8230538, previous stride at 592
+Long stride! 2 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8230310 and curr_req of 8230560, previous stride at 592
+Long stride! 3 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8230334 and curr_req of 8230584, previous stride at 592
+Long stride! 4 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8230350 and curr_req of 82305a0, previous stride at 592
+Long stride! 5 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8230374 and curr_req of 82305c4, previous stride at 592
+Long stride! 6 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8230324 and curr_req of 8230574, previous stride at 592
+Long stride! 7 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8230318 and curr_req of 8230568, previous stride at 592
+Long stride! 8 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8230314 and curr_req of 8230564, previous stride at 592
+Long stride! 9 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 823041c and curr_req of 823066c, previous stride at 592
+Long stride! 10 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8230420 and curr_req of 8230670, previous stride at 592
+Long stride! 11 total short strides
+PRE: same stride found for address 8173e63, with lastmem of 8230424 and curr_req of 8230674, previous stride at 592
+Long stride! 12 total short strides
+PRE: same stride found for address 8173e6a, with lastmem of 8230320 and curr_req of 8230570, previous stride at 592
+Long stride! 13 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823031c and curr_req of 823056c, previous stride at 592
+Long stride! 14 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 823030c and curr_req of 823055c, previous stride at 592
+Long stride! 15 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8230308 and curr_req of 8230558, previous stride at 592
+Long stride! 16 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 82302c8 and curr_req of 8230518, previous stride at 592
+Long stride! 17 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 82302c8 and curr_req of 8230518, previous stride at 592
+Long stride! 18 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 82304a8 and curr_req of 82306f8, previous stride at 592
+Long stride! 19 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 82304a9 and curr_req of 82306f9, previous stride at 592
+Long stride! 20 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8230498 and curr_req of 82306e8, previous stride at 592
+Long stride! 21 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 82304a8 and curr_req of 82306f8, previous stride at 592
+Long stride! 22 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 82302fc and curr_req of 823054c, previous stride at 592
+Long stride! 23 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 82302e8 and curr_req of 8230538, previous stride at 592
+Long stride! 24 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 82309c0 and curr_req of 8230c10, previous stride at 592
+Long stride! 25 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8230a50 and curr_req of 8230ca0, previous stride at 592
+Long stride! 26 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8230a80 and curr_req of 8230cd0, previous stride at 592
+Long stride! 27 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8230ac0 and curr_req of 8230d10, previous stride at 592
+Long stride! 28 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8230ad0 and curr_req of 8230d20, previous stride at 592
+Long stride! 29 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8230b24 and curr_req of 8230d74, previous stride at 592
+Long stride! 30 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 8230b6c and curr_req of 8230dbc, previous stride at 592
+Long stride! 31 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8230c08 and curr_req of 8230e58, previous stride at 592
+Long stride! 32 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8230c28 and curr_req of 8230e78, previous stride at 592
+Long stride! 33 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8230c50 and curr_req of 8230ea0, previous stride at 592
+Long stride! 34 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8230c74 and curr_req of 8230ec4, previous stride at 592
+Long stride! 35 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8230c90 and curr_req of 8230ee0, previous stride at 592
+Long stride! 36 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8230cb4 and curr_req of 8230f04, previous stride at 592
+Long stride! 37 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8230c64 and curr_req of 8230eb4, previous stride at 592
+Long stride! 38 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8230c58 and curr_req of 8230ea8, previous stride at 592
+Long stride! 39 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8230c54 and curr_req of 8230ea4, previous stride at 592
+Long stride! 40 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8230d5c and curr_req of 8230fac, previous stride at 592
+Long stride! 41 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 8230c5c and curr_req of 8230eac, previous stride at 592
+Long stride! 42 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 8230c4c and curr_req of 8230e9c, previous stride at 592
+Long stride! 43 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8230c48 and curr_req of 8230e98, previous stride at 592
+Long stride! 44 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8230c08 and curr_req of 8230e58, previous stride at 592
+Long stride! 45 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8230c08 and curr_req of 8230e58, previous stride at 592
+Long stride! 46 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8230de8 and curr_req of 8231038, previous stride at 592
+Long stride! 47 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 8230de9 and curr_req of 8231039, previous stride at 592
+Long stride! 48 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8230dd8 and curr_req of 8231028, previous stride at 592
+Long stride! 49 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8230de8 and curr_req of 8231038, previous stride at 592
+Long stride! 50 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 8230c3c and curr_req of 8230e8c, previous stride at 592
+Long stride! 51 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8230c28 and curr_req of 8230e78, previous stride at 592
+Long stride! 52 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8230eb4 and curr_req of 8231104, previous stride at 592
+Long stride! 53 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8231300 and curr_req of 8231550, previous stride at 592
+Long stride! 54 total short strides
+PRE: same stride found for address 809d268, with lastmem of 8231104 and curr_req of 82315a4, previous stride at 1184
+Long stride! 55 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8231390 and curr_req of 82315e0, previous stride at 592
+Long stride! 56 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8231400 and curr_req of 8231650, previous stride at 592
+Long stride! 57 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8231410 and curr_req of 8231660, previous stride at 592
+Long stride! 58 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8231450 and curr_req of 82316a0, previous stride at 592
+Long stride! 59 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8231464 and curr_req of 82316b4, previous stride at 592
+Long stride! 60 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 82314ac and curr_req of 82316fc, previous stride at 592
+Long stride! 61 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8231548 and curr_req of 8231798, previous stride at 592
+Long stride! 62 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8231568 and curr_req of 82317b8, previous stride at 592
+Long stride! 63 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8231590 and curr_req of 82317e0, previous stride at 592
+Long stride! 64 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 82315b4 and curr_req of 8231804, previous stride at 592
+Long stride! 65 total short strides
+PRE: same stride found for address 804c985, with lastmem of 82315d0 and curr_req of 8231820, previous stride at 592
+Long stride! 66 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 82315f4 and curr_req of 8231844, previous stride at 592
+Long stride! 67 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8231610 and curr_req of 8231860, previous stride at 592
+Long stride! 68 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8231598 and curr_req of 82317e8, previous stride at 592
+Long stride! 69 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8231594 and curr_req of 82317e4, previous stride at 592
+Long stride! 70 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 823169c and curr_req of 82318ec, previous stride at 592
+Long stride! 71 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823159c and curr_req of 82317ec, previous stride at 592
+Long stride! 72 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 823158c and curr_req of 82317dc, previous stride at 592
+Long stride! 73 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8231588 and curr_req of 82317d8, previous stride at 592
+Long stride! 74 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8231548 and curr_req of 8231798, previous stride at 592
+Long stride! 75 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8231548 and curr_req of 8231798, previous stride at 592
+Long stride! 76 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8231728 and curr_req of 8231978, previous stride at 592
+Long stride! 77 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 8231729 and curr_req of 8231979, previous stride at 592
+Long stride! 78 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8231718 and curr_req of 8231968, previous stride at 592
+Long stride! 79 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8231728 and curr_req of 8231978, previous stride at 592
+Long stride! 80 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 823157c and curr_req of 82317cc, previous stride at 592
+Long stride! 81 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8231568 and curr_req of 82317b8, previous stride at 592
+Long stride! 82 total short strides
+PRE: same stride found for address 809d1ef, with lastmem of 8231310 and curr_req of 8231c50, previous stride at 2368
+Long stride! 83 total short strides
+PRE: same stride found for address 804c9ec, with lastmem of 82313a0 and curr_req of 8231ce0, previous stride at 2368
+Long stride! 84 total short strides
+PRE: same stride found for address 8173e4e, with lastmem of 8231444 and curr_req of 8231d84, previous stride at 2368
+Long stride! 85 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8231c40 and curr_req of 8231e90, previous stride at 592
+Long stride! 86 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8231cd0 and curr_req of 8231f20, previous stride at 592
+Long stride! 87 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8231d40 and curr_req of 8231f90, previous stride at 592
+Long stride! 88 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8231d50 and curr_req of 8231fa0, previous stride at 592
+Long stride! 89 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8231d90 and curr_req of 8231fe0, previous stride at 592
+Long stride! 90 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8231da4 and curr_req of 8231ff4, previous stride at 592
+Long stride! 91 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 8231dec and curr_req of 823203c, previous stride at 592
+Long stride! 92 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8231e88 and curr_req of 82320d8, previous stride at 592
+Long stride! 93 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8231ea8 and curr_req of 82320f8, previous stride at 592
+Long stride! 94 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8231ed0 and curr_req of 8232120, previous stride at 592
+Long stride! 95 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8231ef4 and curr_req of 8232144, previous stride at 592
+Long stride! 96 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8231f10 and curr_req of 8232160, previous stride at 592
+Long stride! 97 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8231f34 and curr_req of 8232184, previous stride at 592
+Long stride! 98 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8231ee4 and curr_req of 8232134, previous stride at 592
+Long stride! 99 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8231ed8 and curr_req of 8232128, previous stride at 592
+Long stride! 100 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8231ed4 and curr_req of 8232124, previous stride at 592
+Long stride! 101 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8231fdc and curr_req of 823222c, previous stride at 592
+Long stride! 102 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 8231edc and curr_req of 823212c, previous stride at 592
+Long stride! 103 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 8231ecc and curr_req of 823211c, previous stride at 592
+Long stride! 104 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8231ec8 and curr_req of 8232118, previous stride at 592
+Long stride! 105 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8231e88 and curr_req of 82320d8, previous stride at 592
+Long stride! 106 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8231e88 and curr_req of 82320d8, previous stride at 592
+Long stride! 107 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8232068 and curr_req of 82322b8, previous stride at 592
+Long stride! 108 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 8232069 and curr_req of 82322b9, previous stride at 592
+Long stride! 109 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8232058 and curr_req of 82322a8, previous stride at 592
+Long stride! 110 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8232068 and curr_req of 82322b8, previous stride at 592
+Long stride! 111 total short strides
+PRE: same stride found for address 810fa4f, with lastmem of 8230720 and curr_req of 8230970, previous stride at 592
+Long stride! 112 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 8231ebc and curr_req of 823210c, previous stride at 592
+Long stride! 113 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8231ea8 and curr_req of 82320f8, previous stride at 592
+Long stride! 114 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8232580 and curr_req of 82327d0, previous stride at 592
+Long stride! 115 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8232610 and curr_req of 8232860, previous stride at 592
+Long stride! 116 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8232640 and curr_req of 8232890, previous stride at 592
+Long stride! 117 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8232680 and curr_req of 82328d0, previous stride at 592
+Long stride! 118 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8232690 and curr_req of 82328e0, previous stride at 592
+Long stride! 119 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 82326d0 and curr_req of 8232920, previous stride at 592
+Long stride! 120 total short strides
+PRE: same stride found for address 81676da, with lastmem of 82326e4 and curr_req of 8232934, previous stride at 592
+Long stride! 121 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 823272c and curr_req of 823297c, previous stride at 592
+Long stride! 122 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 82327c8 and curr_req of 8232a18, previous stride at 592
+Long stride! 123 total short strides
+PRE: same stride found for address 809d229, with lastmem of 82327f0 and curr_req of 8232a40, previous stride at 592
+Long stride! 124 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8232810 and curr_req of 8232a60, previous stride at 592
+Long stride! 125 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8232834 and curr_req of 8232a84, previous stride at 592
+Long stride! 126 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8232850 and curr_req of 8232aa0, previous stride at 592
+Long stride! 127 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8232824 and curr_req of 8232a74, previous stride at 592
+Long stride! 128 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8232818 and curr_req of 8232a68, previous stride at 592
+Long stride! 129 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8232814 and curr_req of 8232a64, previous stride at 592
+Long stride! 130 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823281c and curr_req of 8232a6c, previous stride at 592
+Long stride! 131 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 823280c and curr_req of 8232a5c, previous stride at 592
+Long stride! 132 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8232808 and curr_req of 8232a58, previous stride at 592
+Long stride! 133 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 82327c8 and curr_req of 8232a18, previous stride at 592
+Long stride! 134 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 82327c8 and curr_req of 8232a18, previous stride at 592
+Long stride! 135 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 82329a8 and curr_req of 8232bf8, previous stride at 592
+Long stride! 136 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 82329a9 and curr_req of 8232bf9, previous stride at 592
+Long stride! 137 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8232998 and curr_req of 8232be8, previous stride at 592
+Long stride! 138 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 82329a8 and curr_req of 8232bf8, previous stride at 592
+Long stride! 139 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 82327fc and curr_req of 8232a4c, previous stride at 592
+Long stride! 140 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8232a38 and curr_req of 8232c88, previous stride at 592
+Long stride! 141 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8232ac4 and curr_req of 8232d14, previous stride at 592
+Long stride! 142 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8232a74 and curr_req of 8232cc4, previous stride at 592
+Long stride! 143 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8232b6c and curr_req of 8232dbc, previous stride at 592
+Long stride! 144 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8232a38 and curr_req of 8232c88, previous stride at 592
+Long stride! 145 total short strides
+PRE: same stride found for address 8173e3b, with lastmem of 8232b40 and curr_req of 8232fe0, previous stride at 1184
+Long stride! 146 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8232ec0 and curr_req of 8233110, previous stride at 592
+Long stride! 147 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8232f50 and curr_req of 82331a0, previous stride at 592
+Long stride! 148 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8232fc0 and curr_req of 8233210, previous stride at 592
+Long stride! 149 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8232dc0 and curr_req of 8233260, previous stride at 1184
+Long stride! 150 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8233024 and curr_req of 8233274, previous stride at 592
+Long stride! 151 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 823306c and curr_req of 82332bc, previous stride at 592
+Long stride! 152 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8233108 and curr_req of 8233358, previous stride at 592
+Long stride! 153 total short strides
+PRE: same stride found for address 809d229, with lastmem of 8233130 and curr_req of 8233380, previous stride at 592
+Long stride! 154 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8233150 and curr_req of 82333a0, previous stride at 592
+Long stride! 155 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8233174 and curr_req of 82333c4, previous stride at 592
+Long stride! 156 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8233190 and curr_req of 82333e0, previous stride at 592
+Long stride! 157 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 82331d0 and curr_req of 8233420, previous stride at 592
+Long stride! 158 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8233158 and curr_req of 82333a8, previous stride at 592
+Long stride! 159 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8233154 and curr_req of 82333a4, previous stride at 592
+Long stride! 160 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8233220 and curr_req of 8233470, previous stride at 592
+Long stride! 161 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823315c and curr_req of 82333ac, previous stride at 592
+Long stride! 162 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 823314c and curr_req of 823339c, previous stride at 592
+Long stride! 163 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8233148 and curr_req of 8233398, previous stride at 592
+Long stride! 164 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8233108 and curr_req of 8233358, previous stride at 592
+Long stride! 165 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8233108 and curr_req of 8233358, previous stride at 592
+Long stride! 166 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 82332e8 and curr_req of 8233538, previous stride at 592
+Long stride! 167 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 82332e9 and curr_req of 8233539, previous stride at 592
+Long stride! 168 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 82332d8 and curr_req of 8233528, previous stride at 592
+Long stride! 169 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 82332e8 and curr_req of 8233538, previous stride at 592
+Long stride! 170 total short strides
+PRE: same stride found for address 810fa4f, with lastmem of 82319a0 and curr_req of 8231bf0, previous stride at 592
+Long stride! 171 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 823313c and curr_req of 823338c, previous stride at 592
+Long stride! 172 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8233378 and curr_req of 82335c8, previous stride at 592
+Long stride! 173 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8233404 and curr_req of 8233654, previous stride at 592
+Long stride! 174 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 82333b4 and curr_req of 8233604, previous stride at 592
+Long stride! 175 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 82334ac and curr_req of 82336fc, previous stride at 592
+Long stride! 176 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8233378 and curr_req of 82335c8, previous stride at 592
+Long stride! 177 total short strides
+PRE: same stride found for address 8173e3e, with lastmem of 8233238 and curr_req of 8233928, previous stride at 1776
+Long stride! 178 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8233800 and curr_req of 8233a50, previous stride at 592
+Long stride! 179 total short strides
+PRE: same stride found for address 809d268, with lastmem of 8233164 and curr_req of 8233aa4, previous stride at 2368
+Long stride! 180 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8233890 and curr_req of 8233ae0, previous stride at 592
+Long stride! 181 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8233900 and curr_req of 8233b50, previous stride at 592
+Long stride! 182 total short strides
+PRE: same stride found for address 8173e6a, with lastmem of 82333b0 and curr_req of 8233aa0, previous stride at 1776
+Long stride! 183 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8233964 and curr_req of 8233bb4, previous stride at 592
+Long stride! 184 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 82339ac and curr_req of 8233bfc, previous stride at 592
+Long stride! 185 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8233a48 and curr_req of 8233c98, previous stride at 592
+Long stride! 186 total short strides
+PRE: same stride found for address 809d229, with lastmem of 8233a70 and curr_req of 8233cc0, previous stride at 592
+Long stride! 187 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8233a90 and curr_req of 8233ce0, previous stride at 592
+Long stride! 188 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8233ab4 and curr_req of 8233d04, previous stride at 592
+Long stride! 189 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8233ad0 and curr_req of 8233d20, previous stride at 592
+Long stride! 190 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8233b10 and curr_req of 8233d60, previous stride at 592
+Long stride! 191 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8233a98 and curr_req of 8233ce8, previous stride at 592
+Long stride! 192 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8233a94 and curr_req of 8233ce4, previous stride at 592
+Long stride! 193 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8233b60 and curr_req of 8233db0, previous stride at 592
+Long stride! 194 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 8233a9c and curr_req of 8233cec, previous stride at 592
+Long stride! 195 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 8233a8c and curr_req of 8233cdc, previous stride at 592
+Long stride! 196 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8233a88 and curr_req of 8233cd8, previous stride at 592
+Long stride! 197 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8233a48 and curr_req of 8233c98, previous stride at 592
+Long stride! 198 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8233a48 and curr_req of 8233c98, previous stride at 592
+Long stride! 199 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8233c28 and curr_req of 8233e78, previous stride at 592
+Long stride! 200 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8233c18 and curr_req of 8233e68, previous stride at 592
+Long stride! 201 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8233c28 and curr_req of 8233e78, previous stride at 592
+Long stride! 202 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 8233a7c and curr_req of 8233ccc, previous stride at 592
+Long stride! 203 total short strides
+PRE: same stride found for address 809d1ef, with lastmem of 82335c0 and curr_req of 8233f00, previous stride at 2368
+Long stride! 204 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8233cb8 and curr_req of 8233f08, previous stride at 592
+Long stride! 205 total short strides
+PRE: same stride found for address 804c9ec, with lastmem of 8233650 and curr_req of 8233f90, previous stride at 2368
+Long stride! 206 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8233d44 and curr_req of 8233f94, previous stride at 592
+Long stride! 207 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8233cf4 and curr_req of 8233f44, previous stride at 592
+Long stride! 208 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8233dec and curr_req of 823403c, previous stride at 592
+Long stride! 209 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8233cb8 and curr_req of 8233f08, previous stride at 592
+Long stride! 210 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8234140 and curr_req of 8234390, previous stride at 592
+Long stride! 211 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 82341d0 and curr_req of 8234420, previous stride at 592
+Long stride! 212 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8234240 and curr_req of 8234490, previous stride at 592
+Long stride! 213 total short strides
+PRE: same stride found for address 8173e4e, with lastmem of 8233b94 and curr_req of 82344d4, previous stride at 2368
+Long stride! 214 total short strides
+PRE: same stride found for address 81676da, with lastmem of 82342a4 and curr_req of 82344f4, previous stride at 592
+Long stride! 215 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 82342ec and curr_req of 823453c, previous stride at 592
+Long stride! 216 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8234388 and curr_req of 82345d8, previous stride at 592
+Long stride! 217 total short strides
+PRE: same stride found for address 809d229, with lastmem of 82343b0 and curr_req of 8234600, previous stride at 592
+Long stride! 218 total short strides
+PRE: same stride found for address 809d261, with lastmem of 82343d0 and curr_req of 8234620, previous stride at 592
+Long stride! 219 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 82343f4 and curr_req of 8234644, previous stride at 592
+Long stride! 220 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8234410 and curr_req of 8234660, previous stride at 592
+Long stride! 221 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8234450 and curr_req of 82346a0, previous stride at 592
+Long stride! 222 total short strides
+PRE: same stride found for address 809de32, with lastmem of 82343d8 and curr_req of 8234628, previous stride at 592
+Long stride! 223 total short strides
+PRE: same stride found for address 80df431, with lastmem of 82343d4 and curr_req of 8234624, previous stride at 592
+Long stride! 224 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 82344a0 and curr_req of 82346f0, previous stride at 592
+Long stride! 225 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 82344e0 and curr_req of 8234730, previous stride at 592
+Long stride! 226 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 82343dc and curr_req of 823462c, previous stride at 592
+Long stride! 227 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 82343cc and curr_req of 823461c, previous stride at 592
+Long stride! 228 total short strides
+PRE: same stride found for address 8147016, with lastmem of 82343c8 and curr_req of 8234618, previous stride at 592
+Long stride! 229 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8234388 and curr_req of 82345d8, previous stride at 592
+Long stride! 230 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8234388 and curr_req of 82345d8, previous stride at 592
+Long stride! 231 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8234568 and curr_req of 82347b8, previous stride at 592
+Long stride! 232 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8234569 and curr_req of 82347b9, previous stride at 592
+Long stride! 233 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 823456a and curr_req of 82347ba, previous stride at 592
+Long stride! 234 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8234558 and curr_req of 82347a8, previous stride at 592
+Long stride! 235 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8234568 and curr_req of 82347b8, previous stride at 592
+Long stride! 236 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 82343bc and curr_req of 823460c, previous stride at 592
+Long stride! 237 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 823472c and curr_req of 823497c, previous stride at 592
+Long stride! 238 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8234884 and curr_req of 8234ad4, previous stride at 592
+Long stride! 239 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8234a80 and curr_req of 8234cd0, previous stride at 592
+Long stride! 240 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8234b10 and curr_req of 8234d60, previous stride at 592
+Long stride! 241 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8234b80 and curr_req of 8234dd0, previous stride at 592
+Long stride! 242 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8234be4 and curr_req of 8234e34, previous stride at 592
+Long stride! 243 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 8234c2c and curr_req of 8234e7c, previous stride at 592
+Long stride! 244 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8234cc8 and curr_req of 8234f18, previous stride at 592
+Long stride! 245 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8234ce8 and curr_req of 8234f38, previous stride at 592
+Long stride! 246 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8234d10 and curr_req of 8234f60, previous stride at 592
+Long stride! 247 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8234d34 and curr_req of 8234f84, previous stride at 592
+Long stride! 248 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8234d50 and curr_req of 8234fa0, previous stride at 592
+Long stride! 249 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8234d74 and curr_req of 8234fc4, previous stride at 592
+Long stride! 250 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8234d18 and curr_req of 8234f68, previous stride at 592
+Long stride! 251 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8234d14 and curr_req of 8234f64, previous stride at 592
+Long stride! 252 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8234de0 and curr_req of 8235030, previous stride at 592
+Long stride! 253 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8234e20 and curr_req of 8235070, previous stride at 592
+Long stride! 254 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 8234d1c and curr_req of 8234f6c, previous stride at 592
+Long stride! 255 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 8234d0c and curr_req of 8234f5c, previous stride at 592
+Long stride! 256 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8234d08 and curr_req of 8234f58, previous stride at 592
+Long stride! 257 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8234cc8 and curr_req of 8234f18, previous stride at 592
+Long stride! 258 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8234cc8 and curr_req of 8234f18, previous stride at 592
+Long stride! 259 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8234ea8 and curr_req of 82350f8, previous stride at 592
+Long stride! 260 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8234ea9 and curr_req of 82350f9, previous stride at 592
+Long stride! 261 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 8234eaa and curr_req of 82350fa, previous stride at 592
+Long stride! 262 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8234e98 and curr_req of 82350e8, previous stride at 592
+Long stride! 263 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8234ea8 and curr_req of 82350f8, previous stride at 592
+Long stride! 264 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 8234cfc and curr_req of 8234f4c, previous stride at 592
+Long stride! 265 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8234ce8 and curr_req of 8234f38, previous stride at 592
+Long stride! 266 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8234fe0 and curr_req of 8235230, previous stride at 592
+Long stride! 267 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 82351c4 and curr_req of 8235414, previous stride at 592
+Long stride! 268 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 82352bc and curr_req of 823550c, previous stride at 592
+Long stride! 269 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 82353c0 and curr_req of 8235610, previous stride at 592
+Long stride! 270 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8235450 and curr_req of 82356a0, previous stride at 592
+Long stride! 271 total short strides
+PRE: same stride found for address 80df434, with lastmem of 82354c0 and curr_req of 8235710, previous stride at 592
+Long stride! 272 total short strides
+PRE: same stride found for address 8173e3b, with lastmem of 8235290 and curr_req of 8235730, previous stride at 1184
+Long stride! 273 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8235524 and curr_req of 8235774, previous stride at 592
+Long stride! 274 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 823556c and curr_req of 82357bc, previous stride at 592
+Long stride! 275 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8235608 and curr_req of 8235858, previous stride at 592
+Long stride! 276 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8235628 and curr_req of 8235878, previous stride at 592
+Long stride! 277 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8235650 and curr_req of 82358a0, previous stride at 592
+Long stride! 278 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8235674 and curr_req of 82358c4, previous stride at 592
+Long stride! 279 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8235690 and curr_req of 82358e0, previous stride at 592
+Long stride! 280 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 82356b4 and curr_req of 8235904, previous stride at 592
+Long stride! 281 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8235658 and curr_req of 82358a8, previous stride at 592
+Long stride! 282 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8235654 and curr_req of 82358a4, previous stride at 592
+Long stride! 283 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8235510 and curr_req of 82359b0, previous stride at 1184
+Long stride! 284 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823565c and curr_req of 82358ac, previous stride at 592
+Long stride! 285 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 823564c and curr_req of 823589c, previous stride at 592
+Long stride! 286 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8235648 and curr_req of 8235898, previous stride at 592
+Long stride! 287 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8235608 and curr_req of 8235858, previous stride at 592
+Long stride! 288 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8235608 and curr_req of 8235858, previous stride at 592
+Long stride! 289 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 82357e8 and curr_req of 8235a38, previous stride at 592
+Long stride! 290 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 82357e9 and curr_req of 8235a39, previous stride at 592
+Long stride! 291 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 82357ea and curr_req of 8235a3a, previous stride at 592
+Long stride! 292 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 82357d8 and curr_req of 8235a28, previous stride at 592
+Long stride! 293 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 82357e8 and curr_req of 8235a38, previous stride at 592
+Long stride! 294 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 823563c and curr_req of 823588c, previous stride at 592
+Long stride! 295 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8235628 and curr_req of 8235878, previous stride at 592
+Long stride! 296 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8235920 and curr_req of 8235b70, previous stride at 592
+Long stride! 297 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8235970 and curr_req of 8235bc0, previous stride at 592
+Long stride! 298 total short strides
+PRE: same stride found for address 810fa4f, with lastmem of 82340f0 and curr_req of 8234340, previous stride at 592
+Long stride! 299 total short strides
+PRE: same stride found for address 809d1ef, with lastmem of 82353d0 and curr_req of 8235d10, previous stride at 2368
+Long stride! 300 total short strides
+PRE: same stride found for address 804c9ec, with lastmem of 8235460 and curr_req of 8235da0, previous stride at 2368
+Long stride! 301 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8235b04 and curr_req of 8235d54, previous stride at 592
+Long stride! 302 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8235bfc and curr_req of 8235e4c, previous stride at 592
+Long stride! 303 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8235d00 and curr_req of 8235f50, previous stride at 592
+Long stride! 304 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8235d90 and curr_req of 8235fe0, previous stride at 592
+Long stride! 305 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8235e00 and curr_req of 8236050, previous stride at 592
+Long stride! 306 total short strides
+PRE: same stride found for address 8173e3e, with lastmem of 8235988 and curr_req of 8236078, previous stride at 1776
+Long stride! 307 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8235e64 and curr_req of 82360b4, previous stride at 592
+Long stride! 308 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 8235eac and curr_req of 82360fc, previous stride at 592
+Long stride! 309 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8235f48 and curr_req of 8236198, previous stride at 592
+Long stride! 310 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8235f68 and curr_req of 82361b8, previous stride at 592
+Long stride! 311 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8235f90 and curr_req of 82361e0, previous stride at 592
+Long stride! 312 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8235fb4 and curr_req of 8236204, previous stride at 592
+Long stride! 313 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8235fd0 and curr_req of 8236220, previous stride at 592
+Long stride! 314 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8235ff4 and curr_req of 8236244, previous stride at 592
+Long stride! 315 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8235f98 and curr_req of 82361e8, previous stride at 592
+Long stride! 316 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8235f94 and curr_req of 82361e4, previous stride at 592
+Long stride! 317 total short strides
+PRE: same stride found for address 8173e6a, with lastmem of 8235b00 and curr_req of 82361f0, previous stride at 1776
+Long stride! 318 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 8235f9c and curr_req of 82361ec, previous stride at 592
+Long stride! 319 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 8235f8c and curr_req of 82361dc, previous stride at 592
+Long stride! 320 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8235f88 and curr_req of 82361d8, previous stride at 592
+Long stride! 321 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8235f48 and curr_req of 8236198, previous stride at 592
+Long stride! 322 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8235f48 and curr_req of 8236198, previous stride at 592
+Long stride! 323 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8236128 and curr_req of 8236378, previous stride at 592
+Long stride! 324 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8236129 and curr_req of 8236379, previous stride at 592
+Long stride! 325 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 823612a and curr_req of 823637a, previous stride at 592
+Long stride! 326 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8236118 and curr_req of 8236368, previous stride at 592
+Long stride! 327 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8236128 and curr_req of 8236378, previous stride at 592
+Long stride! 328 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 8235f7c and curr_req of 82361cc, previous stride at 592
+Long stride! 329 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8235f68 and curr_req of 82361b8, previous stride at 592
+Long stride! 330 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8236260 and curr_req of 82364b0, previous stride at 592
+Long stride! 331 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 82362b0 and curr_req of 8236500, previous stride at 592
+Long stride! 332 total short strides
+PRE: same stride found for address 810fa4f, with lastmem of 8234a30 and curr_req of 8234c80, previous stride at 592
+Long stride! 333 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8236444 and curr_req of 8236694, previous stride at 592
+Long stride! 334 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 823653c and curr_req of 823678c, previous stride at 592
+Long stride! 335 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8236640 and curr_req of 8236890, previous stride at 592
+Long stride! 336 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 82366d0 and curr_req of 8236920, previous stride at 592
+Long stride! 337 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8236740 and curr_req of 8236990, previous stride at 592
+Long stride! 338 total short strides
+PRE: same stride found for address 81676da, with lastmem of 82367a4 and curr_req of 82369f4, previous stride at 592
+Long stride! 339 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 82367ec and curr_req of 8236a3c, previous stride at 592
+Long stride! 340 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8236888 and curr_req of 8236ad8, previous stride at 592
+Long stride! 341 total short strides
+PRE: same stride found for address 809d229, with lastmem of 82368b0 and curr_req of 8236b00, previous stride at 592
+Long stride! 342 total short strides
+PRE: same stride found for address 809d261, with lastmem of 82368d0 and curr_req of 8236b20, previous stride at 592
+Long stride! 343 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 82368f4 and curr_req of 8236b44, previous stride at 592
+Long stride! 344 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8236910 and curr_req of 8236b60, previous stride at 592
+Long stride! 345 total short strides
+PRE: same stride found for address 809de32, with lastmem of 82368d8 and curr_req of 8236b28, previous stride at 592
+Long stride! 346 total short strides
+PRE: same stride found for address 80df431, with lastmem of 82368d4 and curr_req of 8236b24, previous stride at 592
+Long stride! 347 total short strides
+PRE: same stride found for address 8173e4e, with lastmem of 82362e4 and curr_req of 8236c24, previous stride at 2368
+Long stride! 348 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 82368dc and curr_req of 8236b2c, previous stride at 592
+Long stride! 349 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 82368cc and curr_req of 8236b1c, previous stride at 592
+Long stride! 350 total short strides
+PRE: same stride found for address 8147016, with lastmem of 82368c8 and curr_req of 8236b18, previous stride at 592
+Long stride! 351 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8236888 and curr_req of 8236ad8, previous stride at 592
+Long stride! 352 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8236888 and curr_req of 8236ad8, previous stride at 592
+Long stride! 353 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8236a68 and curr_req of 8236cb8, previous stride at 592
+Long stride! 354 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8236a69 and curr_req of 8236cb9, previous stride at 592
+Long stride! 355 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 8236a6a and curr_req of 8236cba, previous stride at 592
+Long stride! 356 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8236a58 and curr_req of 8236ca8, previous stride at 592
+Long stride! 357 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8236a68 and curr_req of 8236cb8, previous stride at 592
+Long stride! 358 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 82368bc and curr_req of 8236b0c, previous stride at 592
+Long stride! 359 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8236af8 and curr_req of 8236d48, previous stride at 592
+Long stride! 360 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8236b84 and curr_req of 8236dd4, previous stride at 592
+Long stride! 361 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8236ba0 and curr_req of 8236df0, previous stride at 592
+Long stride! 362 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8236bf0 and curr_req of 8236e40, previous stride at 592
+Long stride! 363 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8236c30 and curr_req of 8236e80, previous stride at 592
+Long stride! 364 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8236af8 and curr_req of 8236d48, previous stride at 592
+Long stride! 365 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8236d84 and curr_req of 8236fd4, previous stride at 592
+Long stride! 366 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8236e7c and curr_req of 82370cc, previous stride at 592
+Long stride! 367 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8236f80 and curr_req of 82371d0, previous stride at 592
+Long stride! 368 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8237010 and curr_req of 8237260, previous stride at 592
+Long stride! 369 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8237080 and curr_req of 82372d0, previous stride at 592
+Long stride! 370 total short strides
+PRE: same stride found for address 81676da, with lastmem of 82370e4 and curr_req of 8237334, previous stride at 592
+Long stride! 371 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 823712c and curr_req of 823737c, previous stride at 592
+Long stride! 372 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 82371c8 and curr_req of 8237418, previous stride at 592
+Long stride! 373 total short strides
+PRE: same stride found for address 809d229, with lastmem of 82371f0 and curr_req of 8237440, previous stride at 592
+Long stride! 374 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8237210 and curr_req of 8237460, previous stride at 592
+Long stride! 375 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8237234 and curr_req of 8237484, previous stride at 592
+Long stride! 376 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8237250 and curr_req of 82374a0, previous stride at 592
+Long stride! 377 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8237218 and curr_req of 8237468, previous stride at 592
+Long stride! 378 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8237214 and curr_req of 8237464, previous stride at 592
+Long stride! 379 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823721c and curr_req of 823746c, previous stride at 592
+Long stride! 380 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 823720c and curr_req of 823745c, previous stride at 592
+Long stride! 381 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8237208 and curr_req of 8237458, previous stride at 592
+Long stride! 382 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 82371c8 and curr_req of 8237418, previous stride at 592
+Long stride! 383 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 82371c8 and curr_req of 8237418, previous stride at 592
+Long stride! 384 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 82373a8 and curr_req of 82375f8, previous stride at 592
+Long stride! 385 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 82373a9 and curr_req of 82375f9, previous stride at 592
+Long stride! 386 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 82373aa and curr_req of 82375fa, previous stride at 592
+Long stride! 387 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8237398 and curr_req of 82375e8, previous stride at 592
+Long stride! 388 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 82373a8 and curr_req of 82375f8, previous stride at 592
+Long stride! 389 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 82371fc and curr_req of 823744c, previous stride at 592
+Long stride! 390 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8237438 and curr_req of 8237688, previous stride at 592
+Long stride! 391 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 82374c4 and curr_req of 8237714, previous stride at 592
+Long stride! 392 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 82374e0 and curr_req of 8237730, previous stride at 592
+Long stride! 393 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8237530 and curr_req of 8237780, previous stride at 592
+Long stride! 394 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8237570 and curr_req of 82377c0, previous stride at 592
+Long stride! 395 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8237438 and curr_req of 8237688, previous stride at 592
+Long stride! 396 total short strides
+PRE: same stride found for address 809d268, with lastmem of 8236fd4 and curr_req of 8237914, previous stride at 2368
+Long stride! 397 total short strides
+PRE: same stride found for address 809d276, with lastmem of 8236fd0 and curr_req of 8237910, previous stride at 2368
+Long stride! 398 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 82376c4 and curr_req of 8237914, previous stride at 592
+Long stride! 399 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 82378c0 and curr_req of 8237b10, previous stride at 592
+Long stride! 400 total short strides
+PRE: same stride found for address 804c9b8, with lastmem of 8237950 and curr_req of 8237ba0, previous stride at 592
+Long stride! 401 total short strides
+PRE: same stride found for address 80df434, with lastmem of 82379c0 and curr_req of 8237c10, previous stride at 592
+Long stride! 402 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8237a0c and curr_req of 8237c5c, previous stride at 592
+Long stride! 403 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8237a24 and curr_req of 8237c74, previous stride at 592
+Long stride! 404 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 8237a6c and curr_req of 8237cbc, previous stride at 592
+Long stride! 405 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8237b08 and curr_req of 8237d58, previous stride at 592
+Long stride! 406 total short strides
+PRE: same stride found for address 809d229, with lastmem of 8237b30 and curr_req of 8237d80, previous stride at 592
+Long stride! 407 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8237b50 and curr_req of 8237da0, previous stride at 592
+Long stride! 408 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8237b74 and curr_req of 8237dc4, previous stride at 592
+Long stride! 409 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8237b90 and curr_req of 8237de0, previous stride at 592
+Long stride! 410 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8237b58 and curr_req of 8237da8, previous stride at 592
+Long stride! 411 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8237b54 and curr_req of 8237da4, previous stride at 592
+Long stride! 412 total short strides
+PRE: same stride found for address 8173e3b, with lastmem of 82379e0 and curr_req of 8237e80, previous stride at 1184
+Long stride! 413 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 8237b5c and curr_req of 8237dac, previous stride at 592
+Long stride! 414 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 8237b4c and curr_req of 8237d9c, previous stride at 592
+Long stride! 415 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8237b48 and curr_req of 8237d98, previous stride at 592
+Long stride! 416 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8237b08 and curr_req of 8237d58, previous stride at 592
+Long stride! 417 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8237b08 and curr_req of 8237d58, previous stride at 592
+Long stride! 418 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8237ce8 and curr_req of 8237f38, previous stride at 592
+Long stride! 419 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8237ce9 and curr_req of 8237f39, previous stride at 592
+Long stride! 420 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 8237cea and curr_req of 8237f3a, previous stride at 592
+Long stride! 421 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8237cd8 and curr_req of 8237f28, previous stride at 592
+Long stride! 422 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8237ce8 and curr_req of 8237f38, previous stride at 592
+Long stride! 423 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 8237b3c and curr_req of 8237d8c, previous stride at 592
+Long stride! 424 total short strides
+PRE: same stride found for address 809d1ef, with lastmem of 8237680 and curr_req of 8237fc0, previous stride at 2368
+Long stride! 425 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8237d78 and curr_req of 8237fc8, previous stride at 592
+Long stride! 426 total short strides
+PRE: same stride found for address 804c9ec, with lastmem of 8237710 and curr_req of 8238050, previous stride at 2368
+Long stride! 427 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8237e04 and curr_req of 8238054, previous stride at 592
+Long stride! 428 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8237e20 and curr_req of 8238070, previous stride at 592
+Long stride! 429 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8237c60 and curr_req of 8238100, previous stride at 1184
+Long stride! 430 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8237d78 and curr_req of 8237fc8, previous stride at 592
+Long stride! 431 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 82384d8 and curr_req of 82386f8, previous stride at 544
+Long stride! 432 total short strides
+PRE: same stride found for address 809d218, with lastmem of 82384f8 and curr_req of 8238718, previous stride at 544
+Long stride! 433 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8238520 and curr_req of 8238740, previous stride at 544
+Long stride! 434 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8238534 and curr_req of 8238754, previous stride at 544
+Long stride! 435 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8238528 and curr_req of 8238748, previous stride at 544
+Long stride! 436 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8238524 and curr_req of 8238744, previous stride at 544
+Long stride! 437 total short strides
+PRE: same stride found for address 8173e6a, with lastmem of 8238530 and curr_req of 8238750, previous stride at 544
+Long stride! 438 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823852c and curr_req of 823874c, previous stride at 544
+Long stride! 439 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 823851c and curr_req of 823873c, previous stride at 544
+Long stride! 440 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8238518 and curr_req of 8238738, previous stride at 544
+Long stride! 441 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 82384d8 and curr_req of 82386f8, previous stride at 544
+Long stride! 442 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 82384d8 and curr_req of 82386f8, previous stride at 544
+Long stride! 443 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 823850c and curr_req of 823872c, previous stride at 544
+Long stride! 444 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 82384f8 and curr_req of 8238718, previous stride at 544
+Long stride! 445 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 823884c and curr_req of 8238a9c, previous stride at 592
+Long stride! 446 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8238850 and curr_req of 8238aa0, previous stride at 592
+Long stride! 447 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 82388d8 and curr_req of 8238b28, previous stride at 592
+Long stride! 448 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 82388d9 and curr_req of 8238b29, previous stride at 592
+Long stride! 449 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 82388da and curr_req of 8238b2a, previous stride at 592
+Long stride! 450 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 82388c8 and curr_req of 8238b18, previous stride at 592
+Long stride! 451 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 82388d8 and curr_req of 8238b28, previous stride at 592
+Long stride! 452 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 82389b4 and curr_req of 8238c04, previous stride at 592
+Long stride! 453 total short strides
+PRE: same stride found for address 804c985, with lastmem of 82389d0 and curr_req of 8238c20, previous stride at 592
+Long stride! 454 total short strides
+PRE: same stride found for address 804c9df, with lastmem of 82389ec and curr_req of 8238c3c, previous stride at 592
+Long stride! 455 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 82389f4 and curr_req of 8238c44, previous stride at 592
+Long stride! 456 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 82389a4 and curr_req of 8238bf4, previous stride at 592
+Long stride! 457 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8238aa0 and curr_req of 8238cf0, previous stride at 592
+Long stride! 458 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 823898c and curr_req of 8238bdc, previous stride at 592
+Long stride! 459 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8238988 and curr_req of 8238bd8, previous stride at 592
+Long stride! 460 total short strides
+PRE: same stride found for address 809d268, with lastmem of 8238bf4 and curr_req of 8238e44, previous stride at 592
+Long stride! 461 total short strides
+PRE: same stride found for address 809d27d, with lastmem of 8238bfc and curr_req of 8238e4c, previous stride at 592
+Long stride! 462 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8238c44 and curr_req of 8238e94, previous stride at 592
+Long stride! 463 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8238bf4 and curr_req of 8238e44, previous stride at 592
+Long stride! 464 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8238ca0 and curr_req of 8238ef0, previous stride at 592
+Long stride! 465 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8238d04 and curr_req of 8238f54, previous stride at 592
+Long stride! 466 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 8238afc and curr_req of 8238f9c, previous stride at 1184
+Long stride! 467 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8238de8 and curr_req of 8239038, previous stride at 592
+Long stride! 468 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8238e08 and curr_req of 8239058, previous stride at 592
+Long stride! 469 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8238e30 and curr_req of 8239080, previous stride at 592
+Long stride! 470 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8238e38 and curr_req of 8239088, previous stride at 592
+Long stride! 471 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8238e34 and curr_req of 8239084, previous stride at 592
+Long stride! 472 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8238f00 and curr_req of 8239150, previous stride at 592
+Long stride! 473 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 8238e3c and curr_req of 823908c, previous stride at 592
+Long stride! 474 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8238de8 and curr_req of 8239038, previous stride at 592
+Long stride! 475 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8238de8 and curr_req of 8239038, previous stride at 592
+Long stride! 476 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 8238e1c and curr_req of 823906c, previous stride at 592
+Long stride! 477 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8238e08 and curr_req of 8239058, previous stride at 592
+Long stride! 478 total short strides
+PRE: same stride found for address 804c9ec, with lastmem of 8238e90 and curr_req of 8239330, previous stride at 1184
+Long stride! 479 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 823918c and curr_req of 82393dc, previous stride at 592
+Long stride! 480 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8239218 and curr_req of 8239468, previous stride at 592
+Long stride! 481 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8239219 and curr_req of 8239469, previous stride at 592
+Long stride! 482 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 823921a and curr_req of 823946a, previous stride at 592
+Long stride! 483 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8239208 and curr_req of 8239458, previous stride at 592
+Long stride! 484 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8239218 and curr_req of 8239468, previous stride at 592
+Long stride! 485 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 82392f4 and curr_req of 8239544, previous stride at 592
+Long stride! 486 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8239310 and curr_req of 8239560, previous stride at 592
+Long stride! 487 total short strides
+PRE: same stride found for address 804c9df, with lastmem of 823932c and curr_req of 823957c, previous stride at 592
+Long stride! 488 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8239350 and curr_req of 82395a0, previous stride at 592
+Long stride! 489 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8239190 and curr_req of 8239630, previous stride at 1184
+Long stride! 490 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 82392cc and curr_req of 823951c, previous stride at 592
+Long stride! 491 total short strides
+PRE: same stride found for address 8147016, with lastmem of 82392c8 and curr_req of 8239518, previous stride at 592
+Long stride! 492 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 82394e0 and curr_req of 8239730, previous stride at 592
+Long stride! 493 total short strides
+PRE: same stride found for address 809d268, with lastmem of 8239534 and curr_req of 8239784, previous stride at 592
+Long stride! 494 total short strides
+PRE: same stride found for address 809d27d, with lastmem of 823953c and curr_req of 823978c, previous stride at 592
+Long stride! 495 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8239534 and curr_req of 8239784, previous stride at 592
+Long stride! 496 total short strides
+PRE: same stride found for address 80df434, with lastmem of 82395e0 and curr_req of 8239830, previous stride at 592
+Long stride! 497 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8239644 and curr_req of 8239894, previous stride at 592
+Long stride! 498 total short strides
+PRE: same stride found for address 8056cde, with lastmem of 82391e0 and curr_req of 82398d0, previous stride at 1776
+Long stride! 499 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 8239728 and curr_req of 8239978, previous stride at 592
+Long stride! 500 total short strides
+PRE: same stride found for address 809d218, with lastmem of 8239748 and curr_req of 8239998, previous stride at 592
+Long stride! 501 total short strides
+PRE: same stride found for address 809d261, with lastmem of 8239770 and curr_req of 82399c0, previous stride at 592
+Long stride! 502 total short strides
+PRE: same stride found for address 809de32, with lastmem of 8239778 and curr_req of 82399c8, previous stride at 592
+Long stride! 503 total short strides
+PRE: same stride found for address 80df431, with lastmem of 8239774 and curr_req of 82399c4, previous stride at 592
+Long stride! 504 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8239840 and curr_req of 8239a90, previous stride at 592
+Long stride! 505 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823977c and curr_req of 82399cc, previous stride at 592
+Long stride! 506 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 8239728 and curr_req of 8239978, previous stride at 592
+Long stride! 507 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 8239728 and curr_req of 8239978, previous stride at 592
+Long stride! 508 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 823975c and curr_req of 82399ac, previous stride at 592
+Long stride! 509 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 8239748 and curr_req of 8239998, previous stride at 592
+Long stride! 510 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8239acc and curr_req of 8239d1c, previous stride at 592
+Long stride! 511 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 8239b2c and curr_req of 8239d7c, previous stride at 592
+Long stride! 512 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8239b58 and curr_req of 8239da8, previous stride at 592
+Long stride! 513 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8239b59 and curr_req of 8239da9, previous stride at 592
+Long stride! 514 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 8239b5a and curr_req of 8239daa, previous stride at 592
+Long stride! 515 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8239b48 and curr_req of 8239d98, previous stride at 592
+Long stride! 516 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8239b58 and curr_req of 8239da8, previous stride at 592
+Long stride! 517 total short strides
+PRE: same stride found for address 809d26f, with lastmem of 823952c and curr_req of 8239e6c, previous stride at 2368
+Long stride! 518 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 8239c34 and curr_req of 8239e84, previous stride at 592
+Long stride! 519 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8239c50 and curr_req of 8239ea0, previous stride at 592
+Long stride! 520 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8239c74 and curr_req of 8239ec4, previous stride at 592
+Long stride! 521 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8239c90 and curr_req of 8239ee0, previous stride at 592
+Long stride! 522 total short strides
+PRE: same stride found for address 8173e63, with lastmem of 8239884 and curr_req of 8239f74, previous stride at 1776
+Long stride! 523 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 8239c0c and curr_req of 8239e5c, previous stride at 592
+Long stride! 524 total short strides
+PRE: same stride found for address 8147016, with lastmem of 8239c08 and curr_req of 8239e58, previous stride at 592
+Long stride! 525 total short strides
+PRE: same stride found for address 809d1e3, with lastmem of 8239e20 and curr_req of 823a070, previous stride at 592
+Long stride! 526 total short strides
+PRE: same stride found for address 809d268, with lastmem of 8239e74 and curr_req of 823a0c4, previous stride at 592
+Long stride! 527 total short strides
+PRE: same stride found for address 809d27d, with lastmem of 8239c2c and curr_req of 823a0cc, previous stride at 1184
+Long stride! 528 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 8239e74 and curr_req of 823a0c4, previous stride at 592
+Long stride! 529 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8239f20 and curr_req of 823a170, previous stride at 592
+Long stride! 530 total short strides
+PRE: same stride found for address 8173e4e, with lastmem of 8239874 and curr_req of 823a1b4, previous stride at 2368
+Long stride! 531 total short strides
+PRE: same stride found for address 8173e6a, with lastmem of 8239780 and curr_req of 823a0c0, previous stride at 2368
+Long stride! 532 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8239f84 and curr_req of 823a1d4, previous stride at 592
+Long stride! 533 total short strides
+PRE: same stride found for address 8056cf3, with lastmem of 8239b38 and curr_req of 823a228, previous stride at 1776
+Long stride! 534 total short strides
+PRE: same stride found for address 809d1d6, with lastmem of 823a068 and curr_req of 823a2b8, previous stride at 592
+Long stride! 535 total short strides
+PRE: same stride found for address 809d218, with lastmem of 823a088 and curr_req of 823a2d8, previous stride at 592
+Long stride! 536 total short strides
+PRE: same stride found for address 809d261, with lastmem of 823a0b0 and curr_req of 823a300, previous stride at 592
+Long stride! 537 total short strides
+PRE: same stride found for address 809de32, with lastmem of 823a0b8 and curr_req of 823a308, previous stride at 592
+Long stride! 538 total short strides
+PRE: same stride found for address 80df431, with lastmem of 823a0b4 and curr_req of 823a304, previous stride at 592
+Long stride! 539 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 823a180 and curr_req of 823a3d0, previous stride at 592
+Long stride! 540 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 823a1c0 and curr_req of 823a410, previous stride at 592
+Long stride! 541 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823a0bc and curr_req of 823a30c, previous stride at 592
+Long stride! 542 total short strides
+PRE: same stride found for address 8068d7f, with lastmem of 823a068 and curr_req of 823a2b8, previous stride at 592
+Long stride! 543 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 823a068 and curr_req of 823a2b8, previous stride at 592
+Long stride! 544 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 823a09c and curr_req of 823a2ec, previous stride at 592
+Long stride! 545 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 823a088 and curr_req of 823a2d8, previous stride at 592
+Long stride! 546 total short strides
+PRE: same stride found for address 8063e0e, with lastmem of 823af28 and curr_req of 823b440, previous stride at 1304
+Long stride! 547 total short strides
+PRE: same stride found for address 806740b, with lastmem of 823af2c and curr_req of 823b444, previous stride at 1304
+Long stride! 548 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 823157c and curr_req of 82317cc, previous stride at 592
+Long stride! 549 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 823af50 and curr_req of 823b468, previous stride at 1304
+Long stride! 550 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 82315d0 and curr_req of 8231820, previous stride at 592
+Long stride! 551 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8231600 and curr_req of 8231850, previous stride at 592
+Long stride! 552 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8231594 and curr_req of 82317e4, previous stride at 592
+Long stride! 553 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 823158c and curr_req of 82317dc, previous stride at 592
+Long stride! 554 total short strides
+PRE: same stride found for address 806432c, with lastmem of 823af7c and curr_req of 823b494, previous stride at 1304
+Long stride! 555 total short strides
+PRE: same stride found for address 8064345, with lastmem of 823af78 and curr_req of 823b490, previous stride at 1304
+Long stride! 556 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 823af84 and curr_req of 823b49c, previous stride at 1304
+Long stride! 557 total short strides
+PRE: same stride found for address 805cef0, with lastmem of 823af78 and curr_req of 823b490, previous stride at 1304
+Long stride! 558 total short strides
+PRE: same stride found for address 8067297, with lastmem of 823afb8 and curr_req of 823b4d0, previous stride at 1304
+Long stride! 559 total short strides
+PRE: same stride found for address 806e2ad, with lastmem of 823b284 and curr_req of 823b79c, previous stride at 1304
+Long stride! 560 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 8231cd0 and curr_req of 8231f20, previous stride at 592
+Long stride! 561 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8231d40 and curr_req of 8231f90, previous stride at 592
+Long stride! 562 total short strides
+PRE: same stride found for address 80576db, with lastmem of 8231de0 and curr_req of 8232030, previous stride at 592
+Long stride! 563 total short strides
+PRE: same stride found for address 806420d, with lastmem of 823bee4 and curr_req of 823c3f4, previous stride at 1296
+Long stride! 564 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 8231ebc and curr_req of 823210c, previous stride at 592
+Long stride! 565 total short strides
+PRE: same stride found for address 804cb87, with lastmem of 8231ef4 and curr_req of 8232144, previous stride at 592
+Long stride! 566 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8231f10 and curr_req of 8232160, previous stride at 592
+Long stride! 567 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8231f40 and curr_req of 8232190, previous stride at 592
+Long stride! 568 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8231ed4 and curr_req of 8232124, previous stride at 592
+Long stride! 569 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 8231ecc and curr_req of 823211c, previous stride at 592
+Long stride! 570 total short strides
+PRE: same stride found for address 8067297, with lastmem of 823c410 and curr_req of 823c928, previous stride at 1304
+Long stride! 571 total short strides
+PRE: same stride found for address 8063e0e, with lastmem of 823c898 and curr_req of 823cdb0, previous stride at 1304
+Long stride! 572 total short strides
+PRE: same stride found for address 806740b, with lastmem of 823c89c and curr_req of 823cdb4, previous stride at 1304
+Long stride! 573 total short strides
+PRE: same stride found for address 806e2ad, with lastmem of 823c6dc and curr_req of 823cbf4, previous stride at 1304
+Long stride! 574 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 823c8c0 and curr_req of 823cdd8, previous stride at 1304
+Long stride! 575 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8232160 and curr_req of 82323b0, previous stride at 592
+Long stride! 576 total short strides
+PRE: same stride found for address 806432c, with lastmem of 823c8ec and curr_req of 823ce04, previous stride at 1304
+Long stride! 577 total short strides
+PRE: same stride found for address 8064345, with lastmem of 823c8e8 and curr_req of 823ce00, previous stride at 1304
+Long stride! 578 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 823c8f4 and curr_req of 823ce0c, previous stride at 1304
+Long stride! 579 total short strides
+PRE: same stride found for address 805cef0, with lastmem of 823c8e8 and curr_req of 823ce00, previous stride at 1304
+Long stride! 580 total short strides
+PRE: same stride found for address 810fa4f, with lastmem of 8239490 and curr_req of 82396e0, previous stride at 592
+Long stride! 581 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8232680 and curr_req of 82328d0, previous stride at 592
+Long stride! 582 total short strides
+PRE: same stride found for address 80576db, with lastmem of 8232720 and curr_req of 8232970, previous stride at 592
+Long stride! 583 total short strides
+PRE: same stride found for address 809d21f, with lastmem of 823d394 and curr_req of 823d8a4, previous stride at 1296
+Long stride! 584 total short strides
+PRE: same stride found for address 8094d7d, with lastmem of 823d378 and curr_req of 823d888, previous stride at 1296
+Long stride! 585 total short strides
+PRE: same stride found for address 8094d73, with lastmem of 823d5a8 and curr_req of 823dab8, previous stride at 1296
+Long stride! 586 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 82327fc and curr_req of 8232a4c, previous stride at 592
+Long stride! 587 total short strides
+PRE: same stride found for address 8099d8a, with lastmem of 823d34c and curr_req of 823d85c, previous stride at 1296
+Long stride! 588 total short strides
+PRE: same stride found for address 806e2ce, with lastmem of 823d620 and curr_req of 823db30, previous stride at 1296
+Long stride! 589 total short strides
+PRE: same stride found for address 804cbf1, with lastmem of 8232870 and curr_req of 8232ac0, previous stride at 592
+Long stride! 590 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8232880 and curr_req of 8232ad0, previous stride at 592
+Long stride! 591 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8232814 and curr_req of 8232a64, previous stride at 592
+Long stride! 592 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 823280c and curr_req of 8232a5c, previous stride at 592
+Long stride! 593 total short strides
+PRE: same stride found for address 806420d, with lastmem of 823d84c and curr_req of 823dd5c, previous stride at 1296
+Long stride! 594 total short strides
+PRE: same stride found for address 804cb87, with lastmem of 8232a84 and curr_req of 8232cd4, previous stride at 592
+Long stride! 595 total short strides
+PRE: same stride found for address 804c985, with lastmem of 823de18 and curr_req of 823e0f8, previous stride at 736
+Long stride! 596 total short strides
+PRE: same stride found for address 806e1a6, with lastmem of 823de4c and curr_req of 823e12c, previous stride at 736
+Long stride! 597 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 823de3c and curr_req of 823e11c, previous stride at 736
+Long stride! 598 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 823de58 and curr_req of 823e138, previous stride at 736
+Long stride! 599 total short strides
+PRE: same stride found for address 80df434, with lastmem of 823de98 and curr_req of 823e178, previous stride at 736
+Long stride! 600 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 823dee4 and curr_req of 823e1c4, previous stride at 736
+Long stride! 601 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 823dee8 and curr_req of 823e1c8, previous stride at 736
+Long stride! 602 total short strides
+PRE: same stride found for address 81676da, with lastmem of 823defc and curr_req of 823e1dc, previous stride at 736
+Long stride! 603 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 823df44 and curr_req of 823e224, previous stride at 736
+Long stride! 604 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 823df70 and curr_req of 823e250, previous stride at 736
+Long stride! 605 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 823df71 and curr_req of 823e251, previous stride at 736
+Long stride! 606 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 823df72 and curr_req of 823e252, previous stride at 736
+Long stride! 607 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 823df60 and curr_req of 823e240, previous stride at 736
+Long stride! 608 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 823df70 and curr_req of 823e250, previous stride at 736
+Long stride! 609 total short strides
+PRE: same stride found for address 8063e0e, with lastmem of 823dfc8 and curr_req of 823e2a8, previous stride at 736
+Long stride! 610 total short strides
+PRE: same stride found for address 806740b, with lastmem of 823dfcc and curr_req of 823e2ac, previous stride at 736
+Long stride! 611 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 823dff0 and curr_req of 823e2d0, previous stride at 736
+Long stride! 612 total short strides
+PRE: same stride found for address 806432c, with lastmem of 823e01c and curr_req of 823e2fc, previous stride at 736
+Long stride! 613 total short strides
+PRE: same stride found for address 806433f, with lastmem of 823e020 and curr_req of 823e300, previous stride at 736
+Long stride! 614 total short strides
+PRE: same stride found for address 8064356, with lastmem of 823e024 and curr_req of 823e304, previous stride at 736
+Long stride! 615 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 823e024 and curr_req of 823e304, previous stride at 736
+Long stride! 616 total short strides
+PRE: same stride found for address 805cef0, with lastmem of 823e018 and curr_req of 823e2f8, previous stride at 736
+Long stride! 617 total short strides
+PRE: same stride found for address 806420d, with lastmem of 823e03c and curr_req of 823e31c, previous stride at 736
+Long stride! 618 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 8232f50 and curr_req of 82331a0, previous stride at 592
+Long stride! 619 total short strides
+PRE: same stride found for address 80df459, with lastmem of 8232fc4 and curr_req of 8233214, previous stride at 592
+Long stride! 620 total short strides
+PRE: same stride found for address 80576db, with lastmem of 8233060 and curr_req of 82332b0, previous stride at 592
+Long stride! 621 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 823313c and curr_req of 823338c, previous stride at 592
+Long stride! 622 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8233190 and curr_req of 82333e0, previous stride at 592
+Long stride! 623 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 82331c0 and curr_req of 8233410, previous stride at 592
+Long stride! 624 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 823314c and curr_req of 823339c, previous stride at 592
+Long stride! 625 total short strides
+PRE: same stride found for address 8067297, with lastmem of 823e848 and curr_req of 823ed60, previous stride at 1304
+Long stride! 626 total short strides
+PRE: same stride found for address 8094d73, with lastmem of 823e878 and curr_req of 823f068, previous stride at 2032
+Long stride! 627 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 8233890 and curr_req of 8233ae0, previous stride at 592
+Long stride! 628 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8233900 and curr_req of 8233b50, previous stride at 592
+Long stride! 629 total short strides
+PRE: same stride found for address 80576db, with lastmem of 82339a0 and curr_req of 8233bf0, previous stride at 592
+Long stride! 630 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 8233a7c and curr_req of 8233ccc, previous stride at 592
+Long stride! 631 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8233ad0 and curr_req of 8233d20, previous stride at 592
+Long stride! 632 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8233b00 and curr_req of 8233d50, previous stride at 592
+Long stride! 633 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8233a94 and curr_req of 8233ce4, previous stride at 592
+Long stride! 634 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 8233a8c and curr_req of 8233cdc, previous stride at 592
+Long stride! 635 total short strides
+PRE: same stride found for address 806420d, with lastmem of 823faec and curr_req of 823fdc4, previous stride at 728
+Long stride! 636 total short strides
+PRE: same stride found for address 809d1ef, with lastmem of 823fb40 and curr_req of 823fe18, previous stride at 728
+Long stride! 637 total short strides
+PRE: same stride found for address 809d218, with lastmem of 823fb48 and curr_req of 823fe20, previous stride at 728
+Long stride! 638 total short strides
+PRE: same stride found for address 809d268, with lastmem of 823fb84 and curr_req of 823fe5c, previous stride at 728
+Long stride! 639 total short strides
+PRE: same stride found for address 809d26f, with lastmem of 823fb7c and curr_req of 823fe54, previous stride at 728
+Long stride! 640 total short strides
+PRE: same stride found for address 804c97c, with lastmem of 823fb94 and curr_req of 823fe6c, previous stride at 728
+Long stride! 641 total short strides
+PRE: same stride found for address 804c985, with lastmem of 823fba0 and curr_req of 823fe78, previous stride at 728
+Long stride! 642 total short strides
+PRE: same stride found for address 806e1a6, with lastmem of 823fbd4 and curr_req of 823feac, previous stride at 728
+Long stride! 643 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 823fbc4 and curr_req of 823fe9c, previous stride at 728
+Long stride! 644 total short strides
+PRE: same stride found for address 80e3c89, with lastmem of 823fb84 and curr_req of 823fe5c, previous stride at 728
+Long stride! 645 total short strides
+PRE: same stride found for address 809de32, with lastmem of 823fb78 and curr_req of 823fe50, previous stride at 728
+Long stride! 646 total short strides
+PRE: same stride found for address 80df431, with lastmem of 823fb74 and curr_req of 823fe4c, previous stride at 728
+Long stride! 647 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 823fc6c and curr_req of 823ff44, previous stride at 728
+Long stride! 648 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 823fc70 and curr_req of 823ff48, previous stride at 728
+Long stride! 649 total short strides
+PRE: same stride found for address 81676d7, with lastmem of 823fb7c and curr_req of 823fe54, previous stride at 728
+Long stride! 650 total short strides
+PRE: same stride found for address 8056cd4, with lastmem of 823fb6c and curr_req of 823fe44, previous stride at 728
+Long stride! 651 total short strides
+PRE: same stride found for address 8147016, with lastmem of 823fb68 and curr_req of 823fe40, previous stride at 728
+Long stride! 652 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 823fcf8 and curr_req of 823ffd0, previous stride at 728
+Long stride! 653 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 823fcf9 and curr_req of 823ffd1, previous stride at 728
+Long stride! 654 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 823fcfa and curr_req of 823ffd2, previous stride at 728
+Long stride! 655 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 823fce8 and curr_req of 823ffc0, previous stride at 728
+Long stride! 656 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 823fcf8 and curr_req of 823ffd0, previous stride at 728
+Long stride! 657 total short strides
+PRE: same stride found for address 8094eb0, with lastmem of 823fb5c and curr_req of 823fe34, previous stride at 728
+Long stride! 658 total short strides
+PRE: same stride found for address 8099dfd, with lastmem of 823fb48 and curr_req of 823fe20, previous stride at 728
+Long stride! 659 total short strides
+PRE: same stride found for address 8067297, with lastmem of 823fb00 and curr_req of 823fdd8, previous stride at 728
+Long stride! 660 total short strides
+PRE: same stride found for address 804cb87, with lastmem of 8233f54 and curr_req of 82343f4, previous stride at 1184
+Long stride! 661 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 82341d0 and curr_req of 8234420, previous stride at 592
+Long stride! 662 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8234240 and curr_req of 8234490, previous stride at 592
+Long stride! 663 total short strides
+PRE: same stride found for address 80576db, with lastmem of 82342e0 and curr_req of 8234530, previous stride at 592
+Long stride! 664 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 82343bc and curr_req of 823460c, previous stride at 592
+Long stride! 665 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8234410 and curr_req of 8234660, previous stride at 592
+Long stride! 666 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8234440 and curr_req of 8234690, previous stride at 592
+Long stride! 667 total short strides
+PRE: same stride found for address 80df450, with lastmem of 82343d4 and curr_req of 8234624, previous stride at 592
+Long stride! 668 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 82343cc and curr_req of 823461c, previous stride at 592
+Long stride! 669 total short strides
+PRE: same stride found for address 8067297, with lastmem of 8240db8 and curr_req of 82412d0, previous stride at 1304
+Long stride! 670 total short strides
+PRE: same stride found for address 8063e0e, with lastmem of 8241240 and curr_req of 8241758, previous stride at 1304
+Long stride! 671 total short strides
+PRE: same stride found for address 806740b, with lastmem of 8241244 and curr_req of 824175c, previous stride at 1304
+Long stride! 672 total short strides
+PRE: same stride found for address 806e2ad, with lastmem of 8241084 and curr_req of 824159c, previous stride at 1304
+Long stride! 673 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 8241268 and curr_req of 8241780, previous stride at 1304
+Long stride! 674 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 8234b10 and curr_req of 8234d60, previous stride at 592
+Long stride! 675 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8234b80 and curr_req of 8234dd0, previous stride at 592
+Long stride! 676 total short strides
+PRE: same stride found for address 80576db, with lastmem of 8234c20 and curr_req of 8234e70, previous stride at 592
+Long stride! 677 total short strides
+PRE: same stride found for address 806432c, with lastmem of 8241294 and curr_req of 82417ac, previous stride at 1304
+Long stride! 678 total short strides
+PRE: same stride found for address 806433f, with lastmem of 8241298 and curr_req of 82417b0, previous stride at 1304
+Long stride! 679 total short strides
+PRE: same stride found for address 8064356, with lastmem of 824129c and curr_req of 82417b4, previous stride at 1304
+Long stride! 680 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 824129c and curr_req of 82417b4, previous stride at 1304
+Long stride! 681 total short strides
+PRE: same stride found for address 805cef0, with lastmem of 8241290 and curr_req of 82417a8, previous stride at 1304
+Long stride! 682 total short strides
+PRE: same stride found for address 810fc63, with lastmem of 823f258 and curr_req of 823fa48, previous stride at 2032
+Long stride! 683 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 8234cfc and curr_req of 8234f4c, previous stride at 592
+Long stride! 684 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8234d50 and curr_req of 8234fa0, previous stride at 592
+Long stride! 685 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8234d80 and curr_req of 8234fd0, previous stride at 592
+Long stride! 686 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8234d14 and curr_req of 8234f64, previous stride at 592
+Long stride! 687 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8234dd0 and curr_req of 8235020, previous stride at 592
+Long stride! 688 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 8234d0c and curr_req of 8234f5c, previous stride at 592
+Long stride! 689 total short strides
+PRE: same stride found for address 8067297, with lastmem of 82420a0 and curr_req of 82425b8, previous stride at 1304
+Long stride! 690 total short strides
+PRE: same stride found for address 8063e0e, with lastmem of 8242528 and curr_req of 8242a40, previous stride at 1304
+Long stride! 691 total short strides
+PRE: same stride found for address 806740b, with lastmem of 824252c and curr_req of 8242a44, previous stride at 1304
+Long stride! 692 total short strides
+PRE: same stride found for address 806e2ad, with lastmem of 824236c and curr_req of 8242884, previous stride at 1304
+Long stride! 693 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 8242550 and curr_req of 8242a68, previous stride at 1304
+Long stride! 694 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 8235450 and curr_req of 82356a0, previous stride at 592
+Long stride! 695 total short strides
+PRE: same stride found for address 80576db, with lastmem of 8235560 and curr_req of 82357b0, previous stride at 592
+Long stride! 696 total short strides
+PRE: same stride found for address 806432c, with lastmem of 824257c and curr_req of 8242a94, previous stride at 1304
+Long stride! 697 total short strides
+PRE: same stride found for address 806433f, with lastmem of 8242580 and curr_req of 8242a98, previous stride at 1304
+Long stride! 698 total short strides
+PRE: same stride found for address 8064356, with lastmem of 8242584 and curr_req of 8242a9c, previous stride at 1304
+Long stride! 699 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 8242584 and curr_req of 8242a9c, previous stride at 1304
+Long stride! 700 total short strides
+PRE: same stride found for address 805cef0, with lastmem of 8242578 and curr_req of 8242a90, previous stride at 1304
+Long stride! 701 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 823563c and curr_req of 823588c, previous stride at 592
+Long stride! 702 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8235690 and curr_req of 82358e0, previous stride at 592
+Long stride! 703 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 82356c0 and curr_req of 8235910, previous stride at 592
+Long stride! 704 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8235654 and curr_req of 82358a4, previous stride at 592
+Long stride! 705 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 823564c and curr_req of 823589c, previous stride at 592
+Long stride! 706 total short strides
+PRE: same stride found for address 809c7b1, with lastmem of 823587c and curr_req of 8235acc, previous stride at 592
+Long stride! 707 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 8235d90 and curr_req of 8235fe0, previous stride at 592
+Long stride! 708 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8235e00 and curr_req of 8236050, previous stride at 592
+Long stride! 709 total short strides
+PRE: same stride found for address 80576db, with lastmem of 8235ea0 and curr_req of 82360f0, previous stride at 592
+Long stride! 710 total short strides
+PRE: same stride found for address 8067297, with lastmem of 82437d8 and curr_req of 8243cf0, previous stride at 1304
+Long stride! 711 total short strides
+PRE: same stride found for address 8063e0e, with lastmem of 8243c60 and curr_req of 8244178, previous stride at 1304
+Long stride! 712 total short strides
+PRE: same stride found for address 806740b, with lastmem of 8243c64 and curr_req of 824417c, previous stride at 1304
+Long stride! 713 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 8235f7c and curr_req of 82361cc, previous stride at 592
+Long stride! 714 total short strides
+PRE: same stride found for address 806e2ad, with lastmem of 8243aa4 and curr_req of 8243fbc, previous stride at 1304
+Long stride! 715 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 8243c88 and curr_req of 82441a0, previous stride at 1304
+Long stride! 716 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8235fd0 and curr_req of 8236220, previous stride at 592
+Long stride! 717 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8236000 and curr_req of 8236250, previous stride at 592
+Long stride! 718 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8235f94 and curr_req of 82361e4, previous stride at 592
+Long stride! 719 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 8235f8c and curr_req of 82361dc, previous stride at 592
+Long stride! 720 total short strides
+PRE: same stride found for address 806432c, with lastmem of 8243cb4 and curr_req of 82441cc, previous stride at 1304
+Long stride! 721 total short strides
+PRE: same stride found for address 806433f, with lastmem of 8243cb8 and curr_req of 82441d0, previous stride at 1304
+Long stride! 722 total short strides
+PRE: same stride found for address 8064356, with lastmem of 8243cbc and curr_req of 82441d4, previous stride at 1304
+Long stride! 723 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 8243cbc and curr_req of 82441d4, previous stride at 1304
+Long stride! 724 total short strides
+PRE: same stride found for address 805cef0, with lastmem of 8243cb0 and curr_req of 82441c8, previous stride at 1304
+Long stride! 725 total short strides
+PRE: same stride found for address 806420d, with lastmem of 8244704 and curr_req of 8244c14, previous stride at 1296
+Long stride! 726 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 82366d0 and curr_req of 8236920, previous stride at 592
+Long stride! 727 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8236740 and curr_req of 8236990, previous stride at 592
+Long stride! 728 total short strides
+PRE: same stride found for address 80576db, with lastmem of 82367e0 and curr_req of 8236a30, previous stride at 592
+Long stride! 729 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8244cd0 and curr_req of 8244fb0, previous stride at 736
+Long stride! 730 total short strides
+PRE: same stride found for address 806e1a6, with lastmem of 8244d04 and curr_req of 8244fe4, previous stride at 736
+Long stride! 731 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8244cf4 and curr_req of 8244fd4, previous stride at 736
+Long stride! 732 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8244d10 and curr_req of 8244ff0, previous stride at 736
+Long stride! 733 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8244d50 and curr_req of 8245030, previous stride at 736
+Long stride! 734 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8244d9c and curr_req of 824507c, previous stride at 736
+Long stride! 735 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8244da0 and curr_req of 8245080, previous stride at 736
+Long stride! 736 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8244db4 and curr_req of 8245094, previous stride at 736
+Long stride! 737 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 8244dfc and curr_req of 82450dc, previous stride at 736
+Long stride! 738 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8244e28 and curr_req of 8245108, previous stride at 736
+Long stride! 739 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8244e29 and curr_req of 8245109, previous stride at 736
+Long stride! 740 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 8244e2a and curr_req of 824510a, previous stride at 736
+Long stride! 741 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8244e18 and curr_req of 82450f8, previous stride at 736
+Long stride! 742 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8244e28 and curr_req of 8245108, previous stride at 736
+Long stride! 743 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 82368bc and curr_req of 8236b0c, previous stride at 592
+Long stride! 744 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8236910 and curr_req of 8236b60, previous stride at 592
+Long stride! 745 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8236940 and curr_req of 8236b90, previous stride at 592
+Long stride! 746 total short strides
+PRE: same stride found for address 80df450, with lastmem of 82368d4 and curr_req of 8236b24, previous stride at 592
+Long stride! 747 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 82368cc and curr_req of 8236b1c, previous stride at 592
+Long stride! 748 total short strides
+PRE: same stride found for address 8063e0e, with lastmem of 8245398 and curr_req of 82458b0, previous stride at 1304
+Long stride! 749 total short strides
+PRE: same stride found for address 806740b, with lastmem of 824539c and curr_req of 82458b4, previous stride at 1304
+Long stride! 750 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 82453c0 and curr_req of 82458d8, previous stride at 1304
+Long stride! 751 total short strides
+PRE: same stride found for address 806433f, with lastmem of 82453f0 and curr_req of 8245908, previous stride at 1304
+Long stride! 752 total short strides
+PRE: same stride found for address 8064356, with lastmem of 82453f4 and curr_req of 824590c, previous stride at 1304
+Long stride! 753 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 82453f4 and curr_req of 824590c, previous stride at 1304
+Long stride! 754 total short strides
+PRE: same stride found for address 8067297, with lastmem of 8245428 and curr_req of 8245940, previous stride at 1304
+Long stride! 755 total short strides
+PRE: same stride found for address 806e2ad, with lastmem of 82456f4 and curr_req of 8245c0c, previous stride at 1304
+Long stride! 756 total short strides
+PRE: same stride found for address 809c8a5, with lastmem of 8236f80 and curr_req of 82371d0, previous stride at 592
+Long stride! 757 total short strides
+PRE: same stride found for address 804cb87, with lastmem of 8236fe4 and curr_req of 8237234, previous stride at 592
+Long stride! 758 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 8237010 and curr_req of 8237260, previous stride at 592
+Long stride! 759 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8237080 and curr_req of 82372d0, previous stride at 592
+Long stride! 760 total short strides
+PRE: same stride found for address 80576db, with lastmem of 8237120 and curr_req of 8237370, previous stride at 592
+Long stride! 761 total short strides
+PRE: same stride found for address 806432c, with lastmem of 8245e1c and curr_req of 8246334, previous stride at 1304
+Long stride! 762 total short strides
+PRE: same stride found for address 805cef0, with lastmem of 8245e18 and curr_req of 8246330, previous stride at 1304
+Long stride! 763 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 82371fc and curr_req of 823744c, previous stride at 592
+Long stride! 764 total short strides
+PRE: same stride found for address 8099d8a, with lastmem of 824593c and curr_req of 824636c, previous stride at 2608
+Long stride! 765 total short strides
+PRE: same stride found for address 806e2ce, with lastmem of 8245c10 and curr_req of 8246640, previous stride at 2608
+Long stride! 766 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8237250 and curr_req of 82374a0, previous stride at 592
+Long stride! 767 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8237280 and curr_req of 82374d0, previous stride at 592
+Long stride! 768 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8237214 and curr_req of 8237464, previous stride at 592
+Long stride! 769 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 823720c and curr_req of 823745c, previous stride at 592
+Long stride! 770 total short strides
+PRE: same stride found for address 8063e0e, with lastmem of 82467f8 and curr_req of 8246d10, previous stride at 1304
+Long stride! 771 total short strides
+PRE: same stride found for address 806740b, with lastmem of 82467fc and curr_req of 8246d14, previous stride at 1304
+Long stride! 772 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 8246820 and curr_req of 8246d38, previous stride at 1304
+Long stride! 773 total short strides
+PRE: same stride found for address 806433f, with lastmem of 8246850 and curr_req of 8246d68, previous stride at 1304
+Long stride! 774 total short strides
+PRE: same stride found for address 8064356, with lastmem of 8246854 and curr_req of 8246d6c, previous stride at 1304
+Long stride! 775 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 8246854 and curr_req of 8246d6c, previous stride at 1304
+Long stride! 776 total short strides
+PRE: same stride found for address 8067297, with lastmem of 8246888 and curr_req of 8246da0, previous stride at 1304
+Long stride! 777 total short strides
+PRE: same stride found for address 806e2ad, with lastmem of 8246b54 and curr_req of 824706c, previous stride at 1304
+Long stride! 778 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 8237950 and curr_req of 8237ba0, previous stride at 592
+Long stride! 779 total short strides
+PRE: same stride found for address 80df453, with lastmem of 82379c0 and curr_req of 8237c10, previous stride at 592
+Long stride! 780 total short strides
+PRE: same stride found for address 80576db, with lastmem of 8237a60 and curr_req of 8237cb0, previous stride at 592
+Long stride! 781 total short strides
+PRE: same stride found for address 806432c, with lastmem of 824727c and curr_req of 8247794, previous stride at 1304
+Long stride! 782 total short strides
+PRE: same stride found for address 805cef0, with lastmem of 8247278 and curr_req of 8247790, previous stride at 1304
+Long stride! 783 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 8237b3c and curr_req of 8237d8c, previous stride at 592
+Long stride! 784 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8237b90 and curr_req of 8237de0, previous stride at 592
+Long stride! 785 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8237bc0 and curr_req of 8237e10, previous stride at 592
+Long stride! 786 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8237b54 and curr_req of 8237da4, previous stride at 592
+Long stride! 787 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 8237b4c and curr_req of 8237d9c, previous stride at 592
+Long stride! 788 total short strides
+PRE: same stride found for address 8063e0e, with lastmem of 8247c58 and curr_req of 8248170, previous stride at 1304
+Long stride! 789 total short strides
+PRE: same stride found for address 806740b, with lastmem of 8247c5c and curr_req of 8248174, previous stride at 1304
+Long stride! 790 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 8247c80 and curr_req of 8248198, previous stride at 1304
+Long stride! 791 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 8247cb4 and curr_req of 82481cc, previous stride at 1304
+Long stride! 792 total short strides
+PRE: same stride found for address 8067297, with lastmem of 8247ce8 and curr_req of 8248200, previous stride at 1304
+Long stride! 793 total short strides
+PRE: same stride found for address 806e2ad, with lastmem of 8247fb4 and curr_req of 82484cc, previous stride at 1304
+Long stride! 794 total short strides
+PRE: same stride found for address 804c985, with lastmem of 82487b8 and curr_req of 8248a98, previous stride at 736
+Long stride! 795 total short strides
+PRE: same stride found for address 806e1a6, with lastmem of 82487ec and curr_req of 8248acc, previous stride at 736
+Long stride! 796 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 82487dc and curr_req of 8248abc, previous stride at 736
+Long stride! 797 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 82487f8 and curr_req of 8248ad8, previous stride at 736
+Long stride! 798 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8248838 and curr_req of 8248b18, previous stride at 736
+Long stride! 799 total short strides
+PRE: same stride found for address 8173e28, with lastmem of 8248884 and curr_req of 8248b64, previous stride at 736
+Long stride! 800 total short strides
+PRE: same stride found for address 8173e5c, with lastmem of 8248888 and curr_req of 8248b68, previous stride at 736
+Long stride! 801 total short strides
+PRE: same stride found for address 81676da, with lastmem of 824889c and curr_req of 8248b7c, previous stride at 736
+Long stride! 802 total short strides
+PRE: same stride found for address 8056cd7, with lastmem of 82488e4 and curr_req of 8248bc4, previous stride at 736
+Long stride! 803 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8248910 and curr_req of 8248bf0, previous stride at 736
+Long stride! 804 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8248911 and curr_req of 8248bf1, previous stride at 736
+Long stride! 805 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 8248912 and curr_req of 8248bf2, previous stride at 736
+Long stride! 806 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 8248900 and curr_req of 8248be0, previous stride at 736
+Long stride! 807 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8248910 and curr_req of 8248bf0, previous stride at 736
+Long stride! 808 total short strides
+PRE: same stride found for address 806e2cb, with lastmem of 8248948 and curr_req of 8248c28, previous stride at 736
+Long stride! 809 total short strides
+PRE: same stride found for address 809c8a5, with lastmem of 82384e0 and curr_req of 8238700, previous stride at 544
+Long stride! 810 total short strides
+PRE: same stride found for address 809c7b1, with lastmem of 82384fc and curr_req of 823871c, previous stride at 544
+Long stride! 811 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 823850c and curr_req of 823872c, previous stride at 544
+Long stride! 812 total short strides
+PRE: same stride found for address 804cb87, with lastmem of 8238544 and curr_req of 8238764, previous stride at 544
+Long stride! 813 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8238524 and curr_req of 8238744, previous stride at 544
+Long stride! 814 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 823851c and curr_req of 823873c, previous stride at 544
+Long stride! 815 total short strides
+PRE: same stride found for address 8099d9c, with lastmem of 8248990 and curr_req of 8249188, previous stride at 2040
+Long stride! 816 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 82387b0 and curr_req of 8238a00, previous stride at 592
+Long stride! 817 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8238800 and curr_req of 8238a50, previous stride at 592
+Long stride! 818 total short strides
+PRE: same stride found for address 80576db, with lastmem of 82388a0 and curr_req of 8238af0, previous stride at 592
+Long stride! 819 total short strides
+PRE: same stride found for address 806433f, with lastmem of 82489c0 and curr_req of 82491b8, previous stride at 2040
+Long stride! 820 total short strides
+PRE: same stride found for address 8064356, with lastmem of 82489c4 and curr_req of 82491bc, previous stride at 2040
+Long stride! 821 total short strides
+PRE: same stride found for address 805cec6, with lastmem of 82489c4 and curr_req of 82491bc, previous stride at 2040
+Long stride! 822 total short strides
+PRE: same stride found for address 804c985, with lastmem of 8248fb0 and curr_req of 8249290, previous stride at 736
+Long stride! 823 total short strides
+PRE: same stride found for address 806e1a6, with lastmem of 8248fe4 and curr_req of 82492c4, previous stride at 736
+Long stride! 824 total short strides
+PRE: same stride found for address 804ca00, with lastmem of 8248fd4 and curr_req of 82492b4, previous stride at 736
+Long stride! 825 total short strides
+PRE: same stride found for address 80e3c8c, with lastmem of 8248ff0 and curr_req of 82492d0, previous stride at 736
+Long stride! 826 total short strides
+PRE: same stride found for address 80df434, with lastmem of 8249030 and curr_req of 8249310, previous stride at 736
+Long stride! 827 total short strides
+PRE: same stride found for address 8173e2f, with lastmem of 8249040 and curr_req of 8249320, previous stride at 736
+Long stride! 828 total short strides
+PRE: same stride found for address 81676da, with lastmem of 8249094 and curr_req of 8249374, previous stride at 736
+Long stride! 829 total short strides
+PRE: same stride found for address 8056cf3, with lastmem of 82490e8 and curr_req of 82493c8, previous stride at 736
+Long stride! 830 total short strides
+PRE: same stride found for address b5fe3e9a, with lastmem of 8249108 and curr_req of 82493e8, previous stride at 736
+Long stride! 831 total short strides
+PRE: same stride found for address b6008d16, with lastmem of 8249109 and curr_req of 82493e9, previous stride at 736
+Long stride! 832 total short strides
+PRE: same stride found for address b5ffe33c, with lastmem of 824910a and curr_req of 82493ea, previous stride at 736
+Long stride! 833 total short strides
+PRE: same stride found for address 809ab82, with lastmem of 82490f8 and curr_req of 82493d8, previous stride at 736
+Long stride! 834 total short strides
+PRE: same stride found for address 81105f5, with lastmem of 8249108 and curr_req of 82493e8, previous stride at 736
+Long stride! 835 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 823897c and curr_req of 8238bcc, previous stride at 592
+Long stride! 836 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 82389d0 and curr_req of 8238c20, previous stride at 592
+Long stride! 837 total short strides
+PRE: same stride found for address 8173e3e, with lastmem of 8249058 and curr_req of 8249850, previous stride at 2040
+Long stride! 838 total short strides
+PRE: same stride found for address 806432c, with lastmem of 82491b4 and curr_req of 82499ac, previous stride at 2040
+Long stride! 839 total short strides
+PRE: same stride found for address 805cef0, with lastmem of 82491b0 and curr_req of 82499a8, previous stride at 2040
+Long stride! 840 total short strides
+PRE: same stride found for address 809c8a5, with lastmem of 8238df0 and curr_req of 8239040, previous stride at 592
+Long stride! 841 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8238e34 and curr_req of 8239084, previous stride at 592
+Long stride! 842 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 8238e2c and curr_req of 823907c, previous stride at 592
+Long stride! 843 total short strides
+PRE: same stride found for address 809c7b1, with lastmem of 823905c and curr_req of 82392ac, previous stride at 592
+Long stride! 844 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 82390d0 and curr_req of 8239320, previous stride at 592
+Long stride! 845 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 82390f0 and curr_req of 8239340, previous stride at 592
+Long stride! 846 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8238ef0 and curr_req of 8239390, previous stride at 1184
+Long stride! 847 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 82392bc and curr_req of 823950c, previous stride at 592
+Long stride! 848 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8239310 and curr_req of 8239560, previous stride at 592
+Long stride! 849 total short strides
+PRE: same stride found for address 80df459, with lastmem of 8238ef4 and curr_req of 82395e4, previous stride at 1776
+Long stride! 850 total short strides
+PRE: same stride found for address 804cb87, with lastmem of 8239544 and curr_req of 8239794, previous stride at 592
+Long stride! 851 total short strides
+PRE: same stride found for address 806420d, with lastmem of 824a264 and curr_req of 824a304, previous stride at 160
+Long stride! 852 total short strides
+PRE: same stride found for address 8067297, with lastmem of 824a278 and curr_req of 824a318, previous stride at 160
+Long stride! 853 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8239774 and curr_req of 82399c4, previous stride at 592
+Long stride! 854 total short strides
+PRE: same stride found for address 80576d8, with lastmem of 823951c and curr_req of 82399bc, previous stride at 1184
+Long stride! 855 total short strides
+PRE: same stride found for address 80576db, with lastmem of 82398d0 and curr_req of 8239b20, previous stride at 592
+Long stride! 856 total short strides
+PRE: same stride found for address 809c8a5, with lastmem of 8239980 and curr_req of 8239bd0, previous stride at 592
+Long stride! 857 total short strides
+PRE: same stride found for address 809c7b1, with lastmem of 823974c and curr_req of 8239bec, previous stride at 1184
+Long stride! 858 total short strides
+PRE: same stride found for address 804cbbd, with lastmem of 8239a10 and curr_req of 8239c60, previous stride at 592
+Long stride! 859 total short strides
+PRE: same stride found for address 806e1cb, with lastmem of 8239a30 and curr_req of 8239c80, previous stride at 592
+Long stride! 860 total short strides
+PRE: same stride found for address 8067297, with lastmem of 824a830 and curr_req of 824ad48, previous stride at 1304
+Long stride! 861 total short strides
+PRE: same stride found for address 809b7dc, with lastmem of 8239bfc and curr_req of 8239e4c, previous stride at 592
+Long stride! 862 total short strides
+PRE: same stride found for address 804cb8a, with lastmem of 8239c50 and curr_req of 8239ea0, previous stride at 592
+Long stride! 863 total short strides
+PRE: same stride found for address 80df453, with lastmem of 8239a80 and curr_req of 8239f20, previous stride at 1184
+Long stride! 864 total short strides
+PRE: same stride found for address 80df450, with lastmem of 8239e64 and curr_req of 823a304, previous stride at 1184
+Long stride! 865 total short strides
+PRE: same stride found for address 80576db, with lastmem of 8239fc0 and curr_req of 823a460, previous stride at 1184
+Long stride! 866 total short strides
+AMAT: 1.395264
+PRE: creating prefetcher with value of (1 reqs per miss)
+PRE: NUM ENTRIES IN TABLE: 8192
+PRE: same stride found for address b7fb8995, with lastmem of b6538040 and curr_req of b65380d0, previous stride at 144
+Long stride! 1 total short strides
+PRE: same stride found for address b7fb45cb, with lastmem of b6662778 and curr_req of b6662838, previous stride at 192
+Long stride! 2 total short strides
+PRE: same stride found for address b7fb29d1, with lastmem of b6534210 and curr_req of b65343f0, previous stride at 480
+Long stride! 3 total short strides
+AMAT: 3.013640
+AMAT mean:       2.25		median:      2.35
+
