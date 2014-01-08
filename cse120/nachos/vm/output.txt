@@ -1,0 +1,1379 @@
+nachos 5.0j initializing... config interrupt timer processor console user-check grader
+
+ThreadedKernel Initializing
+*** awesome thread 0 looped 0 times
+*** awesome thread 1 looped 0 times
+*** awesome thread 0 looped 1 times
+*** awesome thread 1 looped 1 times
+*** awesome thread 0 looped 2 times
+*** awesome thread 1 looped 2 times
+*** awesome thread 0 looped 3 times
+*** awesome thread 1 looped 3 times
+*** awesome thread 0 looped 4 times
+*** awesome thread 1 looped 4 times
+
+Da Semaphore thread is about to be made for the selfTest...
+Synch Self Test Thread...
+Testing the console device. Typed characters
+will be echoed until q is typed.
+q
+Creating a process
+ with PID:	0
+Enterign Execute
+
+UserProcess.load("sh.coff")
+	initializing .text section (4 pages)
+	initializing .rdata section (1 pages)
+	initializing .data section (0 pages)
+	initializing .bss section (1 pages)
+PC=0x00000490	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000490	jal	0x00000424      				
+PC=0x00000494	sll	$0, $0, 0       				
+PC=0x00000424	addiu	$29, $29, -104       				
+PC=0x00000428	sw	$16, 96($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000428	sw	$16, 96($29)					
+PC=0x0000042C	sw	$31, 100($29)					
+PC=0x00000430	jal	0x000004A0      				
+PC=0x00000434	sll	$0, $0, 0       				
+PC=0x000004A0	jr	$31      					
+PC=0x000004A4	sll	$0, $0, 0       				
+PC=0x00000438	lui	$2, 0   					
+PC=0x0000043C	addiu	$2, $2, 4384       				
+PC=0x00000440	lbu	$5, 8($2)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000440	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000440	lbu	$5, 8($2)					
+PC=0x00000444	lw	$3, 0($2)					
+PC=0x00000448	lw	$4, 4($2)					
+PC=0x0000044C	sw	$3, 16($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x0000044C	sw	$3, 16($29)					
+PC=0x00000450	sw	$4, 20($29)					
+PC=0x00000454	sb	$5, 24($29)					
+PC=0x00000458	addiu	$16, $29, 32       				
+PC=0x0000045C	lui	$4, 0   					
+PC=0x00000460	addiu	$4, $4, 4396       				
+PC=0x00000464	jal	0x00000BF0      				
+PC=0x00000468	addiu	$5, $29, 16       				
+PC=0x00000BF0	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000BF0	sw	$4, 0($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000BF0	sw	$4, 0($29)					
+PC=0x00000BF4	sw	$5, 4($29)					
+PC=0x00000BF8	sw	$6, 8($29)					
+PC=0x00000BFC	sw	$7, 12($29)					
+PC=0x00000C00	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000C00	addiu	$29, $29, -24       				
+PC=0x00000C04	sw	$31, 16($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000C04	sw	$31, 16($29)					
+PC=0x00000C08	jal	0x00000B70      				
+PC=0x00000C0C	addiu	$5, $29, 28       				
+PC=0x00000B70	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000B70	addiu	$29, $29, -24       				
+PC=0x00000B74	addu	$6, $5, $0      				
+PC=0x00000B78	addu	$5, $4, $0      				
+PC=0x00000B7C	sw	$31, 16($29)					
+PC=0x00000B80	jal	0x00000AF8      				
+PC=0x00000B84	addiu	$4, $0, 1       				
+PC=0x00000AF8	addiu	$29, $29, -32       				
+PC=0x00000AFC	sw	$17, 20($29)					
+PC=0x00000B00	lui	$17, 0   					
+PC=0x00000B04	addiu	$17, $17, 5120       				
+PC=0x00000B08	sw	$18, 24($29)					
+PC=0x00000B0C	addu	$18, $4, $0      				
+PC=0x00000B10	sw	$16, 16($29)					
+PC=0x00000B14	sw	$31, 28($29)					
+PC=0x00000B18	jal	0x0000085C      				
+PC=0x00000B1C	addu	$4, $17, $0      				
+PC=0x0000085C	addiu	$29, $29, -56       				
+PC=0x00000860	sw	$20, 40($29)					
+PC=0x00000864	sw	$19, 36($29)					
+PC=0x00000868	sw	$18, 32($29)					
+PC=0x0000086C	sw	$16, 24($29)					
+PC=0x00000870	sw	$31, 48($29)					
+PC=0x00000874	sw	$21, 44($29)					
+PC=0x00000878	sw	$17, 28($29)					
+PC=0x0000087C	sw	$4, 56($29)					
+PC=0x00000880	lbu	$3, 0($5)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000880	lbu	$3, 0($5)					
+PC=0x00000884	addu	$16, $5, $0      				
+PC=0x00000888	sll	$3, $3, 24       				
+PC=0x0000088C	addu	$18, $6, $0      				
+PC=0x00000890	addu	$19, $0, $0      				
+PC=0x00000894	beq	$3, $0, 0x000008C8      			
+PC=0x00000898	addu	$20, $0, $0      				
+PC=0x0000089C	sra	$3, $3, 24       				
+PC=0x000008A0	addiu	$2, $0, 37       				
+PC=0x000008A4	beq	$3, $2, 0x00000910      			
+PC=0x000008A8	sll	$0, $0, 0       				
+PC=0x00000910	blez	$20, 0x0000092C  				
+PC=0x00000914	subu	$5, $16, $20      				
+PC=0x0000092C	addiu	$16, $16, 1       				
+PC=0x00000930	lb	$3, 0($16)					
+PC=0x00000934	addiu	$2, $0, 45       				
+PC=0x00000938	lbu	$4, 0($16)					
+PC=0x0000093C	beq	$3, $2, 0x00000ABC      			
+PC=0x00000940	sll	$0, $0, 0       				
+PC=0x00000944	sll	$2, $4, 24       				
+PC=0x00000948	sra	$2, $2, 24       				
+PC=0x0000094C	addiu	$3, $0, 48       				
+PC=0x00000950	beq	$2, $3, 0x00000AB4      			
+PC=0x00000954	addu	$21, $0, $0      				
+PC=0x00000958	jal	0x00000CB0      				
+PC=0x0000095C	addu	$4, $16, $0      				
+PC=0x00000CB0	lb	$3, 0($4)					
+PC=0x00000CB4	addiu	$2, $0, -1       				
+PC=0x00000CB8	addu	$6, $4, $0      				
+PC=0x00000CBC	addu	$7, $0, $0      				
+PC=0x00000CC0	lbu	$4, 0($4)					
+PC=0x00000CC4	beq	$3, $2, 0x00000D24      			
+PC=0x00000CC8	addiu	$8, $0, 1       				
+PC=0x00000CCC	addu	$5, $4, $0      				
+PC=0x00000CD0	addiu	$2, $5, -48       				
+PC=0x00000CD4	andi	$2, $2, 255       				
+PC=0x00000CD8	sltiu	$2, $2, 10       				
+PC=0x00000CDC	beq	$2, $0, 0x00000D18      			
+PC=0x00000CE0	mult	$7, $8  					
+PC=0x00000D18	mflo	$2      					
+PC=0x00000D1C	jr	$31      					
+PC=0x00000D20	sll	$0, $0, 0       				
+PC=0x00000960	addu	$7, $2, $0      				
+PC=0x00000964	lbu	$2, 0($16)					
+PC=0x00000968	sll	$0, $0, 0       				
+PC=0x0000096C	addiu	$2, $2, -48       				
+PC=0x00000970	sltiu	$2, $2, 10       				
+PC=0x00000974	beq	$2, $0, 0x00000AA8      			
+PC=0x00000978	addu	$17, $16, $0      				
+PC=0x00000AA8	lbu	$3, 0($16)					
+PC=0x00000AAC	j	0x00000998      				
+PC=0x00000AB0	sll	$2, $3, 24       				
+PC=0x00000998	sra	$2, $2, 24       				
+PC=0x0000099C	addiu	$2, $2, -88       				
+PC=0x000009A0	sltiu	$3, $2, 33       				
+PC=0x000009A4	beq	$3, $0, 0x00000A74      			
+PC=0x000009A8	addiu	$17, $17, 1       				
+PC=0x000009AC	sll	$2, $2, 2       				
+PC=0x000009B0	lui	$3, 0   					
+PC=0x000009B4	addu	$3, $3, $2      				
+PC=0x000009B8	lw	$3, 4412($3)					
+PC=0x000009BC	sll	$0, $0, 0       				
+PC=0x000009C0	jr	$3      					
+PC=0x000009C4	sll	$0, $0, 0       				
+PC=0x00000A50	addiu	$2, $18, 3       				
+PC=0x00000A54	addiu	$3, $0, -4       				
+PC=0x00000A58	and	$2, $2, $3      				
+PC=0x00000A5C	addiu	$18, $2, 4       				
+PC=0x00000A60	lw	$5, -4($18)					
+PC=0x00000A64	jal	0x00000818      				
+PC=0x00000A68	addiu	$4, $29, 56       				
+PC=0x00000818	addiu	$29, $29, -32       				
+PC=0x0000081C	sw	$17, 20($29)					
+PC=0x00000820	addu	$17, $4, $0      				
+PC=0x00000824	addu	$4, $5, $0      				
+PC=0x00000828	sw	$31, 24($29)					
+PC=0x0000082C	sw	$16, 16($29)					
+PC=0x00000830	jal	0x00000ED0      				
+PC=0x00000834	addu	$16, $5, $0      				
+PC=0x00000ED0	lbu	$2, 0($4)					
+PC=0x00000ED4	addu	$3, $0, $0      				
+PC=0x00000ED8	beq	$2, $0, 0x00000EF0      			
+PC=0x00000EDC	addiu	$4, $4, 1       				
+PC=0x00000EE0	lbu	$2, 0($4)					
+PC=0x00000EE4	addiu	$3, $3, 1       				
+PC=0x00000EE8	bne	$2, $0, 0x00000EE0      			
+PC=0x00000EEC	addiu	$4, $4, 1       				
+PC=0x00000EE0	lbu	$2, 0($4)					
+PC=0x00000EE4	addiu	$3, $3, 1       				
+PC=0x00000EE8	bne	$2, $0, 0x00000EE0      			
+PC=0x00000EEC	addiu	$4, $4, 1       				
+PC=0x00000EE0	lbu	$2, 0($4)					
+PC=0x00000EE4	addiu	$3, $3, 1       				
+PC=0x00000EE8	bne	$2, $0, 0x00000EE0      			
+PC=0x00000EEC	addiu	$4, $4, 1       				
+PC=0x00000EE0	lbu	$2, 0($4)					
+PC=0x00000EE4	addiu	$3, $3, 1       				
+PC=0x00000EE8	bne	$2, $0, 0x00000EE0      			
+PC=0x00000EEC	addiu	$4, $4, 1       				
+PC=0x00000EE0	lbu	$2, 0($4)					
+PC=0x00000EE4	addiu	$3, $3, 1       				
+PC=0x00000EE8	bne	$2, $0, 0x00000EE0      			
+PC=0x00000EEC	addiu	$4, $4, 1       				
+PC=0x00000EE0	lbu	$2, 0($4)					
+PC=0x00000EE4	addiu	$3, $3, 1       				
+PC=0x00000EE8	bne	$2, $0, 0x00000EE0      			
+PC=0x00000EEC	addiu	$4, $4, 1       				
+PC=0x00000EE0	lbu	$2, 0($4)					
+PC=0x00000EE4	addiu	$3, $3, 1       				
+PC=0x00000EE8	bne	$2, $0, 0x00000EE0      			
+PC=0x00000EEC	addiu	$4, $4, 1       				
+PC=0x00000EE0	lbu	$2, 0($4)					
+PC=0x00000EE4	addiu	$3, $3, 1       				
+PC=0x00000EE8	bne	$2, $0, 0x00000EE0      			
+PC=0x00000EEC	addiu	$4, $4, 1       				
+PC=0x00000EF0	jr	$31      					
+PC=0x00000EF4	addu	$2, $3, $0      				
+PC=0x00000838	addu	$6, $2, $0      				
+PC=0x0000083C	addu	$4, $17, $0      				
+PC=0x00000840	jal	0x0000061C      				
+PC=0x00000844	addu	$5, $16, $0      				
+PC=0x0000061C	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x0000061C	addiu	$29, $29, -32       				
+PC=0x00000620	sw	$31, 24($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000620	sw	$31, 24($29)					
+PC=0x00000624	sw	$17, 20($29)					
+PC=0x00000628	sw	$16, 16($29)					
+PC=0x0000062C	addu	$16, $4, $0      				
+PC=0x00000630	lw	$4, 0($4)					
+PC=0x00000634	jal	0x00000EA0      				
+PC=0x00000638	addu	$17, $6, $0      				
+PC=0x00000EA0	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000EA0	addu	$8, $4, $0      				
+PC=0x00000EA4	beq	$6, $0, 0x00000EC8      			
+PC=0x00000EA8	addu	$7, $0, $0      				
+PC=0x00000EAC	addu	$2, $5, $7      				
+PC=0x00000EB0	lbu	$4, 0($2)					
+PC=0x00000EB4	addu	$3, $8, $7      				
+PC=0x00000EB8	addiu	$7, $7, 1       				
+PC=0x00000EBC	sltu	$2, $7, $6      				
+PC=0x00000EC0	bne	$2, $0, 0x00000EAC      			
+PC=0x00000EC4	sb	$4, 0($3)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000EC4	sb	$4, 0($3)					
+PC=0x00000EAC	addu	$2, $5, $7      				
+PC=0x00000EB0	lbu	$4, 0($2)					
+PC=0x00000EB4	addu	$3, $8, $7      				
+PC=0x00000EB8	addiu	$7, $7, 1       				
+PC=0x00000EBC	sltu	$2, $7, $6      				
+PC=0x00000EC0	bne	$2, $0, 0x00000EAC      			
+PC=0x00000EC4	sb	$4, 0($3)					
+PC=0x00000EAC	addu	$2, $5, $7      				
+PC=0x00000EB0	lbu	$4, 0($2)					
+PC=0x00000EB4	addu	$3, $8, $7      				
+PC=0x00000EB8	addiu	$7, $7, 1       				
+PC=0x00000EBC	sltu	$2, $7, $6      				
+PC=0x00000EC0	bne	$2, $0, 0x00000EAC      			
+PC=0x00000EC4	sb	$4, 0($3)					
+PC=0x00000EAC	addu	$2, $5, $7      				
+PC=0x00000EB0	lbu	$4, 0($2)					
+PC=0x00000EB4	addu	$3, $8, $7      				
+PC=0x00000EB8	addiu	$7, $7, 1       				
+PC=0x00000EBC	sltu	$2, $7, $6      				
+PC=0x00000EC0	bne	$2, $0, 0x00000EAC      			
+PC=0x00000EC4	sb	$4, 0($3)					
+PC=0x00000EAC	addu	$2, $5, $7      				
+PC=0x00000EB0	lbu	$4, 0($2)					
+PC=0x00000EB4	addu	$3, $8, $7      				
+PC=0x00000EB8	addiu	$7, $7, 1       				
+PC=0x00000EBC	sltu	$2, $7, $6      				
+PC=0x00000EC0	bne	$2, $0, 0x00000EAC      			
+PC=0x00000EC4	sb	$4, 0($3)					
+PC=0x00000EAC	addu	$2, $5, $7      				
+PC=0x00000EB0	lbu	$4, 0($2)					
+PC=0x00000EB4	addu	$3, $8, $7      				
+PC=0x00000EB8	addiu	$7, $7, 1       				
+PC=0x00000EBC	sltu	$2, $7, $6      				
+PC=0x00000EC0	bne	$2, $0, 0x00000EAC      			
+PC=0x00000EC4	sb	$4, 0($3)					
+PC=0x00000EAC	addu	$2, $5, $7      				
+PC=0x00000EB0	lbu	$4, 0($2)					
+PC=0x00000EB4	addu	$3, $8, $7      				
+PC=0x00000EB8	addiu	$7, $7, 1       				
+PC=0x00000EBC	sltu	$2, $7, $6      				
+PC=0x00000EC0	bne	$2, $0, 0x00000EAC      			
+PC=0x00000EC4	sb	$4, 0($3)					
+PC=0x00000EAC	addu	$2, $5, $7      				
+PC=0x00000EB0	lbu	$4, 0($2)					
+PC=0x00000EB4	addu	$3, $8, $7      				
+PC=0x00000EB8	addiu	$7, $7, 1       				
+PC=0x00000EBC	sltu	$2, $7, $6      				
+PC=0x00000EC0	bne	$2, $0, 0x00000EAC      			
+PC=0x00000EC4	sb	$4, 0($3)					
+PC=0x00000EC8	jr	$31      					
+PC=0x00000ECC	addu	$2, $8, $0      				
+PC=0x0000063C	lw	$3, 0($16)					
+PC=0x00000640	addu	$2, $17, $0      				
+PC=0x00000644	addu	$3, $3, $17      				
+PC=0x00000648	sw	$3, 0($16)					
+PC=0x0000064C	lw	$31, 24($29)					
+PC=0x00000650	lw	$17, 20($29)					
+PC=0x00000654	lw	$16, 16($29)					
+PC=0x00000658	jr	$31      					
+PC=0x0000065C	addiu	$29, $29, 32       				
+PC=0x00000848	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000848	lw	$31, 24($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000848	lw	$31, 24($29)					
+PC=0x0000084C	lw	$17, 20($29)					
+PC=0x00000850	lw	$16, 16($29)					
+PC=0x00000854	jr	$31      					
+PC=0x00000858	addiu	$29, $29, 32       				
+PC=0x00000A6C	j	0x000009E8      				
+PC=0x00000A70	addu	$19, $19, $2      				
+PC=0x000009E8	j	0x000008B4      				
+PC=0x000009EC	addu	$16, $17, $0      				
+PC=0x000008B4	lbu	$3, 0($16)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x000008B4	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x000008B4	lbu	$3, 0($16)					
+PC=0x000008B8	sll	$0, $0, 0       				
+PC=0x000008BC	sll	$3, $3, 24       				
+PC=0x000008C0	bne	$3, $0, 0x000008A0      			
+PC=0x000008C4	sra	$3, $3, 24       				
+PC=0x000008C8	blez	$20, 0x000008E0  				
+PC=0x000008CC	subu	$5, $16, $20      				
+PC=0x000008E0	addu	$2, $19, $0      				
+PC=0x000008E4	lw	$3, 56($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x000008E4	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x000008E4	lw	$3, 56($29)					
+PC=0x000008E8	lw	$31, 48($29)					
+PC=0x000008EC	lw	$21, 44($29)					
+PC=0x000008F0	lw	$20, 40($29)					
+PC=0x000008F4	lw	$19, 36($29)					
+PC=0x000008F8	lw	$18, 32($29)					
+PC=0x000008FC	lw	$17, 28($29)					
+PC=0x00000900	lw	$16, 24($29)					
+PC=0x00000904	sb	$0, 0($3)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000904	sb	$0, 0($3)					
+PC=0x00000908	jr	$31      					
+PC=0x0000090C	addiu	$29, $29, 56       				
+PC=0x00000B20	addu	$16, $2, $0      				
+PC=0x00000B24	sltiu	$2, $2, 256       				
+PC=0x00000B28	lui	$4, 0   					
+PC=0x00000B2C	addiu	$4, $4, 4400       				
+PC=0x00000B30	beq	$2, $0, 0x00000B60      			
+PC=0x00000B34	addiu	$5, $0, 151       				
+PC=0x00000B38	addu	$4, $18, $0      				
+PC=0x00000B3C	addu	$5, $17, $0      				
+PC=0x00000B40	jal	0x00000518      				
+PC=0x00000B44	addu	$6, $16, $0      				
+PC=0x00000518	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000518	addiu	$2, $0, 7       				
+PC=0x0000051C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+nachos% PC=0x00000520	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+TLBMiss:	24
+
+Looking for vpn: 1
+
+
+Now printing contents of inverted page table (all physical memory):
+Physical page 0 is assigned to Process 0
+	Used=true	Pinned=false
+Physical page 1 is assigned to Process 0
+	Used=false	Pinned=false
+Physical page 2 is assigned to Process 0
+	Used=false	Pinned=false
+Physical page 3 is assigned to Process 0
+	Used=true	Pinned=false
+
+
+Now printing contents of page table in process 0:
+Virtual page 0 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 1 is mapped to physical page 3
+	readOnly=true	dirty=false
+Virtual page 2 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 3 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 4 is mapped to physical page 1
+	readOnly=true	dirty=false
+Virtual page 5 is mapped to physical page 0
+	readOnly=false	dirty=true
+Virtual page 6 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 7 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 8 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 9 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 10 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 11 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 12 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 13 is mapped to physical page 2
+	readOnly=false	dirty=true
+Virtual page 14 is not mapped to any physical page
+	readOnly=false	dirty=false
+
+
+Now printing info for swap file
+Number of pages in swap file:	1
+Number of unused pages in swap file:	1
+
+TLBMiss:	24
+
+Looking for vpn: 1
+
+
+Now printing contents of inverted page table (all physical memory):
+Physical page 0 is assigned to Process 0
+	Used=true	Pinned=false
+Physical page 1 is assigned to Process 0
+	Used=false	Pinned=false
+Physical page 2 is assigned to Process 0
+	Used=false	Pinned=false
+Physical page 3 is assigned to Process 0
+	Used=true	Pinned=false
+
+
+Now printing contents of page table in process 0:
+Virtual page 0 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 1 is mapped to physical page 3
+	readOnly=true	dirty=false
+Virtual page 2 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 3 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 4 is mapped to physical page 1
+	readOnly=true	dirty=false
+Virtual page 5 is mapped to physical page 0
+	readOnly=false	dirty=true
+Virtual page 6 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 7 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 8 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 9 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 10 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 11 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 12 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 13 is mapped to physical page 2
+	readOnly=false	dirty=true
+Virtual page 14 is not mapped to any physical page
+	readOnly=false	dirty=false
+
+
+Now printing info for swap file
+Number of pages in swap file:	1
+Number of unused pages in swap file:	1
+
+PC=0x00000520	jr	$31      					
+PC=0x00000524	sll	$0, $0, 0       				
+PC=0x00000B48	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+TLBMiss:	25
+
+Looking for vpn: 2
+
+
+Now printing contents of inverted page table (all physical memory):
+Physical page 0 is assigned to Process 0
+	Used=true	Pinned=false
+Physical page 1 is assigned to Process 0
+	Used=false	Pinned=false
+Physical page 2 is assigned to Process 0
+	Used=false	Pinned=false
+Physical page 3 is assigned to Process 0
+	Used=true	Pinned=false
+
+
+Now printing contents of page table in process 0:
+Virtual page 0 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 1 is mapped to physical page 3
+	readOnly=true	dirty=false
+Virtual page 2 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 3 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 4 is mapped to physical page 1
+	readOnly=true	dirty=false
+Virtual page 5 is mapped to physical page 0
+	readOnly=false	dirty=true
+Virtual page 6 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 7 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 8 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 9 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 10 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 11 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 12 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 13 is mapped to physical page 2
+	readOnly=false	dirty=true
+Virtual page 14 is not mapped to any physical page
+	readOnly=false	dirty=false
+
+
+Now printing info for swap file
+Number of pages in swap file:	1
+Number of unused pages in swap file:	1
+
+TLBMiss:	25
+
+Looking for vpn: 2
+
+
+Now printing contents of inverted page table (all physical memory):
+Physical page 0 is assigned to Process 0
+	Used=true	Pinned=false
+Physical page 1 is assigned to Process 0
+	Used=true	Pinned=false
+Physical page 2 is assigned to Process 0
+	Used=false	Pinned=false
+Physical page 3 is assigned to Process 0
+	Used=true	Pinned=false
+
+
+Now printing contents of page table in process 0:
+Virtual page 0 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 1 is mapped to physical page 3
+	readOnly=true	dirty=false
+Virtual page 2 is mapped to physical page 1
+	readOnly=true	dirty=false
+Virtual page 3 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 4 is not mapped to any physical page
+	readOnly=true	dirty=false
+Virtual page 5 is mapped to physical page 0
+	readOnly=false	dirty=true
+Virtual page 6 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 7 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 8 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 9 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 10 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 11 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 12 is not mapped to any physical page
+	readOnly=false	dirty=false
+Virtual page 13 is mapped to physical page 2
+	readOnly=false	dirty=true
+Virtual page 14 is not mapped to any physical page
+	readOnly=false	dirty=false
+
+
+Now printing info for swap file
+Number of pages in swap file:	1
+Number of unused pages in swap file:	1
+
+PC=0x00000B48	lw	$31, 28($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000B48	lw	$31, 28($29)					
+PC=0x00000B4C	lw	$18, 24($29)					
+PC=0x00000B50	lw	$17, 20($29)					
+PC=0x00000B54	lw	$16, 16($29)					
+PC=0x00000B58	jr	$31      					
+PC=0x00000B5C	addiu	$29, $29, 32       				
+PC=0x00000B88	lw	$31, 16($29)					
+PC=0x00000B8C	sll	$0, $0, 0       				
+PC=0x00000B90	jr	$31      					
+PC=0x00000B94	addiu	$29, $29, 24       				
+PC=0x00000C10	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000C10	lw	$31, 16($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000C10	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000C10	lw	$31, 16($29)					
+PC=0x00000C14	sll	$0, $0, 0       				
+PC=0x00000C18	jr	$31      					
+PC=0x00000C1C	addiu	$29, $29, 24       				
+PC=0x0000046C	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x0000046C	addu	$4, $16, $0      				
+PC=0x00000470	jal	0x00000DC0      				
+PC=0x00000474	addiu	$5, $0, 64       				
+PC=0x00000DC0	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000DC0	addiu	$29, $29, -40       				
+PC=0x00000DC4	sw	$20, 32($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000DC4	sw	$20, 32($29)					
+PC=0x00000DC8	sw	$19, 28($29)					
+PC=0x00000DCC	sw	$18, 24($29)					
+PC=0x00000DD0	sw	$17, 20($29)					
+PC=0x00000DD4	sw	$16, 16($29)					
+PC=0x00000DD8	sw	$31, 36($29)					
+PC=0x00000DDC	addu	$20, $4, $0      				
+PC=0x00000DE0	addu	$19, $5, $0      				
+PC=0x00000DE4	addu	$16, $0, $0      				
+PC=0x00000DE8	addiu	$18, $0, 10       				
+PC=0x00000DEC	addiu	$17, $0, 8       				
+PC=0x00000DF0	jal	0x00000F00      				
+PC=0x00000DF4	addu	$4, $0, $0      				
+PC=0x00000F00	addiu	$29, $29, -40       				
+PC=0x00000F04	sw	$17, 28($29)					
+PC=0x00000F08	sw	$16, 24($29)					
+PC=0x00000F0C	sw	$31, 32($29)					
+PC=0x00000F10	addu	$17, $4, $0      				
+PC=0x00000F14	addiu	$16, $0, 1       				
+PC=0x00000F18	addu	$4, $17, $0      				
+PC=0x00000F1C	addiu	$5, $29, 16       				
+PC=0x00000F20	jal	0x00000508      				
+PC=0x00000F24	addiu	$6, $0, 1       				
+PC=0x00000508	addiu	$2, $0, 6       				
+PC=0x0000050C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+PC=0x00000510	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000510	jr	$31      					
+PC=0x00000514	sll	$0, $0, 0       				
+PC=0x00000F28	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F28	bne	$2, $16, 0x00000F1C      			
+PC=0x00000F2C	addu	$4, $17, $0      				
+PC=0x00000F30	lbu	$2, 16($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F30	lbu	$2, 16($29)					
+PC=0x00000F34	lw	$31, 32($29)					
+PC=0x00000F38	lw	$17, 28($29)					
+PC=0x00000F3C	lw	$16, 24($29)					
+PC=0x00000F40	jr	$31      					
+PC=0x00000F44	addiu	$29, $29, 40       				
+PC=0x00000DF8	sll	$2, $2, 24       				
+PC=0x00000DFC	sra	$2, $2, 24       				
+PC=0x00000E00	beq	$2, $18, 0x00000E64      			
+PC=0x00000E04	slti	$3, $2, 32       				
+PC=0x00000E08	beq	$2, $17, 0x00000E44      			
+PC=0x00000E0C	addiu	$4, $0, 7       				
+PC=0x00000E10	addiu	$5, $0, 1       				
+PC=0x00000E14	bne	$3, $0, 0x00000E34      			
+PC=0x00000E18	addiu	$6, $16, 1       				
+PC=0x00000E1C	beq	$6, $19, 0x00000E34      			
+PC=0x00000E20	addu	$3, $20, $16      				
+PC=0x00000E24	sb	$2, 0($3)					
+PC=0x00000E28	addu	$4, $2, $0      				
+PC=0x00000E2C	addiu	$5, $0, 1       				
+PC=0x00000E30	addu	$16, $6, $0      				
+PC=0x00000E34	jal	0x00000F48      				
+PC=0x00000E38	sll	$0, $0, 0       				
+PC=0x00000F48	addiu	$29, $29, -32       				
+PC=0x00000F4C	addu	$2, $4, $0      				
+PC=0x00000F50	addiu	$6, $0, 1       				
+PC=0x00000F54	addu	$4, $5, $0      				
+PC=0x00000F58	addiu	$5, $29, 16       				
+PC=0x00000F5C	sw	$31, 24($29)					
+PC=0x00000F60	jal	0x00000518      				
+PC=0x00000F64	sb	$2, 16($29)					
+PC=0x00000518	addiu	$2, $0, 7       				
+PC=0x0000051C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+ePC=0x00000520	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000520	jr	$31      					
+PC=0x00000524	sll	$0, $0, 0       				
+PC=0x00000F68	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					
+PC=0x00000F6C	sll	$0, $0, 0       				
+PC=0x00000F70	jr	$31      					
+PC=0x00000F74	addiu	$29, $29, 32       				
+PC=0x00000E3C	j	0x00000DF0      				
+PC=0x00000E40	sll	$0, $0, 0       				
+PC=0x00000DF0	jal	0x00000F00      				
+PC=0x00000DF4	addu	$4, $0, $0      				
+PC=0x00000F00	addiu	$29, $29, -40       				
+PC=0x00000F04	sw	$17, 28($29)					
+PC=0x00000F08	sw	$16, 24($29)					
+PC=0x00000F0C	sw	$31, 32($29)					
+PC=0x00000F10	addu	$17, $4, $0      				
+PC=0x00000F14	addiu	$16, $0, 1       				
+PC=0x00000F18	addu	$4, $17, $0      				
+PC=0x00000F1C	addiu	$5, $29, 16       				
+PC=0x00000F20	jal	0x00000508      				
+PC=0x00000F24	addiu	$6, $0, 1       				
+PC=0x00000508	addiu	$2, $0, 6       				
+PC=0x0000050C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+PC=0x00000510	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000510	jr	$31      					
+PC=0x00000514	sll	$0, $0, 0       				
+PC=0x00000F28	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F28	bne	$2, $16, 0x00000F1C      			
+PC=0x00000F2C	addu	$4, $17, $0      				
+PC=0x00000F30	lbu	$2, 16($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F30	lbu	$2, 16($29)					
+PC=0x00000F34	lw	$31, 32($29)					
+PC=0x00000F38	lw	$17, 28($29)					
+PC=0x00000F3C	lw	$16, 24($29)					
+PC=0x00000F40	jr	$31      					
+PC=0x00000F44	addiu	$29, $29, 40       				
+PC=0x00000DF8	sll	$2, $2, 24       				
+PC=0x00000DFC	sra	$2, $2, 24       				
+PC=0x00000E00	beq	$2, $18, 0x00000E64      			
+PC=0x00000E04	slti	$3, $2, 32       				
+PC=0x00000E08	beq	$2, $17, 0x00000E44      			
+PC=0x00000E0C	addiu	$4, $0, 7       				
+PC=0x00000E10	addiu	$5, $0, 1       				
+PC=0x00000E14	bne	$3, $0, 0x00000E34      			
+PC=0x00000E18	addiu	$6, $16, 1       				
+PC=0x00000E1C	beq	$6, $19, 0x00000E34      			
+PC=0x00000E20	addu	$3, $20, $16      				
+PC=0x00000E24	sb	$2, 0($3)					
+PC=0x00000E28	addu	$4, $2, $0      				
+PC=0x00000E2C	addiu	$5, $0, 1       				
+PC=0x00000E30	addu	$16, $6, $0      				
+PC=0x00000E34	jal	0x00000F48      				
+PC=0x00000E38	sll	$0, $0, 0       				
+PC=0x00000F48	addiu	$29, $29, -32       				
+PC=0x00000F4C	addu	$2, $4, $0      				
+PC=0x00000F50	addiu	$6, $0, 1       				
+PC=0x00000F54	addu	$4, $5, $0      				
+PC=0x00000F58	addiu	$5, $29, 16       				
+PC=0x00000F5C	sw	$31, 24($29)					
+PC=0x00000F60	jal	0x00000518      				
+PC=0x00000F64	sb	$2, 16($29)					
+PC=0x00000518	addiu	$2, $0, 7       				
+PC=0x0000051C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+xPC=0x00000520	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000520	jr	$31      					
+PC=0x00000524	sll	$0, $0, 0       				
+PC=0x00000F68	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					
+PC=0x00000F6C	sll	$0, $0, 0       				
+PC=0x00000F70	jr	$31      					
+PC=0x00000F74	addiu	$29, $29, 32       				
+PC=0x00000E3C	j	0x00000DF0      				
+PC=0x00000E40	sll	$0, $0, 0       				
+PC=0x00000DF0	jal	0x00000F00      				
+PC=0x00000DF4	addu	$4, $0, $0      				
+PC=0x00000F00	addiu	$29, $29, -40       				
+PC=0x00000F04	sw	$17, 28($29)					
+PC=0x00000F08	sw	$16, 24($29)					
+PC=0x00000F0C	sw	$31, 32($29)					
+PC=0x00000F10	addu	$17, $4, $0      				
+PC=0x00000F14	addiu	$16, $0, 1       				
+PC=0x00000F18	addu	$4, $17, $0      				
+PC=0x00000F1C	addiu	$5, $29, 16       				
+PC=0x00000F20	jal	0x00000508      				
+PC=0x00000F24	addiu	$6, $0, 1       				
+PC=0x00000508	addiu	$2, $0, 6       				
+PC=0x0000050C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+PC=0x00000510	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000510	jr	$31      					
+PC=0x00000514	sll	$0, $0, 0       				
+PC=0x00000F28	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F28	bne	$2, $16, 0x00000F1C      			
+PC=0x00000F2C	addu	$4, $17, $0      				
+PC=0x00000F30	lbu	$2, 16($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F30	lbu	$2, 16($29)					
+PC=0x00000F34	lw	$31, 32($29)					
+PC=0x00000F38	lw	$17, 28($29)					
+PC=0x00000F3C	lw	$16, 24($29)					
+PC=0x00000F40	jr	$31      					
+PC=0x00000F44	addiu	$29, $29, 40       				
+PC=0x00000DF8	sll	$2, $2, 24       				
+PC=0x00000DFC	sra	$2, $2, 24       				
+PC=0x00000E00	beq	$2, $18, 0x00000E64      			
+PC=0x00000E04	slti	$3, $2, 32       				
+PC=0x00000E08	beq	$2, $17, 0x00000E44      			
+PC=0x00000E0C	addiu	$4, $0, 7       				
+PC=0x00000E10	addiu	$5, $0, 1       				
+PC=0x00000E14	bne	$3, $0, 0x00000E34      			
+PC=0x00000E18	addiu	$6, $16, 1       				
+PC=0x00000E1C	beq	$6, $19, 0x00000E34      			
+PC=0x00000E20	addu	$3, $20, $16      				
+PC=0x00000E24	sb	$2, 0($3)					
+PC=0x00000E28	addu	$4, $2, $0      				
+PC=0x00000E2C	addiu	$5, $0, 1       				
+PC=0x00000E30	addu	$16, $6, $0      				
+PC=0x00000E34	jal	0x00000F48      				
+PC=0x00000E38	sll	$0, $0, 0       				
+PC=0x00000F48	addiu	$29, $29, -32       				
+PC=0x00000F4C	addu	$2, $4, $0      				
+PC=0x00000F50	addiu	$6, $0, 1       				
+PC=0x00000F54	addu	$4, $5, $0      				
+PC=0x00000F58	addiu	$5, $29, 16       				
+PC=0x00000F5C	sw	$31, 24($29)					
+PC=0x00000F60	jal	0x00000518      				
+PC=0x00000F64	sb	$2, 16($29)					
+PC=0x00000518	addiu	$2, $0, 7       				
+PC=0x0000051C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+iPC=0x00000520	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000520	jr	$31      					
+PC=0x00000524	sll	$0, $0, 0       				
+PC=0x00000F68	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					
+PC=0x00000F6C	sll	$0, $0, 0       				
+PC=0x00000F70	jr	$31      					
+PC=0x00000F74	addiu	$29, $29, 32       				
+PC=0x00000E3C	j	0x00000DF0      				
+PC=0x00000E40	sll	$0, $0, 0       				
+PC=0x00000DF0	jal	0x00000F00      				
+PC=0x00000DF4	addu	$4, $0, $0      				
+PC=0x00000F00	addiu	$29, $29, -40       				
+PC=0x00000F04	sw	$17, 28($29)					
+PC=0x00000F08	sw	$16, 24($29)					
+PC=0x00000F0C	sw	$31, 32($29)					
+PC=0x00000F10	addu	$17, $4, $0      				
+PC=0x00000F14	addiu	$16, $0, 1       				
+PC=0x00000F18	addu	$4, $17, $0      				
+PC=0x00000F1C	addiu	$5, $29, 16       				
+PC=0x00000F20	jal	0x00000508      				
+PC=0x00000F24	addiu	$6, $0, 1       				
+PC=0x00000508	addiu	$2, $0, 6       				
+PC=0x0000050C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+PC=0x00000510	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000510	jr	$31      					
+PC=0x00000514	sll	$0, $0, 0       				
+PC=0x00000F28	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F28	bne	$2, $16, 0x00000F1C      			
+PC=0x00000F2C	addu	$4, $17, $0      				
+PC=0x00000F30	lbu	$2, 16($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F30	lbu	$2, 16($29)					
+PC=0x00000F34	lw	$31, 32($29)					
+PC=0x00000F38	lw	$17, 28($29)					
+PC=0x00000F3C	lw	$16, 24($29)					
+PC=0x00000F40	jr	$31      					
+PC=0x00000F44	addiu	$29, $29, 40       				
+PC=0x00000DF8	sll	$2, $2, 24       				
+PC=0x00000DFC	sra	$2, $2, 24       				
+PC=0x00000E00	beq	$2, $18, 0x00000E64      			
+PC=0x00000E04	slti	$3, $2, 32       				
+PC=0x00000E08	beq	$2, $17, 0x00000E44      			
+PC=0x00000E0C	addiu	$4, $0, 7       				
+PC=0x00000E10	addiu	$5, $0, 1       				
+PC=0x00000E14	bne	$3, $0, 0x00000E34      			
+PC=0x00000E18	addiu	$6, $16, 1       				
+PC=0x00000E1C	beq	$6, $19, 0x00000E34      			
+PC=0x00000E20	addu	$3, $20, $16      				
+PC=0x00000E24	sb	$2, 0($3)					
+PC=0x00000E28	addu	$4, $2, $0      				
+PC=0x00000E2C	addiu	$5, $0, 1       				
+PC=0x00000E30	addu	$16, $6, $0      				
+PC=0x00000E34	jal	0x00000F48      				
+PC=0x00000E38	sll	$0, $0, 0       				
+PC=0x00000F48	addiu	$29, $29, -32       				
+PC=0x00000F4C	addu	$2, $4, $0      				
+PC=0x00000F50	addiu	$6, $0, 1       				
+PC=0x00000F54	addu	$4, $5, $0      				
+PC=0x00000F58	addiu	$5, $29, 16       				
+PC=0x00000F5C	sw	$31, 24($29)					
+PC=0x00000F60	jal	0x00000518      				
+PC=0x00000F64	sb	$2, 16($29)					
+PC=0x00000518	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000518	addiu	$2, $0, 7       				
+PC=0x0000051C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+tPC=0x00000520	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000520	jr	$31      					
+PC=0x00000524	sll	$0, $0, 0       				
+PC=0x00000F68	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					
+PC=0x00000F6C	sll	$0, $0, 0       				
+PC=0x00000F70	jr	$31      					
+PC=0x00000F74	addiu	$29, $29, 32       				
+PC=0x00000E3C	j	0x00000DF0      				
+PC=0x00000E40	sll	$0, $0, 0       				
+PC=0x00000DF0	jal	0x00000F00      				
+PC=0x00000DF4	addu	$4, $0, $0      				
+PC=0x00000F00	addiu	$29, $29, -40       				
+PC=0x00000F04	sw	$17, 28($29)					
+PC=0x00000F08	sw	$16, 24($29)					
+PC=0x00000F0C	sw	$31, 32($29)					
+PC=0x00000F10	addu	$17, $4, $0      				
+PC=0x00000F14	addiu	$16, $0, 1       				
+PC=0x00000F18	addu	$4, $17, $0      				
+PC=0x00000F1C	addiu	$5, $29, 16       				
+PC=0x00000F20	jal	0x00000508      				
+PC=0x00000F24	addiu	$6, $0, 1       				
+PC=0x00000508	addiu	$2, $0, 6       				
+PC=0x0000050C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+PC=0x00000510	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000510	jr	$31      					
+PC=0x00000514	sll	$0, $0, 0       				
+PC=0x00000F28	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F28	bne	$2, $16, 0x00000F1C      			
+PC=0x00000F2C	addu	$4, $17, $0      				
+PC=0x00000F30	lbu	$2, 16($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F30	lbu	$2, 16($29)					
+PC=0x00000F34	lw	$31, 32($29)					
+PC=0x00000F38	lw	$17, 28($29)					
+PC=0x00000F3C	lw	$16, 24($29)					
+PC=0x00000F40	jr	$31      					
+PC=0x00000F44	addiu	$29, $29, 40       				
+PC=0x00000DF8	sll	$2, $2, 24       				
+PC=0x00000DFC	sra	$2, $2, 24       				
+PC=0x00000E00	beq	$2, $18, 0x00000E64      			
+PC=0x00000E04	slti	$3, $2, 32       				
+PC=0x00000E64	addiu	$4, $0, 10       				
+PC=0x00000E68	jal	0x00000F48      				
+PC=0x00000E6C	addiu	$5, $0, 1       				
+PC=0x00000F48	addiu	$29, $29, -32       				
+PC=0x00000F4C	addu	$2, $4, $0      				
+PC=0x00000F50	addiu	$6, $0, 1       				
+PC=0x00000F54	addu	$4, $5, $0      				
+PC=0x00000F58	addiu	$5, $29, 16       				
+PC=0x00000F5C	sw	$31, 24($29)					
+PC=0x00000F60	jal	0x00000518      				
+PC=0x00000F64	sb	$2, 16($29)					
+PC=0x00000518	addiu	$2, $0, 7       				
+PC=0x0000051C	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+
+PC=0x00000520	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000520	jr	$31      					
+PC=0x00000524	sll	$0, $0, 0       				
+PC=0x00000F68	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000F68	lw	$31, 24($29)					
+PC=0x00000F6C	sll	$0, $0, 0       				
+PC=0x00000F70	jr	$31      					
+PC=0x00000F74	addiu	$29, $29, 32       				
+PC=0x00000E70	addu	$2, $20, $16      				
+PC=0x00000E74	lw	$31, 36($29)					
+PC=0x00000E78	lw	$20, 32($29)					
+PC=0x00000E7C	lw	$19, 28($29)					
+PC=0x00000E80	lw	$18, 24($29)					
+PC=0x00000E84	lw	$17, 20($29)					
+PC=0x00000E88	lw	$16, 16($29)					
+PC=0x00000E8C	sb	$0, 0($2)					
+PC=0x00000E90	jr	$31      					
+PC=0x00000E94	addiu	$29, $29, 40       				
+PC=0x00000478	jal	0x000001F4      				
+PC=0x0000047C	addu	$4, $16, $0      				
+PC=0x000001F4	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x000001F4	addiu	$29, $29, -240       				
+PC=0x000001F8	sw	$18, 224($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x000001F8	sw	$18, 224($29)					
+PC=0x000001FC	addiu	$18, $29, 144       				
+PC=0x00000200	addiu	$5, $0, 16       				
+PC=0x00000204	addu	$6, $18, $0      				
+PC=0x00000208	addiu	$7, $29, 16       				
+PC=0x0000020C	sw	$17, 220($29)					
+PC=0x00000210	sw	$31, 232($29)					
+PC=0x00000214	sw	$19, 228($29)					
+PC=0x00000218	jal	0x00000000      				
+PC=0x0000021C	sw	$16, 216($29)					
+PC=0x00000000	addiu	$29, $29, -48       				
+PC=0x00000004	sw	$21, 36($29)					
+PC=0x00000008	sw	$20, 32($29)					
+PC=0x0000000C	sw	$19, 28($29)					
+PC=0x00000010	sw	$18, 24($29)					
+PC=0x00000014	sw	$17, 20($29)					
+PC=0x00000018	sw	$16, 16($29)					
+PC=0x0000001C	sw	$31, 40($29)					
+PC=0x00000020	addu	$21, $5, $0      				
+PC=0x00000024	addu	$16, $4, $0      				
+PC=0x00000028	addu	$19, $6, $0      				
+PC=0x0000002C	addu	$17, $7, $0      				
+PC=0x00000030	addu	$18, $0, $0      				
+PC=0x00000034	blez	$5, 0x000001DC  				
+PC=0x00000038	addu	$20, $0, $0      				
+PC=0x0000003C	lb	$3, 0($16)					
+PC=0x00000040	sll	$0, $0, 0       				
+PC=0x00000044	beq	$3, $0, 0x000001D4      			
+PC=0x00000048	addiu	$16, $16, 1       				
+PC=0x0000004C	addu	$6, $19, $0      				
+PC=0x00000050	addu	$4, $0, $0      				
+PC=0x00000054	addiu	$7, $0, 110       				
+PC=0x00000058	addiu	$8, $0, 116       				
+PC=0x0000005C	addiu	$5, $0, -2       				
+PC=0x00000060	addiu	$9, $0, 34       				
+PC=0x00000064	addiu	$11, $0, 92       				
+PC=0x00000068	addiu	$13, $0, -3       				
+PC=0x0000006C	addiu	$14, $0, 32       				
+PC=0x00000070	addiu	$15, $0, -5       				
+PC=0x00000074	addiu	$10, $0, 34       				
+PC=0x00000078	addiu	$12, $0, 92       				
+PC=0x0000007C	beq	$4, $0, 0x00000130      			
+PC=0x00000080	andi	$2, $18, 2       				
+PC=0x00000130	beq	$2, $0, 0x00000164      			
+PC=0x00000134	sll	$0, $0, 0       				
+PC=0x00000164	slti	$2, $3, 9       				
+PC=0x00000168	bne	$2, $0, 0x00000184      			
+PC=0x0000016C	andi	$2, $18, 4       				
+PC=0x00000170	slti	$2, $3, 11       				
+PC=0x00000174	bne	$2, $0, 0x000001C0      			
+PC=0x00000178	andi	$2, $18, 4       				
+PC=0x0000017C	beq	$3, $14, 0x000001C0      			
+PC=0x00000180	sll	$0, $0, 0       				
+PC=0x00000184	bne	$2, $0, 0x000001A0      			
+PC=0x00000188	sll	$0, $0, 0       				
+PC=0x0000018C	beq	$20, $21, 0x0000010C      			
+PC=0x00000190	addiu	$20, $20, 1       				
+PC=0x00000194	sw	$17, 0($6)					
+PC=0x00000198	addiu	$6, $6, 4       				
+PC=0x0000019C	ori	$18, $18, 4       				
+PC=0x000001A0	beq	$3, $10, 0x000001B8      			
+PC=0x000001A4	sll	$0, $0, 0       				
+PC=0x000001A8	bne	$3, $12, 0x00000098      			
+PC=0x000001AC	sll	$0, $0, 0       				
+PC=0x00000098	sb	$3, 0($17)					
+PC=0x0000009C	andi	$4, $18, 1       				
+PC=0x000000A0	addiu	$17, $17, 1       				
+PC=0x000000A4	lb	$3, 0($16)					
+PC=0x000000A8	sll	$0, $0, 0       				
+PC=0x000000AC	bne	$3, $0, 0x0000007C      			
+PC=0x000000B0	addiu	$16, $16, 1       				
+PC=0x0000007C	beq	$4, $0, 0x00000130      			
+PC=0x00000080	andi	$2, $18, 2       				
+PC=0x00000130	beq	$2, $0, 0x00000164      			
+PC=0x00000134	sll	$0, $0, 0       				
+PC=0x00000164	slti	$2, $3, 9       				
+PC=0x00000168	bne	$2, $0, 0x00000184      			
+PC=0x0000016C	andi	$2, $18, 4       				
+PC=0x00000170	slti	$2, $3, 11       				
+PC=0x00000174	bne	$2, $0, 0x000001C0      			
+PC=0x00000178	andi	$2, $18, 4       				
+PC=0x0000017C	beq	$3, $14, 0x000001C0      			
+PC=0x00000180	sll	$0, $0, 0       				
+PC=0x00000184	bne	$2, $0, 0x000001A0      			
+PC=0x00000188	sll	$0, $0, 0       				
+PC=0x000001A0	beq	$3, $10, 0x000001B8      			
+PC=0x000001A4	sll	$0, $0, 0       				
+PC=0x000001A8	bne	$3, $12, 0x00000098      			
+PC=0x000001AC	sll	$0, $0, 0       				
+PC=0x00000098	sb	$3, 0($17)					
+PC=0x0000009C	andi	$4, $18, 1       				
+PC=0x000000A0	addiu	$17, $17, 1       				
+PC=0x000000A4	lb	$3, 0($16)					
+PC=0x000000A8	sll	$0, $0, 0       				
+PC=0x000000AC	bne	$3, $0, 0x0000007C      			
+PC=0x000000B0	addiu	$16, $16, 1       				
+PC=0x0000007C	beq	$4, $0, 0x00000130      			
+PC=0x00000080	andi	$2, $18, 2       				
+PC=0x00000130	beq	$2, $0, 0x00000164      			
+PC=0x00000134	sll	$0, $0, 0       				
+PC=0x00000164	slti	$2, $3, 9       				
+PC=0x00000168	bne	$2, $0, 0x00000184      			
+PC=0x0000016C	andi	$2, $18, 4       				
+PC=0x00000170	slti	$2, $3, 11       				
+PC=0x00000174	bne	$2, $0, 0x000001C0      			
+PC=0x00000178	andi	$2, $18, 4       				
+PC=0x0000017C	beq	$3, $14, 0x000001C0      			
+PC=0x00000180	sll	$0, $0, 0       				
+PC=0x00000184	bne	$2, $0, 0x000001A0      			
+PC=0x00000188	sll	$0, $0, 0       				
+PC=0x000001A0	beq	$3, $10, 0x000001B8      			
+PC=0x000001A4	sll	$0, $0, 0       				
+PC=0x000001A8	bne	$3, $12, 0x00000098      			
+PC=0x000001AC	sll	$0, $0, 0       				
+PC=0x00000098	sb	$3, 0($17)					
+PC=0x0000009C	andi	$4, $18, 1       				
+PC=0x000000A0	addiu	$17, $17, 1       				
+PC=0x000000A4	lb	$3, 0($16)					
+PC=0x000000A8	sll	$0, $0, 0       				
+PC=0x000000AC	bne	$3, $0, 0x0000007C      			
+PC=0x000000B0	addiu	$16, $16, 1       				
+PC=0x0000007C	beq	$4, $0, 0x00000130      			
+PC=0x00000080	andi	$2, $18, 2       				
+PC=0x00000130	beq	$2, $0, 0x00000164      			
+PC=0x00000134	sll	$0, $0, 0       				
+PC=0x00000164	slti	$2, $3, 9       				
+PC=0x00000168	bne	$2, $0, 0x00000184      			
+PC=0x0000016C	andi	$2, $18, 4       				
+PC=0x00000170	slti	$2, $3, 11       				
+PC=0x00000174	bne	$2, $0, 0x000001C0      			
+PC=0x00000178	andi	$2, $18, 4       				
+PC=0x0000017C	beq	$3, $14, 0x000001C0      			
+PC=0x00000180	sll	$0, $0, 0       				
+PC=0x00000184	bne	$2, $0, 0x000001A0      			
+PC=0x00000188	sll	$0, $0, 0       				
+PC=0x000001A0	beq	$3, $10, 0x000001B8      			
+PC=0x000001A4	sll	$0, $0, 0       				
+PC=0x000001A8	bne	$3, $12, 0x00000098      			
+PC=0x000001AC	sll	$0, $0, 0       				
+PC=0x00000098	sb	$3, 0($17)					
+PC=0x0000009C	andi	$4, $18, 1       				
+PC=0x000000A0	addiu	$17, $17, 1       				
+PC=0x000000A4	lb	$3, 0($16)					
+PC=0x000000A8	sll	$0, $0, 0       				
+PC=0x000000AC	bne	$3, $0, 0x0000007C      			
+PC=0x000000B0	addiu	$16, $16, 1       				
+PC=0x000000B4	bne	$4, $0, 0x00000114      			
+PC=0x000000B8	sll	$0, $0, 0       				
+PC=0x000000BC	andi	$2, $18, 2       				
+PC=0x000000C0	bne	$2, $0, 0x000000FC      			
+PC=0x000000C4	sll	$0, $0, 0       				
+PC=0x000000C8	andi	$2, $18, 4       				
+PC=0x000000CC	beq	$2, $0, 0x000000D8      			
+PC=0x000000D0	addu	$2, $20, $0      				
+PC=0x000000D4	sb	$0, 0($17)					
+PC=0x000000D8	lw	$31, 40($29)					
+PC=0x000000DC	lw	$21, 36($29)					
+PC=0x000000E0	lw	$20, 32($29)					
+PC=0x000000E4	lw	$19, 28($29)					
+PC=0x000000E8	lw	$18, 24($29)					
+PC=0x000000EC	lw	$17, 20($29)					
+PC=0x000000F0	lw	$16, 16($29)					
+PC=0x000000F4	jr	$31      					
+PC=0x000000F8	addiu	$29, $29, 48       				
+PC=0x00000220	blez	$2, 0x00000294  				
+PC=0x00000224	addu	$17, $2, $0      				
+PC=0x00000228	sll	$2, $2, 2       				
+PC=0x0000022C	addu	$3, $29, $2      				
+PC=0x00000230	lw	$4, 140($3)					
+PC=0x00000234	lui	$5, 0   					
+PC=0x00000238	jal	0x00000C60      				
+PC=0x0000023C	addiu	$5, $5, 4136       				
+PC=0x00000C60	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000C60	lb	$3, 0($4)					
+PC=0x00000C64	lb	$6, 0($5)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000C64	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000C64	lb	$6, 0($5)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000C64	lb	$6, 0($5)					
+PC=0x00000C68	sll	$0, $0, 0       				
+PC=0x00000C6C	slt	$2, $3, $6      				
+PC=0x00000C70	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C74	addiu	$7, $0, -1       				
+PC=0x00000C78	slt	$2, $6, $3      				
+PC=0x00000C7C	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C80	addiu	$7, $0, 1       				
+PC=0x00000C9C	jr	$31      					
+PC=0x00000CA0	addu	$2, $7, $0      				
+PC=0x00000240	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000240	bne	$2, $0, 0x00000250      			
+PC=0x00000244	addu	$19, $0, $0      				
+PC=0x00000250	blez	$17, 0x00000294  				
+PC=0x00000254	sll	$0, $0, 0       				
+PC=0x00000258	lw	$4, 144($29)					exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x00000258	lw	$4, 144($29)					
+PC=0x0000025C	lui	$5, 0   					
+PC=0x00000260	jal	0x00000C60      				
+PC=0x00000264	addiu	$5, $5, 4140       				
+PC=0x00000C60	lb	$3, 0($4)					
+PC=0x00000C64	lb	$6, 0($5)					
+PC=0x00000C68	sll	$0, $0, 0       				
+PC=0x00000C6C	slt	$2, $3, $6      				
+PC=0x00000C70	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C74	addiu	$7, $0, -1       				
+PC=0x00000C78	slt	$2, $6, $3      				
+PC=0x00000C7C	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C80	addiu	$7, $0, 1       				
+PC=0x00000C84	addiu	$5, $5, 1       				
+PC=0x00000C88	beq	$3, $0, 0x00000C98      			
+PC=0x00000C8C	addiu	$4, $4, 1       				
+PC=0x00000C90	bne	$6, $0, 0x00000C60      			
+PC=0x00000C94	sll	$0, $0, 0       				
+PC=0x00000C60	lb	$3, 0($4)					
+PC=0x00000C64	lb	$6, 0($5)					
+PC=0x00000C68	sll	$0, $0, 0       				
+PC=0x00000C6C	slt	$2, $3, $6      				
+PC=0x00000C70	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C74	addiu	$7, $0, -1       				
+PC=0x00000C78	slt	$2, $6, $3      				
+PC=0x00000C7C	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C80	addiu	$7, $0, 1       				
+PC=0x00000C84	addiu	$5, $5, 1       				
+PC=0x00000C88	beq	$3, $0, 0x00000C98      			
+PC=0x00000C8C	addiu	$4, $4, 1       				
+PC=0x00000C90	bne	$6, $0, 0x00000C60      			
+PC=0x00000C94	sll	$0, $0, 0       				
+PC=0x00000C60	lb	$3, 0($4)					
+PC=0x00000C64	lb	$6, 0($5)					
+PC=0x00000C68	sll	$0, $0, 0       				
+PC=0x00000C6C	slt	$2, $3, $6      				
+PC=0x00000C70	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C74	addiu	$7, $0, -1       				
+PC=0x00000C78	slt	$2, $6, $3      				
+PC=0x00000C7C	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C80	addiu	$7, $0, 1       				
+PC=0x00000C84	addiu	$5, $5, 1       				
+PC=0x00000C88	beq	$3, $0, 0x00000C98      			
+PC=0x00000C8C	addiu	$4, $4, 1       				
+PC=0x00000C90	bne	$6, $0, 0x00000C60      			
+PC=0x00000C94	sll	$0, $0, 0       				
+PC=0x00000C60	lb	$3, 0($4)					
+PC=0x00000C64	lb	$6, 0($5)					
+PC=0x00000C68	sll	$0, $0, 0       				
+PC=0x00000C6C	slt	$2, $3, $6      				
+PC=0x00000C70	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C74	addiu	$7, $0, -1       				
+PC=0x00000C78	slt	$2, $6, $3      				
+PC=0x00000C7C	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C80	addiu	$7, $0, 1       				
+PC=0x00000C84	addiu	$5, $5, 1       				
+PC=0x00000C88	beq	$3, $0, 0x00000C98      			
+PC=0x00000C8C	addiu	$4, $4, 1       				
+PC=0x00000C90	bne	$6, $0, 0x00000C60      			
+PC=0x00000C94	sll	$0, $0, 0       				
+PC=0x00000C60	lb	$3, 0($4)					
+PC=0x00000C64	lb	$6, 0($5)					
+PC=0x00000C68	sll	$0, $0, 0       				
+PC=0x00000C6C	slt	$2, $3, $6      				
+PC=0x00000C70	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C74	addiu	$7, $0, -1       				
+PC=0x00000C78	slt	$2, $6, $3      				
+PC=0x00000C7C	bne	$2, $0, 0x00000C9C      			
+PC=0x00000C80	addiu	$7, $0, 1       				
+PC=0x00000C84	addiu	$5, $5, 1       				
+PC=0x00000C88	beq	$3, $0, 0x00000C98      			
+PC=0x00000C8C	addiu	$4, $4, 1       				
+PC=0x00000C98	addu	$7, $0, $0      				
+PC=0x00000C9C	jr	$31      					
+PC=0x00000CA0	addu	$2, $7, $0      				
+PC=0x00000268	bne	$2, $0, 0x00000354      			
+PC=0x0000026C	addiu	$2, $0, 1       				
+PC=0x00000270	beq	$17, $2, 0x000002C0      			
+PC=0x00000274	addu	$4, $0, $0      				
+PC=0x000002C0	jal	0x000004B8      				
+PC=0x000002C4	sll	$0, $0, 0       				
+PC=0x000004B8	exception: TLB miss     
+Handle Exception in VMProcess		cause: 2
+
+PC=0x000004B8	addiu	$2, $0, 1       				
+PC=0x000004BC	syscall	exception: syscall      
+Handle Exception in VMProcess		cause: 0
+
+Machine halting!
+
+Ticks: total 36331342, kernel 36330380, user 962
+Disk I/O: reads 0, writes 0
+Console I/O: reads 6, writes 14
+Paging: page faults 0, TLB misses 72
+Network I/O: received 0, sent 0

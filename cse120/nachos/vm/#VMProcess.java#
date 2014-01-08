@@ -1,0 +1,645 @@
+package nachos.vm;
+
+import nachos.machine.*;
+import nachos.threads.*;
+import nachos.userprog.*;
+import nachos.vm.*;
+import java.util.Random;
+
+/**
+ * A <tt>UserProcess</tt> that supports demand-paging.
+ */
+public class VMProcess extends UserProcess {
+    /**
+     * Allocate a new process.
+     */
+    public VMProcess() {
+	super();
+    }
+
+    /**
+     * Save the state of this process in preparation for a context switch.
+     * Called by <tt>UThread.saveState()</tt>.
+     */
+    public void saveState() {
+        //make all entries in TLB invalid (they all refer to this process's virtual address space)   //DAC
+        //might need to save a copy of TLB for use upon restore
+        Lib.debug(trace,"Saving state in VMProcess\n");
+        TranslationEntry entry=new TranslationEntry();   //DAC DEBUG
+        for (int i = 0; i < Machine.processor().getTLBSize(); i++) {
+	    entry = Machine.processor().readTLBEntry(i);
+	    if (entry.valid) {
+                //update vpn with values (probably necessary) and update invertedPageTable too
+	        if(entry.dirty){
+    		    pageTable[entry.vpn].dirty = entry.dirty;
+                }
+                if(entry.used){     
+    		    pageTable[entry.vpn].used = entry.used;
+                    VMKernel.invertedPageTable[entry.ppn].used=entry.used;    //DAC   
+		}
+		entry.valid = false;
+		Machine.processor().writeTLBEntry(i, entry);  //Unnecessary?? DAC DEBUG
+	    }
+	}
+	super.saveState();
+    }
+
+    /**
+     * Restore the state of this process after a context switch. Called by
+     * <tt>UThread.restoreState()</tt>.
+     */
+    public void restoreState() {
+        //might need to restore a saved copy of TLB?
+	//super.restoreState();     //might need to undo the "setPageTable" command in super since we are no longer using a pageTable in processor? DAC ???
+        return;
+    }
+
+    /**
+     * Initializes page tables for this process so that the executable can be
+     * demand-paged.
+     *
+     * @return	<tt>true</tt> if successful.
+     */
+    protected boolean loadSections() {
+        //Load pageTable with a bunch of invalid pages that have not been written (valid = 0 and dirty = 0) (might start with NULL, but invalid is choice for now)  DAC
+        //also load coffMap
+	coffMap=new ptBucket[numPages];   //new map for pageTable
+        pageTable = new TranslationEntry[numPages];  //num pages
+        numCoffPages=numPages-(stackPages+1);  //so we can check if coff or not this way if we want to //DAC DEBUG (implementation change maybe)
+        for(int i=0; i<numPages;i++){
+            pageTable[i]=new TranslationEntry(i,-1, false, false, false, false); //-1 might not work for ppn DAC
+            coffMap[i] = new ptBucket();
+        }
+
+        //go through and record in each entry in coffMap, the section that is mapped to it (for all sections)
+	for (int s=0; s<coff.getNumSections(); s++) {
+	    CoffSection section = coff.getSection(s);
+
+	    Lib.debug(dbgProcess, "\tinitializing " + section.getName()
+		      + " section (" + section.getLength() + " pages)");
+
+	    for (int i=0; i<section.getLength(); i++) {
+		int vpn = section.getFirstVPN()+i;
+
+		//int ppn = UserKernel.availablePages.remove().ppn;                                                                          
+		pageTable[vpn].readOnly = section.isReadOnly();
+                coffMap[vpn].section=section;   //record the section associated with this vpn
+                coffMap[vpn].sectionPage=i;     //record the page within the section (used for loadpage()
+		//section.loadPage(i, getPhysicalPage(vpn,false));           
+		//section.loadPage(i, pageTable[vpn].ppn);
+
+	    }
+	}
+
+	return true;
+    }
+
+    /**
+     * Release any resources allocated by <tt>loadSections()</tt>.
+     */
+    protected void unloadSections() {
+        //this method might be less necessary than before, but haven't yet analyzed DAC
+        VMKernel.memLock.acquire(); //gotta get the lock
+        VMKernel.memLockOwner=this.pid;  //DEBUG
+        for(int i=0; i<numPages; i++){
+            if(pageTable[i].valid){
+              int ppn=pageTable[i].ppn;
+              VMKernel.invertedPageTable[ppn].assigned=false;
+              VMKernel.invertedPageTable[ppn].used=false;
+              VMKernel.invertedPageTable[ppn].process=null;
+            }
+        }
+        VMKernel.memLockOwner=-1;  //DEBUG
+        VMKernel.memLock.release();
+        return;
+
+    }
+
+    /******************************************************************************************************
+     *pageFault() - gets and initializes a page from physical memory for the specified vpn
+     *params: 
+     *  vpn - the vpn in question
+     *return: N/A
+     *****************************************************************************************************/
+    public void pageFault(int vpn){
+	//assertTrue memLock DAC DEBUG
+            int newPage = VMKernel.getAvailablePage(this, vpn);   //gimme a page to use biznitch!  DAC
+            initializePage(newPage,vpn);   //initialize page with information
+            return;
+    }
+    
+
+    /******************************************************************************************************
+     *handleTLBMiss() - checks if the given address is valid.  If it is valid, it assigns the TLB in the 
+     *                  page table to the TLB. Otherwise, it gets a page from physical memory to create
+     *                  a valid mapping and then 
+     *params: 
+     *  vAddr - the virtual address in question
+     *return: N/A
+     *****************************************************************************************************/
+    public void handleTLBMiss(int vAddr){
+	TLBCount++;  //DEBUG
+            VMKernel.memLock.acquire();
+            VMKernel.memLockOwner=this.pid;  //DEBUG
+            int vpn = Processor.pageFromAddress(vAddr);                  //get virtual page from badAddr
+            if(TLBCount>23){  //DEBUG
+		Lib.debug(w,"TLBMiss:\t"+TLBCount+"\n");
+                Lib.debug(w,"Looking for vpn: "+vpn+"\n");
+                memDebug();
+	    }
+
+            Lib.debug(lock, test.printLock());
+            //invalid VPN in the first place
+            Lib.assertTrue(vpn>=0 && vpn<numPages);
+	    if (vpn < 0 || vpn >= numPages){
+                //return false;  gotta do something here, but what?  DAC DEBUG!!! 
+                //call handleExit DEBUG DAC IMPLEMENT
+            }
+            if(checkValidAddress(vpn)==false){
+                pageFault(vpn);
+            }
+            addToTLB(vpn);   //add entry to TLB
+            if(TLBCount>23){  //DEBUG
+		Lib.debug(w,"TLBMiss:\t"+TLBCount+"\n");
+                Lib.debug(w,"Looking for vpn: "+vpn+"\n");
+                memDebug();
+	    }
+            VMKernel.memLockOwner=-1;  //DEBUG
+            Lib.debug(lock, test.printLock());
+            VMKernel.memLock.release();
+            return;
+    }
+
+
+    /**
+     * Handle a user exception. Called by
+     * <tt>UserKernel.exceptionHandler()</tt>. The
+     * <i>cause</i> argument identifies which exception occurred; see the
+     * <tt>Processor.exceptionZZZ</tt> constants.
+     *
+     * @param	cause	the user exception that occurred.
+     */
+    public void handleException(int cause) {
+	Processor processor = Machine.processor();
+        Lib.debug(mem, "Handle Exception in VMProcess\t\tcause: "+cause+"\n");
+
+
+	switch (cause) {
+        case Processor.exceptionTLBMiss:
+	    //Add code for TLBMiss DAC
+            int badAddr=Machine.processor().readRegister(Processor.regBadVAddr);   //read bad address from designated register
+            handleTLBMiss(badAddr);
+            break;
+        
+	default:
+	    super.handleException(cause);
+	    break;
+	}
+    }
+    /**************************************************************************************************************************************************
+     * updateTLB -update TLB so that entry with vpn (if exists) is valid/valid 
+     * params:
+     *   int vpn - the vpn to search for in TLB, set this entry to invalid
+     *   boolean valid - value to set valid
+     * returns - n/a
+     *****************************************************************************************************************************************************/
+    private void updateTLB(int vpn, boolean val) {
+        TranslationEntry entry;
+	for (int i = 0; i < Machine.processor().getTLBSize(); i++){
+             entry = Machine.processor().readTLBEntry(i);
+             if (entry.vpn==vpn){   
+                 entry.valid=val;
+             }
+        }
+       return;
+   }
+    /**********************************************************************************************************************************************
+     * savePage - save page to swap if it needs to be, tell process shit went down
+     * params:
+     *   ppn - the page in invertedPageTable to save/zero out
+     * returns - n/a
+     *********************************************************************************************************************************************/
+   public void savePage(int vpn) {
+        //figure out if page needs to be saved to swap
+       TranslationEntry tEntry=pageTable[vpn];   //DAC DEBUG - make sure that
+       if(tEntry.dirty){    //entry has been written to, save to swap
+           int swapLocation=VMKernel.addToSwap(tEntry.ppn);//add to swap
+           pageTable[vpn].ppn=swapLocation;  //make physical location swap loaction
+       }
+       pageTable[vpn].valid=false;  //this is no longer a valid mapping
+       updateTLB(vpn, false);  //make sure TLB knows this is now invalid
+       return;
+   }
+
+    /*************************************************************************************************************************************
+     * checkAddress():  scans page table of VMProcess to see if there is a valid page 	
+     * params:
+     *    vAddr - the virtual address to check
+     * return - true if address is valid
+     ************************************************************************************************************************************/
+    //checkAddress()
+    //get virtual page from badAddr
+    //get entry corresponding to that vpn in pageTable in this process
+    //return whether or not "valid"
+    public boolean checkValidAddress(int vpn){
+	//get entry corresponding to that vpn in pageTable in this process
+	TranslationEntry entry = pageTable[vpn];
+	if(entry.valid){
+	    return true;
+	}else{
+	    return false;
+        }
+    }
+
+    /*************************************************************************************************************************************
+     * addToTLB: adds translation entry to TLB
+     * params:
+     *    vAddr - the virtual address of the entry to add
+     * return - void
+     ************************************************************************************************************************************/
+    public void addToTLB(int vpn){
+        //PK:checkinf for free entry.
+	// stores the Id/entry of the trasnlation entry that will be replaced
+	int freeEntry = -1;
+	// looping through TLB table, trying to find free index to write to
+	//checking if full
+	for (int i = 0; (i < Machine.processor().getTLBSize()) && (freeEntry == -1); i++){
+		TranslationEntry entry = Machine.processor().readTLBEntry(i);
+		if (!entry.valid){
+		    freeEntry = i;
+                }
+	}
+	// PK: if no free entry was found, we replace by Random b/c TLB is full
+	if (freeEntry == -1){
+    	    freeEntry = randomGenerator.nextInt(Machine.processor().getTLBSize());   //get the next random number 
+	}//end of IFstatement of no free entry found
+        //write to tlb at appropriate spot with entry from pageTable
+	Machine.processor().writeTLBEntry(freeEntry, pageTable[vpn]);    //assumes pageTable[vpn] is set and valid, DAC DEBUG
+    }//end of addtoTLB
+
+    /*************************************************************************************************************
+     * storeArguments() - empty, for use with load()
+     * params:
+     *   none
+     * returns - N/A
+     *************************************************************************************************************/
+    /*    protected void storeArguments(byte[][] argv, String[] args, int entryOffset, int stringOffset){
+        this.argvStandIn=argv;
+        this.argsStandIn=args;
+        this.entryOffsetStandIn=entryOffset;
+        this.stringOffsetStandIn=stringOffset;
+	return;
+	}  */
+
+	    
+     
+    /*************************************************************************************************************************************
+     * initializePage: fill page with appropriate data
+     * params:
+     *    int pageFromKern - physical page to fill w/appropriate data
+     *    int vpn - the virtual page we're interested in
+     * return - void
+     ************************************************************************************************************************************/
+    //initializePage(getspagefromkernel) (initialize page with appropriate information)
+
+    public void initializePage(int pageFromKern, int vpn){
+        int ppn = pageFromKern;
+        /*cases:
+         *  1. page not dirty, args  - get from load args
+         *  2. page not dirty, coff  - get from coff
+         *  3. page not dirty, stack - get zero'd page
+         *  4. page dirty, args    - get from swap
+	 *  5. page dirty, coff    - get from swap   (unless written to cofffile?)
+         *  6. page dirty, stack   - get from swap
+         */
+	if(pageTable[vpn].dirty==true){   //must be on swap
+	    VMKernel.loadFromSwap(pageTable[vpn].ppn,ppn);  //load page at swap[spn] into physical page ppn
+	    /*}else if(pageTable[vpn].dirty==false && vpn==(numPages-1)){  //last page is args ???
+            pageTable[vpn].ppn=ppn;
+            pageTable[vpn].valid=true;
+            VMKernel.memLockOwner=-1;  //DEBUG
+            VMKernel.memLock.release();  //locking issues DAC DEBUG
+	    super.storeArguments(argvStandIn, argsStandIn, entryOffsetStandIn, stringOffsetStandIn);   //not sure about this, DAC DEBUG
+            pageTable[vpn].dirty=true;  //now args have been initialized (not sure if we need this)
+            VMKernel.memLock.acquire();  //locking issues DAC DEBUG
+            VMKernel.memLockOwner=this.pid;  //DEBUG  */
+	}else if(pageTable[vpn].dirty==false && vpn<numCoffPages){  //a coff page
+	    coffMap[vpn].section.loadPage(coffMap[vpn].sectionPage, ppn);  //load coff page
+	}else{   //then it is an unwritten stack page
+            //zero(ppn)  // zero out page
+            VMKernel.zero(ppn);
+        }
+        pageTable[vpn].ppn=ppn;  //assign ppn to pageTableEntry
+        pageTable[vpn].used=true;  //not sure if needed
+        pageTable[vpn].valid=true; //is this somewhere else already?
+        return;
+    }
+
+    /*
+     *verifyVaddr() - makes sure that the virtual address is valid, updates the used and dirty bits as well (used in read/writeVirtualMemory)
+     * params:
+     *   int vpn - the virtual address to check
+     *   boolean write- true if this is for writeVirtualMemory, false otherwise)
+     * returns boolean - true if everything went ok, false otherwise
+     */
+    public boolean verifyVaddr(int vpn, boolean write){
+        if (vpn<0||vpn>=numPages){    //changed this to pageTable.numPages*(pageSize-1)(verify) DAC DEBUG  AFTER MERGE2  
+	    return false;
+	}else{
+            VMKernel.memLock.acquire();  //get lock - now doing stuff with memory
+            VMKernel.memLockOwner=this.pid; //DEBUG
+            if(checkValidAddress(vpn)==false){
+                pageFault(vpn);  //go through the page fault stuff, just don't update TLB  //DAC DEBUG
+	    }
+            int ppn=pageTable[vpn].ppn;
+            VMKernel.invertedPageTable[ppn].used=true;
+            VMKernel.invertedPageTable[ppn].pinned=true;            
+            if(write){  //if this is writeVirtualMemory, make it dirty
+                VMKernel.invertedPageTable[ppn].tEntry.dirty=true;  //not necessary?
+                pageTable[vpn].dirty=true;
+            }
+            VMKernel.memLock.release();
+            return true;
+	}
+    }     
+
+
+    /*
+     *verifyClean() - does what is required to indicate this page is no longer being written to in read/writeVM
+     * params:
+     *   int vpn - the virtual address to check
+     * returns boolean - true if everything went ok, false otherwise
+     */
+    public boolean verifyClean(int vpn){
+        //assert we have lock DAC DEBUG
+        VMKernel.memLock.acquire();
+        int ppn=pageTable[vpn].ppn;
+        VMKernel.invertedPageTable[ppn].pinned=false;
+        VMKernel.pinneded.wakeAll();
+        VMKernel.memLockOwner=-1; //DEBUG
+        VMKernel.memLock.release();
+        return true;
+    }     
+
+    /*
+     *setUsed() - set the used bit of the page table at vpn to the value in val
+     *params:
+     *  int vpn - vpn of entry to change
+     *  boolean val - value to set the used bit to
+     * returns N/A
+     */
+    public void setUsed(int vpn, boolean val){
+        pageTable[vpn].used=val;
+	return;
+    }
+
+    /**
+     * Transfer data from the specified array to this process's virtual memory.
+     * This method handles address translation details. This method must
+     * <i>not</i> destroy the current process if an error occurs, but instead
+     * should return the number of bytes successfully copied (or zero if no
+     * data could be copied).
+     *
+     * @param	vaddr	the first byte of virtual memory to write.
+     * @param	data	the array containing the data to transfer.
+     * @param	offset	the first byte to transfer from the array.
+     * @param	length	the number of bytes to transfer from the array to
+     *			virtual memory.
+     * @return	the number of bytes successfully transferred.
+     */
+    public int writeVirtualMemory(int vaddr, byte[] data, int offset,
+				  int length) {
+        
+        int byteNum=0;
+        //pin page and mark as used and dirty
+        //read only check??? DAC
+        //make sure this is a valid place to write to
+        byteNum=super.writeVirtualMemory(vaddr, data, offset, length);
+        return byteNum;  //total written
+
+    }
+
+    /**
+     * Transfer data from this process's virtual memory to the specified array.
+     * This method handles address translation details. This method must
+     * <i>not</i> destroy the current process if an error occurs, but instead
+     * should return the number of bytes successfully copied (or zero if no
+     * data could be copied).
+     *
+     * @param	vaddr	the first byte of virtual memory to read.
+     * @param	data	the array where the data will be stored.
+     * @param	offset	the first byte to write in the array.
+     * @param	length	the number of bytes to transfer from virtual memory to
+     *			the array.
+     * @return	the number of bytes successfully transferred.
+     */
+    public int readVirtualMemory(int vaddr, byte[] data, int offset,
+				 int length) {
+        int byteNum=0;
+        byteNum=super.readVirtualMemory(vaddr, data, offset, length);
+        return byteNum;  //total written
+    }
+    /*
+     * memDebug - prints out memory test stuff
+     */
+    public void memDebug(){
+            Lib.debug(mem, test.printIPT());  //DEBUG
+            Lib.debug(mem, test.printVPT(this));    
+            Lib.debug(mem, test.printSwap());
+    }
+            
+
+
+    private static final int pageSize = Processor.pageSize;
+    private static final char dbgProcess = 'a';
+    private static final char dbgVM = 'v';
+    private static Random randomGenerator = new Random();
+    protected int numCoffPages;
+    private ptBucket[] coffMap;
+    private byte[][] argvStandIn;
+    private String[] argsStandIn;
+    private int entryOffsetStandIn;
+    private int stringOffsetStandIn;
+    private VMTest test = new VMTest();
+    private static final char w = 'w';
+    private static final char trace = 'x';    
+    private static final char lock = 'y';
+    private static final char mem = 'z';
+    public static int TLBCount=0;
+    /*
+            Lib.debug(mem, "Memory print at beginning of handleTLBMiss\n"); 
+            Lib.debug(mem, test.printIPT());  //DEBUG
+            Lib.debug(mem, test.printSwap());
+            Lib.debug(mem, test.printVPT(this));
+
+    */
+
+
+/**
+ * This class is for testing the project3 code.  What what!
+ *
+ * -Dan Cashman 11/27/11
+ */
+
+public class VMTest {
+    
+    /*
+     *printIPT - prints the contents of the invertedPageTable in VMKernel
+     * params 
+     * return N/A
+     */
+    /*    public void printIPT(){
+        System.out.print("\nNow printing contents of inverted page table (all physical memory):\n");
+        for(int i=0;i<VMKernel.numPhysPages;i++){
+            if(!VMKernel.invertedPageTable[i].assigned){
+                System.out.print("Physical page " + i + " is not assigned to any process\n");
+            }else{
+                System.out.print("Physical page " + i + " is assigned to Process " + VMKernel.invertedPageTable[i].process.pid + "\n");
+                System.out.print("\tUsed="+VMKernel.invertedPageTable[i].used+"\tPinned="+VMKernel.invertedPageTable[i].pinned+"\n");
+            }
+	}
+        return;
+	}*/
+
+
+    /*
+     *printIPT - prints the contents of the invertedPageTable in VMKernel
+     * params 
+     * return N/A
+     */
+    public String printIPT(){
+        String output;
+        output="\nNow printing contents of inverted page table (all physical memory):\n";
+        for(int i=0;i<VMKernel.numPhysPages;i++){
+            if(!VMKernel.invertedPageTable[i].assigned){
+                output+="Physical page " + i + " is not assigned to any process\n";
+            }else{
+                output+="Physical page " + i + " is assigned to Process " + VMKernel.invertedPageTable[i].process.pid + "\n";
+                output+="\tUsed="+VMKernel.invertedPageTable[i].used+"\tPinned="+VMKernel.invertedPageTable[i].pinned+"\n";
+            }
+	}
+        return output;
+    }
+
+    /*
+     *printSwap - prints info for the swap file
+     * params 
+     * return N/A
+     */
+    /*    public void printSwap(){
+        System.out.print("\nNow printing info for swap file\n");
+        System.out.print("Number of pages in swap file:\t"+VMKernel.numSwapPages+"\n");
+        System.out.print("Number of unused pages in swap file:\t"+VMKernel.freeSwap.size()+"\n");
+        return;
+	}*/
+
+    /*
+     *printSwap - prints info for the swap file
+     * params 
+     * return N/A
+     */
+    public String printSwap(){
+        String output;
+        output="\nNow printing info for swap file\n";
+        output+="Number of pages in swap file:\t"+VMKernel.numSwapPages+"\n";
+        output+="Number of unused pages in swap file:\t"+VMKernel.freeSwap.size()+"\n";
+        return output;
+    }
+
+    /*
+     *printVPT - prints the contents of the PageTable in VMProcess
+     * params
+     *  process - a VMProcess 
+     * return N/A
+     */
+    /* public void printVPT(VMProcess process){
+        System.out.print("\nNow printing contents of page table in process "+process.pid+":\n");
+        for(int i=0;i<process.numPages;i++){
+            if(!process.pageTable[i].valid){
+                System.out.print("Virtual page " + i + " is not mapped to any physical page\n");
+                if(process.pageTable[i].dirty){
+                    System.out.print("Contents currently stored in swap file at page: " + pageTable[i].ppn + "\n");
+		}
+            }else{
+                System.out.print("Virtual page " + i + " is mapped to physical page " + pageTable[i].ppn + "\n");
+	    }
+            System.out.print("\treadOnly="+pageTable[i].readOnly+"\tdirty="+pageTable[i].dirty+"\n");
+       }
+        return;
+	}*/
+
+    /*
+     *printVPT - prints the contents of the PageTable in VMProcess
+     * params
+     *  process - a VMProcess 
+     * return N/A
+     */
+        public String printVPT(VMProcess process){
+        String output;
+        output="\nNow printing contents of page table in process "+process.pid+":\n";
+        for(int i=0;i<process.numPages;i++){
+            if(!process.pageTable[i].valid){
+                output+="Virtual page " + i + " is not mapped to any physical page\n";
+                if(process.pageTable[i].dirty){
+                    output+="Contents currently stored in swap file at page: " + pageTable[i].ppn + "\n";
+		}
+            }else{
+                output+="Virtual page " + i + " is mapped to physical page " + pageTable[i].ppn + "\n";
+	    }
+            output+="\treadOnly="+pageTable[i].readOnly+"\tdirty="+pageTable[i].dirty+"\n";
+       }
+        return output;
+    }
+
+    /*
+     *printLock - prints info on lock ownership
+     */
+    /*    public void printLock(){
+	System.out.print("\nLock information:\n");
+        if(VMKernel.memLockOwner==-1){
+            System.out.print("\nmemLock currently unowned\n");
+        }else{
+            System.out.print("\nmemLock owned by Process"+VMKernel.memLockOwner+"\n");
+        }
+        if(VMKernel.pidLockOwner==-1){
+            System.out.print("\npidLock currently unowned\n");
+        }else{
+            System.out.print("\npidLock owned by Process"+VMKernel.pidLockOwner+"\n");
+        }
+        if(VMKernel.numProcessLockOwner==-1){
+            System.out.print("\nnumProcessLock currently unowned\n");
+        }else{
+            System.out.print("\nnumProcessLock owned by Process"+VMKernel.numProcessLockOwner+"\n");
+        }
+        return;
+    }
+    */
+    /*
+     *printLock - prints info on lock ownership
+     */
+    public String printLock(){
+        String output;
+	output="\nLock information:\n";
+        if(VMKernel.memLockOwner==-1){
+            output+="\nmemLock currently unowned\n";
+        }else{
+            output+="\nmemLock owned by Process"+VMKernel.memLockOwner+"\n";
+        }
+        if(VMKernel.pidLockOwner==-1){
+            output+="\npidLock currently unowned\n";
+        }else{
+            output+="\npidLock owned by Process"+VMKernel.pidLockOwner+"\n";
+        }
+        if(VMKernel.numProcessLockOwner==-1){
+            output+="\nnumProcessLock currently unowned\n";
+        }else{
+            output+="\nnumProcessLock owned by Process"+VMKernel.numProcessLockOwner+"\n";
+        }
+        return output;
+    }
+    
+
+}
+
+    
+}
