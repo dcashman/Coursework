@@ -1,0 +1,4 @@
+This directory contains the code for our web-security project in CSE 127.  The attacks here, a-e, were written to provide the capabilities desired by the project page, here:  http://cseweb.ucsd.edu/classes/fa11/cse127-a/proj3.html  (also downloaded in this dir for reference).
+
+The exploitable site is here:  http://zoobar.org  (although code for it can be found in www and zoobar directories.
+

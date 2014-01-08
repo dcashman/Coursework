@@ -1,0 +1,25 @@
+The three directories contained herein correspond to the three projects undertaken during CSE127 during the fall quarter in 2011 at UCSD.  Currently, only projects 2 and 3 have the appropriate code, as the code to the "sploits" in the first project has not yet been recovered.  The three projects are as follows:
+
+Project 1:
+Software vulnerabilities:
+Part 1 - Simple buffer overflow
+part 2 - "off by one" error and resulting overflow
+part 3 - Integer overflow
+part 4 - error in use of 'tfree' - a version of free
+part 5 - mis/unintended-use of printf
+
+All of the above resulted in a /bin/sh root shell after completed exploits were coded.
+
+Project 2: 
+
+A heapspray on a vulnerable function in a modified and provided version of "Iceweasel."  Resulted in remote access as root.
+
+Project 3: 
+Part 1 - cookie theft
+Part 2 - CSRF
+Part 3 - SQL injection
+Part 4 - Password Theft
+Part 5 - profile worm
+
+The specs for project three are available at this website: http://cseweb.ucsd.edu/classes/fa11/cse127-a/proj3.html
+Which is also provided in the directory

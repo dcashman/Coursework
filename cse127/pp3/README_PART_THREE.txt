@@ -1,0 +1,14 @@
+[ATTACK E]
+This attack takes advantage of the poor design of the zoobar site. In order to
+implement the zoobar counter, line 42 of the users.php file evals the className
+of the element with id equal to "zoobars", which the server will have populated
+with a value equal to the number of zoobars of that user. Because the profile
+comes before the span provided by the server, we can provide our own span with
+an id of 'zoobars' and it will be the element returned by
+document.getElementById, allowing us to execute arbitrary javascript by changing
+the name of the class to be the javascript we want to execute. Once we have
+reached this point, we can use XMLHttpRequest to issue the needed requests to
+steal the zoobar and set the profile of the viewing user. The only other wrinkle
+is that we have had to encode the ampersand to avoid it being mangled and
+concatenated strings using the String.concat function for the same reason (that
+is to say, the plus sign was being messed with).

