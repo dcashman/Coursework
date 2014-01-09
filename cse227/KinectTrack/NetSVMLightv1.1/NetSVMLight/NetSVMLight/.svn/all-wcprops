@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/NetSVMLight/NetSVMLight
+END
+Utilities.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/NetSVMLight/NetSVMLight/Utilities.cs
+END
+CheapFeatureVector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/NetSVMLight/NetSVMLight/CheapFeatureVector.cs
+END
+NetSVMLight.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3/trunk/NetSVMLight/NetSVMLight/NetSVMLight.csproj
+END
+release-notes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3/trunk/NetSVMLight/NetSVMLight/release-notes.txt
+END
+SVMClassify.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/NetSVMLight/NetSVMLight/SVMClassify.cs
+END
+SVMLearn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/3/trunk/NetSVMLight/NetSVMLight/SVMLearn.cs
+END

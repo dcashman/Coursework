@@ -1,0 +1,120 @@
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal1.txt with probability:	-24.3074567984046
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal1.txt with probability:	-28.8709766313297
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal1.txt with probability:	-22.7136019593042
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal1.txt with probability:	-33.3804288875243
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal2.txt with probability:	-4.20683961137874
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal2.txt with probability:	-0.802708810623072
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal2.txt with probability:	-1.20237153837063
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal2.txt with probability:	-2.94455835945454
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal3.txt with probability:	-8.82212164202491
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal3.txt with probability:	-10.2538957660197
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal3.txt with probability:	-11.2800905617029
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal3.txt with probability:	-7.62095094932363
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal4.txt with probability:	-4.13123721544605
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal4.txt with probability:	-0.788185736237943
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal4.txt with probability:	-1.18070449510937
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal4.txt with probability:	-2.89168564009422
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal5.txt with probability:	-4.35804440324412
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal5.txt with probability:	-0.83175495939333
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal5.txt with probability:	-1.24570562489313
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal5.txt with probability:	-3.05030379817518
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal6.txt with probability:	-4.05563481951336
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal6.txt with probability:	-0.773662661852814
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal6.txt with probability:	-1.15903745184812
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal6.txt with probability:	-2.8388129207339
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal7.txt with probability:	-3.37521325611917
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal7.txt with probability:	-0.642954992386651
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal7.txt with probability:	-0.964034062496843
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal7.txt with probability:	-2.36295844649104
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal8.txt with probability:	-4.66045398697487
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal8.txt with probability:	-0.889847256933846
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal8.txt with probability:	-1.33237379793814
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal8.txt with probability:	-3.26179467561645
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal9.txt with probability:	-4.28244200731143
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal9.txt with probability:	-0.817231885008201
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal9.txt with probability:	-1.22403858163188
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal9.txt with probability:	-2.99743107881486
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal10.txt with probability:	-4.13123721544605
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal10.txt with probability:	-0.788185736237943
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal10.txt with probability:	-1.18070449510937
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal10.txt with probability:	-2.89168564009422
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal11.txt with probability:	-4.28244200731143
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal11.txt with probability:	-0.817231885008201
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal11.txt with probability:	-1.22403858163188
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal11.txt with probability:	-2.99743107881486
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal12.txt with probability:	-4.28244200731143
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal12.txt with probability:	-0.817231885008201
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal12.txt with probability:	-1.22403858163188
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal12.txt with probability:	-2.99743107881486
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal13.txt with probability:	-3.37521325611917
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal13.txt with probability:	-0.642954992386651
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal13.txt with probability:	-0.964034062496843
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal13.txt with probability:	-2.36295844649104
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal14.txt with probability:	-4.28244200731143
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal14.txt with probability:	-0.817231885008201
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal14.txt with probability:	-1.22403858163188
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal14.txt with probability:	-2.99743107881486
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal15.txt with probability:	-3.07280367238842
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal15.txt with probability:	-0.584862694846135
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal15.txt with probability:	-0.877365889451831
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal15.txt with probability:	-2.15146756904977
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal16.txt with probability:	-4.50924919510949
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal16.txt with probability:	-0.860801108163588
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal16.txt with probability:	-1.28903971141564
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal16.txt with probability:	-3.15604923689581
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal17.txt with probability:	-4.43364679917681
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal17.txt with probability:	-0.846278033778459
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal17.txt with probability:	-1.26737266815439
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal17.txt with probability:	-3.10317651753549
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal18.txt with probability:	-4.58485159104218
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal18.txt with probability:	-0.875324182548717
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal18.txt with probability:	-1.31070675467689
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal18.txt with probability:	-3.20892195625613
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal19.txt with probability:	-6.47491148935939
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal19.txt with probability:	-1.23840104217695
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal19.txt with probability:	-1.85238283620822
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal19.txt with probability:	-4.53073994026408
+
+
+trainingWithShift/paulNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal20.txt with probability:	-4.20683961137874
+trainingWithShift/paulCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal20.txt with probability:	-0.802708810623072
+trainingWithShift/danNormalAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal20.txt with probability:	-1.20237153837063
+trainingWithShift/danCrazyAsKlusters256.txt classifies classifyWithShift/256/classifyPaulNormal20.txt with probability:	-2.94455835945454
+
+

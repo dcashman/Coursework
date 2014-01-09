@@ -1,0 +1,120 @@
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal1.txt with probability:	-34.056507312429
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal1.txt with probability:	-41.2753215971338
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal1.txt with probability:	-44.6220711177498
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal1.txt with probability:	-47.3343273419484
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal2.txt with probability:	-9.71657422829104
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal2.txt with probability:	-8.78076283189065
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal2.txt with probability:	-11.4437197912421
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal2.txt with probability:	-31.6398482605814
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal3.txt with probability:	-44.1826943631668
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal3.txt with probability:	-45.6977687634063
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal3.txt with probability:	-57.0881053277405
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal3.txt with probability:	-58.515588851118
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal4.txt with probability:	-12.4754320662185
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal4.txt with probability:	-11.27452620952
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal4.txt with probability:	-14.693570119264
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal4.txt with probability:	-40.6173469373252
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal5.txt with probability:	-20.3892749816071
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal5.txt with probability:	-20.3436858431589
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal5.txt with probability:	-24.115290733035
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal5.txt with probability:	-40.3524349066415
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal6.txt with probability:	-55.0434915037822
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal6.txt with probability:	-55.9110187162224
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal6.txt with probability:	-48.9274619187361
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal6.txt with probability:	-60.1901032060784
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal7.txt with probability:	-48.6031045141365
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal7.txt with probability:	-44.2455843083607
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal7.txt with probability:	-59.5822586794575
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal7.txt with probability:	-90.5357417101026
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal8.txt with probability:	-13.4012968384845
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal8.txt with probability:	-13.0907897075794
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal8.txt with probability:	-16.0403711248211
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal8.txt with probability:	-29.6737654531716
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal9.txt with probability:	-47.9536015000635
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal9.txt with probability:	-49.2603764050818
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal9.txt with probability:	-34.8159782596951
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal9.txt with probability:	-70.2713540529678
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal10.txt with probability:	-43.9435621976839
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal10.txt with probability:	-42.8744235285901
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal10.txt with probability:	-46.3938665881292
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal10.txt with probability:	-54.1106077429773
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal11.txt with probability:	-13.3950513455277
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal11.txt with probability:	-12.1057806687298
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal11.txt with probability:	-15.7768535619379
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal11.txt with probability:	-43.6098464962398
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal12.txt with probability:	-61.0497737962883
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal12.txt with probability:	-59.3320679916076
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal12.txt with probability:	-54.2853521347407
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal12.txt with probability:	-61.4067790383342
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal13.txt with probability:	-62.2773524534256
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal13.txt with probability:	-57.6867951151941
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal13.txt with probability:	-49.5035816909294
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal13.txt with probability:	-83.1390325210641
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal14.txt with probability:	-13.5789752013895
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal14.txt with probability:	-12.2720315605718
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal14.txt with probability:	-15.9935102504727
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal14.txt with probability:	-44.2083464080227
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal15.txt with probability:	-17.6253000303498
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal15.txt with probability:	-15.9295511810948
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal15.txt with probability:	-20.7599573982381
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal15.txt with probability:	-57.3753444672469
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal16.txt with probability:	-9.5326503724292
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal16.txt with probability:	-8.6145119400487
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal16.txt with probability:	-11.2270631027073
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal16.txt with probability:	-31.0413483487984
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal17.txt with probability:	-40.0865175131034
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal17.txt with probability:	-39.0320801156624
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal17.txt with probability:	-32.6850981087608
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal17.txt with probability:	-65.2993072927648
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal18.txt with probability:	-53.1570974405804
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal18.txt with probability:	-54.1690590130902
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal18.txt with probability:	-49.0405914849424
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal18.txt with probability:	-88.4555539691103
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal19.txt with probability:	-59.5719801703804
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal19.txt with probability:	-58.7503212277987
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal19.txt with probability:	-73.0061142072715
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal19.txt with probability:	-69.7143683116103
+
+
+trainingWithShift/paulNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal20.txt with probability:	-59.7106645384093
+trainingWithShift/paulCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal20.txt with probability:	-58.9698230739529
+trainingWithShift/danNormalAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal20.txt with probability:	-51.0957383021419
+trainingWithShift/danCrazyAsKlusters1024.txt classifies classifyWithShift/1024/classifyDanNormal20.txt with probability:	-73.9688943552206
+
+
